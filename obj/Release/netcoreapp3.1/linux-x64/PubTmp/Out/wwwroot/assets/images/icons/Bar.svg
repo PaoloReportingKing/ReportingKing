@@ -1,0 +1,14 @@
+<svg id="Bar" xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #1d1d1b;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M245.859,20.925h50.752v259.15H245.859V20.925Z"/>
+  <path id="Rectangle_1_copy_3" data-name="Rectangle 1 copy 3" class="cls-1" d="M3.389,94.166H54.141V280.075H3.389V94.166Z"/>
+  <path id="Rectangle_1_copy" data-name="Rectangle 1 copy" class="cls-1" d="M166.907,122.333h50.752V280.075H166.907V122.333Z"/>
+  <path id="Rectangle_1_copy_2" data-name="Rectangle 1 copy 2" class="cls-1" d="M82.341,161.76h50.752V280.075H82.341V161.76Z"/>
+</svg>

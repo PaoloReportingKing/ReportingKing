@@ -1,0 +1,37 @@
+<svg id="Scatter" xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #1d1d1b;
+        stroke-width: 10px;
+      }
+
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2, .cls-3 {
+        fill: #1d1d1b;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M24.616,10.964V278.6h260.2"/>
+  <path class="cls-2" d="M117.545,33.268A18.586,18.586,0,1,1,98.96,51.853,18.586,18.586,0,0,1,117.545,33.268Z"/>
+  <circle id="Ellipse_1_copy" data-name="Ellipse 1 copy" class="cls-3" cx="180.734" cy="144.781" r="14.859"/>
+  <path id="Ellipse_1_copy_2" data-name="Ellipse 1 copy 2" class="cls-2" d="M243.929,189.389a11.152,11.152,0,1,1-11.151,11.151A11.152,11.152,0,0,1,243.929,189.389Z"/>
+  <path id="Ellipse_1_copy_3" data-name="Ellipse 1 copy 3" class="cls-2" d="M177.02,189.389a11.152,11.152,0,1,1-11.151,11.151A11.152,11.152,0,0,1,177.02,189.389Z"/>
+  <circle id="Ellipse_1_copy_4" data-name="Ellipse 1 copy 4" class="cls-3" cx="65.5" cy="118.766" r="11.156"/>
+  <path id="Ellipse_1_copy_8" data-name="Ellipse 1 copy 8" class="cls-2" d="M110.111,167.086A11.151,11.151,0,1,1,98.96,178.237,11.152,11.152,0,0,1,110.111,167.086Z"/>
+  <circle id="Ellipse_1_copy_9" data-name="Ellipse 1 copy 9" class="cls-3" cx="221.625" cy="237.719" r="11.156"/>
+  <circle id="Ellipse_1_copy_5" data-name="Ellipse 1 copy 5" class="cls-3" cx="128.688" cy="115.047" r="7.438"/>
+  <circle id="Ellipse_1_copy_6" data-name="Ellipse 1 copy 6" class="cls-3" cx="188.172" cy="100.188" r="7.422"/>
+  <circle id="Ellipse_1_copy_10" data-name="Ellipse 1 copy 10" class="cls-3" cx="147.281" cy="275.438" r="3.719"/>
+  <path id="Ellipse_1_copy_11" data-name="Ellipse 1 copy 11" class="cls-2" d="M191.889,271.733a3.717,3.717,0,1,1-3.717,3.717A3.717,3.717,0,0,1,191.889,271.733Z"/>
+  <path id="Ellipse_1_copy_12" data-name="Ellipse 1 copy 12" class="cls-2" d="M87.808,271.733a3.717,3.717,0,1,1-3.717,3.717A3.717,3.717,0,0,1,87.808,271.733Z"/>
+  <path id="Ellipse_1_copy_13" data-name="Ellipse 1 copy 13" class="cls-2" d="M28.768,211.692a3.717,3.717,0,1,1-3.717,3.717A3.717,3.717,0,0,1,28.768,211.692Z"/>
+  <circle id="Ellipse_1_copy_14" data-name="Ellipse 1 copy 14" class="cls-3" cx="28.781" cy="155.938" r="3.719"/>
+  <circle id="Ellipse_1_copy_15" data-name="Ellipse 1 copy 15" class="cls-3" cx="28.781" cy="51.844" r="3.719"/>
+  <circle id="Ellipse_1_copy_16" data-name="Ellipse 1 copy 16" class="cls-3" cx="251.375" cy="275.438" r="3.719"/>
+  <circle id="Ellipse_1_copy_7" data-name="Ellipse 1 copy 7" class="cls-3" cx="229.063" cy="155.938" r="3.719"/>
+</svg>

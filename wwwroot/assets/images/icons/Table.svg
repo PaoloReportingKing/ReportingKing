@@ -1,0 +1,23 @@
+<svg id="Table" xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #1d1d1b;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M5.408,10.97H294.592V72.143H5.408V10.97Z"/>
+  <path class="cls-1" d="M5.408,83.265H66.582v61.174H5.408V83.265Z"/>
+  <path id="Rectangle_2_copy" data-name="Rectangle 2 copy" class="cls-1" d="M83.265,83.265h61.174v61.174H83.265V83.265Z"/>
+  <path id="Rectangle_2_copy_2" data-name="Rectangle 2 copy 2" class="cls-1" d="M155.561,83.265h61.174v61.174H155.561V83.265Z"/>
+  <path id="Rectangle_2_copy_3" data-name="Rectangle 2 copy 3" class="cls-1" d="M233.418,83.265h61.174v61.174H233.418V83.265Z"/>
+  <path id="Rectangle_2_copy_4" data-name="Rectangle 2 copy 4" class="cls-1" d="M5.408,155.561H66.582v61.174H5.408V155.561Z"/>
+  <path id="Rectangle_2_copy_4-2" data-name="Rectangle 2 copy 4" class="cls-1" d="M83.265,155.561h61.174v61.174H83.265V155.561Z"/>
+  <path id="Rectangle_2_copy_4-3" data-name="Rectangle 2 copy 4" class="cls-1" d="M155.561,155.561h61.174v61.174H155.561V155.561Z"/>
+  <path id="Rectangle_2_copy_4-4" data-name="Rectangle 2 copy 4" class="cls-1" d="M233.418,155.561h61.174v61.174H233.418V155.561Z"/>
+  <path id="Rectangle_2_copy_5" data-name="Rectangle 2 copy 5" class="cls-1" d="M5.408,227.857H66.582V289.03H5.408V227.857Z"/>
+  <path id="Rectangle_2_copy_5-2" data-name="Rectangle 2 copy 5" class="cls-1" d="M83.265,227.857h61.174V289.03H83.265V227.857Z"/>
+  <path id="Rectangle_2_copy_5-3" data-name="Rectangle 2 copy 5" class="cls-1" d="M155.561,227.857h61.174V289.03H155.561V227.857Z"/>
+  <path id="Rectangle_2_copy_5-4" data-name="Rectangle 2 copy 5" class="cls-1" d="M233.418,227.857h61.174V289.03H233.418V227.857Z"/>
+</svg>

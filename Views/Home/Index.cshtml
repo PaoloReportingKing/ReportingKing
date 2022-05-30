@@ -1,0 +1,2058 @@
+@using Microsoft.AspNetCore.Http
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+@using ReportingApp.Common;
+@using Newtonsoft.Json;
+
+@{
+    ViewData["Title"] = "Dashboard";
+}
+
+@{
+    var sessionString = @HttpContextAccessor.HttpContext.Session.GetString("CustomerManager");
+}
+
+@{
+    CustomerSessionManager cms = JsonConvert.DeserializeObject<CustomerSessionManager>(sessionString);
+    string stl = "";
+    if (cms.IsLogin && cms.IsSuperAdmin)
+    {
+        stl = "display: block";
+    }
+    else
+    {
+        stl = "display: none";
+    }
+}
+
+@section CSS{
+    <style>
+        .apexcharts-xaxis-title {
+            margin-top: 10px
+        }
+
+        .has-search .form-control {
+            padding-left: 2.375rem;
+        }
+
+        .has-search .form-control-feedback {
+            position: absolute;
+            z-index: 2;
+            display: block;
+            width: 2.375rem;
+            height: 2.375rem;
+            line-height: 2.375rem;
+            text-align: center;
+            pointer-events: none;
+            color: #aaa;
+        }
+
+        .fieldsNew {
+            padding: 10px;
+            border: 3px solid lightgray;
+            height: 570px !important;
+        }
+
+        .search_bar {
+            padding-left: 0;
+            position: absolute;
+            top: 3px;
+            padding: 10px 10px;
+            z-index: 10;
+            background: #fff;
+            left: 10px;
+        }
+
+            .search_bar li {
+                display: inline-block;
+                padding-bottom: 10px;
+            }
+
+        #ReportColumns #slimScrollBar {
+            z-index: 0;
+        }
+
+        #ReportColumns, #SavedReportUL {
+            margin-top: 0;
+        }
+
+        .highlight {
+            border: 2px dashed blue;
+        }
+    </style>
+    <style type="text/css">
+        .customBtn {
+            display: inline-block;
+            background: white;
+            color: white;
+            width: 100px;
+            border-radius: 5px;
+            border: thin solid #888;
+            /*  box-shadow: 1px 1px 1px grey;*/
+            white-space: nowrap;
+            background-color: #4d79f6;
+        }
+
+            .customBtn:hover {
+                cursor: pointer;
+            }
+
+        #customBtn2 {
+            display: inline-block;
+            background: white;
+            color: white;
+            width: 100px;
+            border-radius: 5px;
+            border: thin solid #888;
+            /*     box-shadow: 1px 1px 1px grey;*/
+            white-space: nowrap;
+            background-color: #4d79f6;
+        }
+
+            #customBtn2:hover {
+                cursor: pointer;
+            }
+
+        span.label {
+            font-family: serif;
+            font-weight: normal;
+        }
+
+        span.icon {
+            background: url('/identity/sign-in/g-normal.png') transparent 5px 50% no-repeat;
+            display: inline-block;
+            vertical-align: middle;
+            width: 42px;
+            height: 42px;
+        }
+
+        span.buttonText {
+            display: inline-block;
+            vertical-align: middle;
+            padding-left: 26px;
+            padding-right: 42px;
+            font-size: 14px;
+            /*   font-weight: bold;*/
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+}
+
+<div class="left-sidenav">
+    <div class="main-icon-menu">
+        <nav class="nav">
+            <a href="#Fields" id="a_AddFields" onclick="showChartsDiv()" class="first-link fields-link nav-link" data-toggle="tooltip-custom" data-placement="top" title="" data-original-title="Add Fields">
+                Add <br /> Fields
+            </a>
+
+            <a href="#Colors" onclick="ColorPalletFunc()" class="clr-pallet nav-link" data-toggle="tooltip-custom" data-placement="top" title="" data-original-title="Color Pallet">
+                Color <br /> Palettes
+            </a>
+            <a href="#calculatefields" onclick="showFieldsDiv()" class="calculated-fields-link nav-link" data-toggle="tooltip-custom" data-placement="top" title="" data-original-title="Calculated Fields">
+                Create <br /> Field
+            </a>
+            @*<a href="#Fields" disabled onclick="SavedFieldsDiv()" class=" nav-link" data-toggle="tooltip-custom" data-placement="top" title="" data-original-title="Calculated Fields">
+                    Saved Reports
+                </a>*@
+            <a href="javascript:void(0)" onclick="SavedFieldsDiv()" class=" nav-link saved-temp" data-toggle="tooltip-custom" data-placement="top" title="" data-original-title="Saved Fields">
+                Saved Reports
+            </a>
+            <a href="javascript:void(0)" id="profileBtn" onclick="showAccountDetails()" class=" nav-link saved-temp d-none" data-toggle="tooltip-custom" data-placement="top" title="" data-original-title="Calculated Fields">
+                My Account
+            </a>
+
+            <a href="javascript:void(0)" id="UsersSideMenu" onclick="GetInternalDashboardData()" class=" nav-link saved-temp" style="display:none" data-toggle="tooltip-custom" data-placement="top" title="" data-original-title="Users">
+                Internal Dashboard
+            </a>
+
+            <a href="javascript:void(0)" id="VedioTutorial" onclick="ShowVedioTutorials()" class=" nav-link saved-temp" data-toggle="tooltip-custom" data-placement="top" title="" data-original-title="Vedio Tutorials">
+                Video Tutorial
+            </a>
+
+            <a href="javascript:void(0)" onclick="showStuff()" class="nav-link stuff_link" data-toggle="tooltip-custom" data-placement="top" title="" data-original-title="Stuff">
+                Useful Stuff
+            </a>
+        </nav>
+    </div>
+
+    <div class="main-menu-inner" id="LeftSideFileUpload">
+        <a class="  button-menu-mobile" onclick="reflowAllHighchartswithtimer()">
+            <img src="~/assets/images/icon.svg" />
+        </a>
+        <div class="menu-body slimscroll">
+
+
+
+            <div class="menu-fixed-top">
+
+                <div id="gSignOutWrapper" style="margin-bottom:5px;display:none">
+                    <button type="button" onclick="Logout()" class="btn btn-primary">Logout</button>
+                </div>
+
+                <!--<div id="gSignInWrapper" style="margin-bottom:5px;display:none">-->
+                @*<span class="label">Sign in with:</span>*@
+                <!--<div id="customBtnshow" onclick="clickhiddencustombtn()" class="customGPlusSignIn customBtn">-->
+                @*<span class="icon"></span>*@
+                <!--<span class="buttonText">Sign in</span>
+                </div>
+                <div id="customBtn" class="customGPlusSignIn customBtn d-none">-->
+                @*<span class="icon"></span>*@
+                <!--<span class="buttonText">Sign in</span>
+                </div>
+                <div id="customBtn2" class="customGPlusSignIn customBtn" style="float:right">-->
+                @*<span class="icon"></span>*@
+                <!--<span class="buttonText">Sign up</span>
+                    </div>
+                </div>-->
+                <label class="btn btn-orange btn-lg upload-btn">
+                    <span class="text-upload"> UPLOAD</span>
+                    <input type="file" id="PaymentFile" class="btn btn-orange btn-lg w-100 mb-2 d-none" onchange="postfiles('PaymentFile');" accept=".csv,.xlsx,.xls">
+                </label>
+                <marquee class="marque" id="marque">Upload an XLS , XLSX or CSV file to create a report</marquee>
+                <div class="input-group mb-1" id="div_fieldsearch" style="display:none">
+
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="validationTooltipUsernamePrepend"><i class="fa fa-search"></i> </span>
+                    </div>
+                    <input type="text" class="form-control" onkeyup="lookupFields()" id="column_fields_search" placeholder="Search" aria-describedby="validationTooltipUsernamePrepend">
+                    <div class="invalid-tooltip">
+                        Please choose a unique and valid username.
+                    </div>
+                </div>
+            </div>
+
+
+            @*<div class="slimscroll">*@
+            <div id="Fields" class="main-icon-menu-pane">
+                @*<input type="file" id="PaymentFile" class=" btn btn-primary btn-lg w-100 mb-4" onchange="postfiles('PaymentFile');" accept=".csv,.xlsx,.xls">
+
+
+
+                    <div class="input-group mb-2"  id="div_fieldsearch">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="validationTooltipUsernamePrepend"><i class="fa fa-search"></i> </span>
+                        </div>
+                        <input type="text" class="form-control" onkeyup="lookupFields()" id="column_fields_search" placeholder="Search" aria-describedby="validationTooltipUsernamePrepend" >
+                        <div class="invalid-tooltip">
+                            Please choose a unique and valid username.
+                        </div>
+                    </div>*@
+
+
+                <ul class="fields" id="FieldsList">
+                </ul>
+                <ul class="fields" id="FieldsList12All">
+                </ul>
+
+            </div>
+            <div id="Colors" class="main-icon-menu-pane">
+                <ul id="iqonic-theme-list">
+                    <li>
+                        <div class="row pallet">
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="        background: #A50044"></div>
+                                    <small class="text-center">#A50044</small>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="        background: #004D98
+"></div>
+                                    <small class="text-center">#004D98</small>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="        background: #EDBB00
+"></div>
+                                    <small class="text-center">#EDBB00</small>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="    background: #e6d600
+    "></div>
+                                    <small class="text-center">#e6d600</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="custom-control custom-switch mb-2" dir="ltr">
+                            <input name="radio" type="checkbox" class="custom-control-input themeswitch" id="customSwitch1" onchange="SetSelectedColourPallets('customSwitch1')" checked=checked />
+                            <label class="custom-control-label" for="customSwitch1">palette 1</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row pallet">
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="        background: #A800FF
+"></div>
+                                    <small class="text-center">#A800FF</small>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="        background: #0079FF
+"></div>
+                                    <small class="text-center">#0079FF</small>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="        background: #00F11D
+"></div>
+                                    <small class="text-center">#00F11D</small>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="        background: #e6d600
+"></div>
+                                    <small class="text-center">#e6d600</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="custom-control custom-switch mb-2" dir="ltr">
+                            <input name="radio" type="checkbox" class="custom-control-input themeswitch" id="customSwitch2" onchange="SetSelectedColourPallets('customSwitch2')" />
+                            <label class="custom-control-label" for="customSwitch2">palette 2</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row pallet">
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="        background: #010101
+"></div>
+                                    <small class="text-center">#010101</small>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="        background: #4BE1EC
+"></div>
+                                    <small class="text-center">#4BE1EC</small>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="        background: #F53C3C
+"></div>
+                                    <small class="text-center">#F53C3C</small>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="        background: #377280
+"></div>
+                                    <small class="text-center">#377280</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="custom-control custom-switch mb-2" dir="ltr">
+                            <input name="radio" type="checkbox" disabled class="custom-control-input themeswitch" id="customSwitch3" onchange="SetSelectedColourPallets('customSwitch3')" />
+                            <label class="custom-control-label" for="customSwitch3">palette 3</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row pallet">
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="        background: #510C6C
+"></div>
+                                    <small class="text-center">#510C6C</small>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="        background: #E74164
+"></div>
+                                    <small class="text-center">#E74164</small>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="        background: #F7CC3D
+"></div>
+                                    <small class="text-center">#F7CC3D</small>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="        background: #38C8A7
+"></div>
+                                    <small class="text-center">#38C8A7</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="custom-control custom-switch mb-2" dir="ltr">
+                            <input name="radio" type="checkbox" class="custom-control-input themeswitch" id="customSwitch4" onchange="SetSelectedColourPallets('customSwitch4')" />
+                            <label disabled class="custom-control-label" for="customSwitch4">palette 4</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row pallet">
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="        background: #F79400
+"></div>
+                                    <small class="text-center">#F79400</small>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="        background: #136BAE
+"></div>
+                                    <small class="text-center">#136BAE</small>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="        background: #000000
+"></div>
+                                    <small class="text-center">#000000</small>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="        background: #4C6887
+"></div>
+                                    <small class="text-center">#4C6887</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="custom-control custom-switch mb-2" dir="ltr">
+                            <input name="radio" disabled type="checkbox" class="custom-control-input themeswitch" id="customSwitch5" onchange="SetSelectedColourPallets('customSwitch5')" />
+                            <label class="custom-control-label" for="customSwitch5">palette 5</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row pallet">
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="    background: #097275
+    "></div>
+                                    <small class="text-center">#097275</small>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="        background: #ee6055
+    "></div>
+                                    <small class="text-center">#ee6055</small>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="        background: #dfbf6d
+"></div>
+                                    <small class="text-center">#Dfbf6d</small>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="        background: #C96C1C
+"></div>
+                                    <small class="text-center">#C96C1C</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="custom-control custom-switch mb-2" dir="ltr">
+                            <input name="radio" disabled type="checkbox" class="custom-control-input themeswitch" id="customSwitch6" onchange="SetSelectedColourPallets('customSwitch6')" />
+                            <label class="custom-control-label" for="customSwitch6">palette 6</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row pallet">
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="        background: #DE3036
+"></div>
+                                    <small class="text-center">#DE3036</small>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="        background: #0061CB
+"></div>
+                                    <small class="text-center">#0061CB</small>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="        background: #EDAA02
+"></div>
+                                    <small class="text-center">#EDAA02</small>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="        background: #82B216
+"></div>
+                                    <small class="text-center">#82B216</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="custom-control custom-switch mb-2" dir="ltr">
+                            <input name="radio" disabled type="checkbox" class="custom-control-input themeswitch" id="customSwitch7" onchange="SetSelectedColourPallets('customSwitch7')" />
+                            <label class="custom-control-label" for="customSwitch7">palette 7</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row pallet">
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="        background: #EB4E21
+"></div>
+                                    <small class="text-center">#EB4E21</small>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="        background: #01A4EF
+"></div>
+                                    <small class="text-center">#01A4EF</small>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="        background: #80BB01
+"></div>
+                                    <small class="text-center">#80BB01</small>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="        background: #FFB901
+"></div>
+                                    <small class="text-center">#FFB901</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="custom-control custom-switch mb-2" dir="ltr">
+                            <input disabled name="radio" type="checkbox" class="custom-control-input themeswitch" id="customSwitch8" onchange="SetSelectedColourPallets('customSwitch8')" />
+                            <label class="custom-control-label" for="customSwitch8">palette 8</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row pallet">
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="        background: #383be0
+"></div>
+                                    <small class="text-center">#383be0</small>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="        background: #0F8567
+"></div>
+                                    <small class="text-center">#0F8567</small>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="        background: #13A0F0
+"></div>
+                                    <small class="text-center">#13A0F0</small>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="        background: #05ada2
+"></div>
+                                    <small class="text-center">#05ada2</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="custom-control custom-switch mb-2" dir="ltr">
+                            <input name="radio" disabled type="checkbox" class="custom-control-input themeswitch" id="customSwitch9" onchange="SetSelectedColourPallets('customSwitch9')" />
+                            <label class="custom-control-label" for="customSwitch9">palette 9</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row pallet">
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="background: #2e294e "></div>
+                                    <small class="text-center">#2e294e</small>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="background: #DADADA"></div>
+                                    <small class="text-center">#DADADA</small>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="background: #01f594"></div>
+                                    <small class="text-center">#01f594</small>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="background: #fee33f"></div>
+                                    <small class="text-center">#fee33f</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="custom-control custom-switch mb-2" dir="ltr">
+                            <input name="radio" type="checkbox" class="custom-control-input themeswitch" id="customSwitch10" onchange="SetSelectedColourPallets('customSwitch10')" />
+                            <label class="custom-control-label" for="customSwitch10">palette 10</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row pallet">
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="background: #2b2d41 "></div>
+                                    <small class="text-center">#2b2d41</small>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="background: #92dbe5"></div>
+                                    <small class="text-center">#92dbe5</small>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="background: #ff65d8"></div>
+                                    <small class="text-center">#ff65d8</small>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="background: #f7ec59"></div>
+                                    <small class="text-center">#f7ec59</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="custom-control custom-switch mb-2" dir="ltr">
+                            <input name="radio" type="checkbox" class="custom-control-input themeswitch" id="customSwitch11" onchange="SetSelectedColourPallets('customSwitch11')" />
+                            <label class="custom-control-label" for="customSwitch11">palette 11</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row pallet">
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="background: #1230f6 "></div>
+                                    <small class="text-center">#1230f6</small>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="background: #fedc04"></div>
+                                    <small class="text-center">#fedc04</small>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="background: #93c5a6"></div>
+                                    <small class="text-center">#93c5a6</small>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="background: #019c3c"></div>
+                                    <small class="text-center">#019c3c</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="custom-control custom-switch mb-2" dir="ltr">
+                            <input name="radio" type="checkbox" class="custom-control-input themeswitch" id="customSwitch12" onchange="SetSelectedColourPallets('customSwitch12')" />
+                            <label class="custom-control-label" for="customSwitch12">palette 12</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row pallet">
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="background: #ffb610 "></div>
+                                    <small class="text-center">#ffb610</small>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="background: #19953d"></div>
+                                    <small class="text-center">#19953d</small>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="background: #02040a"></div>
+                                    <small class="text-center">#02040a</small>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="background: #ffee00"></div>
+                                    <small class="text-center">#ffee00</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="custom-control custom-switch mb-2" dir="ltr">
+                            <input name="radio" type="checkbox" class="custom-control-input themeswitch" id="customSwitch13" onchange="SetSelectedColourPallets('customSwitch13')" />
+                            <label class="custom-control-label" for="customSwitch13">palette 13</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row pallet">
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="background: #1d1d1b "></div>
+                                    <small class="text-center">#1d1d1b</small>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="background: #c6c6c6"></div>
+                                    <small class="text-center">#c6c6c6</small>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="background: #e32228"></div>
+                                    <small class="text-center">#e32228</small>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="background: #fece2c"></div>
+                                    <small class="text-center">#fece2c</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="custom-control custom-switch mb-2" dir="ltr">
+                            <input name="radio" type="checkbox" class="custom-control-input themeswitch" id="customSwitch14" onchange="SetSelectedColourPallets('customSwitch14')" />
+                            <label class="custom-control-label" for="customSwitch14">palette 14</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row pallet">
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="background: #E30613 "></div>
+                                    <small class="text-center">#E30613</small>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="background: #C6c6c6"></div>
+                                    <small class="text-center">#c6c6c6</small>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="background: #009640"></div>
+                                    <small class="text-center">#009640</small>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="background: #ea5b0c"></div>
+                                    <small class="text-center">#ea5b0c</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="custom-control custom-switch mb-2" dir="ltr">
+                            <input name="radio" type="checkbox" class="custom-control-input themeswitch" id="customSwitch15" onchange="SetSelectedColourPallets('customSwitch15')" />
+                            <label class="custom-control-label" for="customSwitch15">palette 15</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row pallet">
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="background: #511B29 "></div>
+                                    <small class="text-center">#511B29</small>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="background: #A29C9B"></div>
+                                    <small class="text-center">#A29C9B</small>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="background: #DA324D"></div>
+                                    <small class="text-center">#DA324D</small>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="background: #564A4E"></div>
+                                    <small class="text-center">#564A4E</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="custom-control custom-switch mb-2" dir="ltr">
+                            <input name="radio" type="checkbox" class="custom-control-input themeswitch" id="customSwitch16" onchange="SetSelectedColourPallets('customSwitch16')" />
+                            <label class="custom-control-label" for="customSwitch16">palette 16</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row pallet">
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="background: #320f3b "></div>
+                                    <small class="text-center">#320f3b</small>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="background: #a6cfd5"></div>
+                                    <small class="text-center">#a6cfd5</small>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="background: #dadada"></div>
+                                    <small class="text-center">#dadada</small>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="background: #002986"></div>
+                                    <small class="text-center">#002986</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="custom-control custom-switch mb-2" dir="ltr">
+                            <input name="radio" type="checkbox" class="custom-control-input themeswitch" id="customSwitch17" onchange="SetSelectedColourPallets('customSwitch17')" />
+                            <label class="custom-control-label" for="customSwitch17">palette 17</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row pallet">
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="background: #571f4e "></div>
+                                    <small class="text-center">#571f4e</small>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="background: #dadada "></div>
+                                    <small class="text-center">#dadada</small>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="background: #a2fba3"></div>
+                                    <small class="text-center">#a2fba3</small>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="background: #4f759b"></div>
+                                    <small class="text-center">#4f759b</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="custom-control custom-switch mb-2" dir="ltr">
+                            <input name="radio" type="checkbox" class="custom-control-input themeswitch" id="customSwitch18" onchange="SetSelectedColourPallets('customSwitch18')" />
+                            <label class="custom-control-label" for="customSwitch18">palette 18</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row pallet">
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="background: #571f4e "></div>
+                                    <small class="text-center">#571f4e</small>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="background: #dadada "></div>
+                                    <small class="text-center">#dadada</small>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="background: #ff00ed"></div>
+                                    <small class="text-center">#ff00ed</small>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="background: #a2fba3"></div>
+                                    <small class="text-center">#a2fba3</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="custom-control custom-switch mb-2" dir="ltr">
+                            <input name="radio" type="checkbox" class="custom-control-input themeswitch" id="customSwitch19" onchange="SetSelectedColourPallets('customSwitch19')" />
+                            <label class="custom-control-label" for="customSwitch19">palette 19</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row pallet">
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="background: #3b5593 "></div>
+                                    <small class="text-center">#3b5593</small>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="background: #99c3f6 "></div>
+                                    <small class="text-center">#99c3f6</small>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="background: #e6007e"></div>
+                                    <small class="text-center">#e6007e</small>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body" style="background: #8898bd"></div>
+                                    <small class="text-center">#8898bd</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="custom-control custom-switch mb-2" dir="ltr">
+                            <input name="radio" type="checkbox" class="custom-control-input themeswitch" id="customSwitch20" onchange="SetSelectedColourPallets('customSwitch20')" />
+                            <label class="custom-control-label" for="customSwitch20">palette 20</label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="useful_stuff" class="d-none">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <a class="nav-link active" id="v-pills-PricePlane-tab" data-toggle="pill" href="#PricePlan" role="tab" aria-selected="true">Price & Plan</a>
+                            <a class="nav-link " id="v-pills-faq-tab" data-toggle="pill" href="#faq" role="tab" aria-selected="true">FAQ</a>
+                            <a class="nav-link" id="v-pills-privacy_policy-tab" data-toggle="pill" href="#privacy_policy" role="tab" aria-selected="false">Privacy Policy</a>
+                            <a class="nav-link" id="v-pills-terms-tab" data-toggle="pill" href="#terms" role="tab" aria-selected="false">Terms & Conditions</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            @*</div>*@
+        </div>
+    </div>
+</div>
+
+<div class="page-content">
+    <div class="container-fluid filters" style="height:auto">
+        <div class="">
+            <div class="row ">
+                <div class="col-md-12">
+                    <div id="filters" class="row append-filter">
+                        <h4 class="mt-2 ml-3">Drop filter here...</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="main_div" class="container-fluid">
+    </div>
+    <div class="row">
+        <div class="col-md-9">
+            <div class="text-center">
+                <a onclick="AddNewRow()" id="new_row_btn" class="btn btn-warning d-none">New Row</a>
+            </div>
+        </div>
+    </div>
+    <div id="custom_fields_main_div" class="container-fluid d-none" style="padding-top:65px;">
+        <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <a class="nav-item nav-link active" id="nav-create-field" data-toggle="tab" href="#nav-createField" role="tab" aria-controls="nav-createField" aria-selected="true">Create Formula</a>
+                <a class="nav-item nav-link " id="nav-create-formula" data-toggle="tab" href="#nav-createFormula" role="tab" aria-controls="nav-createFormula" aria-selected="false">Create Date Field</a>
+            </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-createField" role="tabpanel" aria-labelledby="nav-create-field">
+                <div class="row">
+                    <div class="col-md-9">
+                        <div class="card pt-2" style="min-height:510px;">
+                            <div class="container" id="custom_fields_main">
+                                @*<h4 class="card-title">&nbsp;</h4>*@
+                                <div id="errors_fileds"></div>
+                                <div class="row">
+                                    <div class="col-md-10 form-group">
+                                        <label>Name <span style="color:red">*</span></label>
+                                        <input id="custom_field_name" class="form-control" />
+                                    </div>
+                                    <div id="custom_formula_div" class="col-md-5 form-group">
+                                        <label>Create Formula <span style="color:red">*</span></label>
+                                        @*<select id="custom_formula" class="form-control" multiple="multiple">
+                                            </select>*@
+                                        <input id="custom_formula" class="form-control" />
+                                        @*<div style="border: 1px solid #333; margin-top: 5px; " class="row d-none" id="custom_formula_column_fields">
+                                            </div>*@
+
+
+                                    </div>
+                                    <div class="col-md-5 mb-3 form-group has-search">
+                                        <label>Select Columns</label>
+                                        <span class="fa fa-search form-control-feedback"></span>
+                                        <input type="text" class="form-control" onkeyup="lookupcolumns()" id="custom_formula_column_fields_search" placeholder="Search" />
+                                        <ul class="list-group" style="height:135px; overflow-y:scroll; margin-top: 5px;" id="custom_formula_column_fields">
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4 form-group">
+                                        <label>Type</label>
+                                        <select id="custom_field_format" onchange="showFormatOptions()" class="form-control">
+                                            <option value="">--Select Option--</option>
+                                            <option value="0">Number</option>
+                                            <option value="1">Percentage</option>
+                                            <option value="2">Currency</option>
+                                            @*<option value="3">Account</option>*@
+                                            <option value="4">Date</option>
+                                            <option value="5">Time</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4 form-group d-none" id="format_choose_currency">
+                                        <label>Select Currency</label>
+                                        <select class="form-control" id="format_currency" onchange="showCurrencyFormating()">
+                                            <option value="USD">$</option>
+                                            <option value="Pound">£</option>
+                                            <option value="Euro">€</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4 form-group d-none" id="format_type_div">
+                                        <label>Formatting</label>
+                                        <select id="custom_field_format_type" class="form-control">
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row" id="row_DecimalPlacesLabel">
+                                    <div class="col-md-12 form-group">
+                                        <label>&nbsp;&nbsp;&nbsp;&nbsp;Decimal Places <span style="color:red">*</span></label>
+                                    </div>
+                                </div>
+                                <div class="row" id="row_DecimalPlaces">
+
+                                    <div class="col-md-1">
+                                        <button type="button" onclick="calculateDecimalPlaces('minus')" class="btn btn-danger">-</button>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <input type="number" min="0" id="decimal_places" max="100" value="2" class="form-control" />
+                                    </div>
+                                    <div class="col-md-1">
+                                        <button type="button" onclick="calculateDecimalPlaces('plus')" class="btn btn-success">+</button>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="col-md-3 form-group">
+                                    <button disabled onclick="createField()" id="btn_AddCalculatedField" onMouseOver="ShowBlockIcon('btn_AddCalculatedField')" style="margin-top: 10px; margin-left: 4px;" class="btn btn-success" type="button">Add Field</button>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card" style="min-height:510px;">
+                            <div class="container">
+                                <h4>Formulas</h4>
+                                <div id="custom_created_fields_list">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade  data-formula" id="nav-createFormula" role="tabpanel" aria-labelledby="nav-create-formula">
+                <div class="row">
+                    <div class="col-md-9">
+                        <div class="card" style="min-height:510px;">
+                            <div class="container" id="custom_fields_date_main" style="margin-top:5px">
+                                <div id="errors_fileds_date"></div>
+                                <h4>&nbsp;</h4>
+                                <div id="errors_fileds"></div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="date_day">
+                                    <label class="form-check-label" for="date_day">
+                                        Day<span class="detail">(Monday, Tuesday...)</span>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="date_week">
+                                    <label class="form-check-label" for="date_week">
+                                        Week<span class="detail">(21, 22...)</span>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="date_month">
+                                    <label class="form-check-label" for="date_month">
+                                        Month<span class="detail">(January, February...)</span>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="date_year">
+                                    <label class="form-check-label" for="date_year">
+                                        Year<span class="detail">(2019, 2020...)</span>
+                                    </label>
+                                </div>
+                                <div class="form-check mb-4">
+                                    <input class="form-check-input" type="checkbox" value="" id="date_quarter">
+                                    <label class="form-check-label" for="date_quarter">
+                                        Quarter<span class="detail">(Q1, Q2...)</span>
+                                    </label>
+                                </div>
+                                <h4 class="ml-2">First week number</h4>
+                                <div class="mb-3 ml-2">
+                                    <label class="form-label ml-2 font-weight-light">Week count will start from week number</label>
+                                    <input type="number" class="form-control col-md-6" id="date_week_start">
+                                </div>
+
+                                <h5 class="ml-2">Source Field</h5>
+                                <div class="mb-3 ml-2">
+                                    <label class="form-label ml-2 font-weight-light">Drop and drop Date Field here</label>
+                                    <div id="date_field_drop" class="drop_area"></div>
+                                </div>
+                                <button disabled type="button" onclick="createDateField()" id="btn_AddCalculatedFieldDate" class="btn btn-success ml-2 mb-3">Create</button>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card" style="min-height:510px;">
+                            <div class="container">
+                                <h4>Date Fields</h4>
+                                <div id="custom_date_created_fields_list">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="SavedReportsSection" class="container-fluid d-none">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card" style="min-height:510px;padding:30px">
+                    <lable id="ErrorMessage" class="card-title d-none"><span></span><b></b></lable>
+                    <div class="row">
+                        <div class="col-md-3" style="min-height:400px">
+                            <ul id="ReportColumns" class="fields fieldsNew slimscroll">
+                            </ul>
+                        </div>
+                        <div class="col-md-9" style="min-height:400px">
+                            <div class="row">
+                                <div class="col-md-12" style="min-height:400px">
+                                    <ul class="search_bar">
+                                        <li><h3 class="card-title mr-3">Saved Reports</h3></li>
+                                        <li style="list-style: none">
+                                            <input class="form-control ml-4" placeholder="Search" type="text" id="searchSavedReports" onkeyup="searchSavedReports()" />
+                                        </li>
+                                    </ul>
+                                    <ul id="SavedReportUL" class="fields SR fieldsNew slimscroll">
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            @*<div class="col-md-3">
+                    <div class="card" style="min-height:510px;">
+                        <div class="container">
+                            <h4>Formulas</h4>
+                            <div id="custom_created_fields_list">
+                            </div>
+                        </div>
+                    </div>
+                </div>*@
+        </div>
+    </div>
+    <div id="InternalDashBoardSection" class="container-fluid d-none">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card" style="min-height:510px;padding:30px;margin-top:50px">
+                    <div class="row">
+                        <div class="col-md-12">
+                            @*<a href="#" class="AllowFreeAccess" onclick="ShowHideDashboardTable()" id="freeaccessuser">Allow Free Access</a>*@
+
+                     
+                        </div>
+                    </div>
+                    <div class="row" id="dashboardrow">
+                        <div class="col-md-12" style="min-height:300px">
+
+                            <div class="table-responsive">
+                                <table id="tblUsers_List" class="table table-striped table-bordered zero-configuration">
+                                    <thead>
+                                        <tr>
+                                            <th>Customer Id</th>
+                                            <th>Name</th>
+                                            <th>Email</th>
+                                            <th>Start Date</th>
+                                            <th>Days</th>
+                                            <th>Month</th>
+                                            <th>Last Payment Date</th>
+                                            <th>Next Payment Date</th>
+                                            <th>Paid so far</th>
+                                            <th>User Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row d-none" id="FreeAccessSections">
+                        <div class="col-md-2">
+                            <label>Email Address</label>
+                            <input class="form-control" type="text" id="txt_FreeAccessEmail" />.
+
+                        </div>
+                        <div class="col-md-2">
+                            <button type="button" id="addfreeuser" class="btn btn-default">Add</button>
+
+                        </div>
+                        <div class="col-md-8">
+                            <div>Free Access</div>
+                            <div><span style="color:red">x</span>maro@gmail.com</div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+    </div>
+
+    <div id="VedioTutorialSection" class="container-fluid d-none">
+        <div class="row">
+            <div class="col-md-12 col-xl-12 col-sm-12">
+                <div class="card" style="min-height: 510px;  margin-top: 30px; ">
+
+                    <div class="row" style="padding: 30px 0px 0px 25px;">
+                        <div class="col-md-12 col-xl-12 col-sm-12">
+                            <div class="row vediotitle">
+                                <div class="col-md-12 col-xl-12 col-sm-12  mt-3">
+                                    <div class="VedioTutorialDemoTitle">
+                                        <b id="vediotutorialtitle"></b>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-md-12 col-xl-12 col-sm-12 ">
+                                    <iframe class="vediotutorial" id="vediotutorialsource" src=""></iframe>
+                                    @*<iframe class="vediotutorial" id="vediotutorialsource"  src="https://www.youtube.com/embed/hElkEzAjd5o"></iframe>*@
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 col-xl-12 col-sm-12  mt-2">
+                                    <div class="FullTutorialLink">
+                                        <a href="https://www.reportingking.com/tutorial" class="btn btn-orange btn-lg upload-btn" target="_blank">Watch Full Tutorial</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="AccountDetailsSection" class="container-fluid d-none" style="margin-top:80px"></div>
+
+    <div id="stuff_content" class="d-none">
+        <div class="col-md-12">
+            <div class="tab-content" id="v-pills-tabContent">
+                <div class="tab-pane fade" id="faq" role="tabpanel">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="main bg-white">
+                                    <h4>FAQ</h4>
+                                    <div class="content">
+                                        <h4>What is the Reporting King?</h4>
+                                        <ul>
+                                            <li>
+                                                Reporting King is a new generation app designed for data analytics, presentations and reporting.
+                                            </li>
+                                        </ul>
+                                        <h4 class="mb-0">What can I do with Reporting King?</h4>
+                                        <ul>
+                                            <li>- You can create data visualisation and beautiful interactive dashboards in minutes</li>
+                                            <li>- You can analyse your data with a high level of flexibility</li>
+                                            <li>- You can create beautiful reports ready to be sent</li>
+                                            <li>- You can create presentation level charts and tables for your decks</li>
+                                            <li>- You can use the Reporting King dashboard for live presentations</li>
+                                        </ul>
+                                        <h4>How long does it take to setup?</h4>
+                                        <ul>
+                                            <li>
+                                                Reporting King has no setup time. Upload your data file at <a href="app.reportingking.com">app.reportingking.com</a> and start creating your dashboard with the first click
+                                            </li>
+                                        </ul>
+                                        <h4>What files does Reporting King work with?</h4>
+                                        <ul>
+                                            <li>
+                                                At present, Reporting King works with files in XLS, CSV, XLSX.
+                                            </li>
+                                        </ul>
+                                        <h4>How long does it take to learn Reporting King?</h4>
+                                        <ul>
+                                            <li>
+                                                Reporting King has a new generation interface designed to be user-friendly and intuitive even for absolute beginners that may not be tech savvy or have advanced analytics skills.
+                                            </li>
+                                        </ul>
+                                        <ul><li>Unlike most of the traditional apps for analytics or presentation, Reporting King mission is being easy to use and accessible to anyone, without demanding high skill level or intensive training.</li></ul>
+                                        <h4>How does it work?</h4>
+                                        <ol>
+                                            <li>Upload your data file to Reportingking.com</li>
+                                            <li>Drag and drop your data to create the charts</li>
+                                            <li>Analyse your data faster and smarter</li>
+                                            <li>Double click and swipe to customize the charts</li>
+                                            <li>Write your insights</li>
+                                            <li>Print a stunning report in PDF</li>
+                                            <li>Print high quality charts in PNG</li>
+                                            <li>Save </li>
+                                        </ol>
+                                        <h4>Why isn’t Reporting King integrated with online channels and CRMs?</h4>
+                                        <ul>
+                                            <li>
+                                                Reporting King is a data transformer designed to require no setup time, no setup skills, no bug related problem-solving abilities and be very flexible and adaptable to source file replacement. Regardless what software or methodology you are using to analyse your data, you can download your file and upload it in Reporting King to start creating your analytics at a higher speed, at any time.
+
+                                            </li>
+                                        </ul>
+                                        <h4>What is the best competitive advantage Reporting King has over other apps?</h4>
+                                        <ul>
+                                            <li>
+                                                Reporting King requires almost no skills and no training to be used.
+                                            </li>
+                                        </ul>
+                                        <ul><li>It’s massively task automation oriented and allows to create entire dashboards with Drag & Drop faster than any other app.</li></ul>
+                                        <ul><li>It’s designed to make users do in minutes what they would normally do in hours.</li></ul>
+                                        <h4>What factors make Reporting King different from traditional apps for analytics?</h4>
+                                        <ol>
+                                            <li>The intuitive and creative UI designed to drag & drop data and customise them in one click</li>
+                                            <li>The multipurpose nature of the software, combining data analytics and presentation design</li>
+                                            <li>Analyse your data faster and smarter</li>
+                                            <li>Double click and swipe to customize the charts</li>
+                                            <li>Unique features and interface solutions </li>
+                                            <li>Reporting King doesn’t store your data</li>
+                                            <li>Reporting King is engineered for task automation, speed and usability</li>
+                                        </ol>
+                                        <h4>Where do I start?</h4>
+                                        <ul>
+                                            <li>
+                                                Go to <a href="app.reportingking.com">app.reportingking.com</a>  and upload your data.
+                                            </li>
+                                        </ul>
+                                        <ul><li>You can try the FREE version of Reporting King and subscribe to unlock all the features. </li></ul>
+                                        <ul><li>You can watch the video demo in the Video Tutorial section</li></ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>      
+
+
+                <div class="tab-pane fade  show active" id="PricePlan" role="tabpanel">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="main bg-white">
+                                    <div style="text-align: center;">
+
+                                        <h1 style="text-align:center;color:black">
+                                            <p style="font-size:68px">Choose your</p>
+                                            <p style="font-size:68px;margin-top:-45px">pricing plan</p>
+                                        </h1>
+                                        <p>JOIN REPORTING KING AT NO RISK WITH A <span style="text-decoration:underline">7-DAYS FULL REFUND POLICY</span></p>
+                                        <p>Cancel your plan before the 7-days trial period ends to get a full refund</p>
+                                    </div>
+                                    <div class="row mt-5 mb-5">
+                                        <div class="col-md-2">
+                                        </div>
+                                        <div class="col-md-4 ">
+
+                                            <div class="card ">
+                                                <div class="card-body planandpriceTwoSections">
+                                                    <h1 class="font_0" style="font-size:24px;"><span style="color:#2E2B7E;">Trial</span></h1>
+                                                    <div id="LimitedVersion">
+                                                        <span style="font-size:16px;"><span class="color_13">Limited Version</span></span>
+                                                    </div>
+                                                    <div id="comp-l2dy0dxr3" class="_2Hij5" data-testid="richTextElement"><h2 class="font_2" style="font-size:38px;"><span style="font-size:38px;"><span class="color_30">Free</span></span></h2></div>
+                                                    <!--<div id="FreeVersionButton"><a href="#Fields"id="linkfreeversion" onclick="showChartsDivusingFreeVersion()"--> @*class="btn btn-lg"*@ <!--class="first-link fields-link nav-link" data-toggle="tooltip-custom" data-placement="top" title="" data-original-title="Add Fields">Continue to FREE Version</a></div>-->
+                                                    <div id="FreeVersionButton"><a href="#Fields" id="linkfreeversion"  @*class="btn btn-lg"*@ class="first-link fields-link nav-link" data-toggle="tooltip-custom" data-placement="top" title="" data-original-title="Add Fields">Continue to FREE Version</a></div>
+                                                </div>
+                                                <div class="card-body planandpriceTwoSections" style="min-height:634px">    
+                                                    <p class="font_8" style="line-height:2.8em; font-size:13px;"><span style="color:#2E2B7E;"><span style="letter-spacing:0em;"><span style="font-size:17px;"><span style="font-family:helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif;font-weight:700">Includes</span></span></span></span></p>
+                                                    <ul class="font_8" style="letter-spacing:0em; font-size:13px;">
+                                                        <li>
+                                                            <p class="font_8" style=" font-size:13px;"><span style="letter-spacing:0em;">4 charts​</span></p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="font_8" style="font-size:13px;">1 User</p>
+                                                        </li>
+                                                    </ul>
+                                                    <p class="font_8" style=" font-size:13px;"><span style="font-size:15px;"><span style="font-family: helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif; font-weight: 700">Key Features</span></span></p>
+                                                    <ul class="font_8" style="font-size:13px;">
+                                                        <li>
+                                                            <p class="font_8" style="font-size:13px;">Drag &amp; Drop UX</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="font_8" style="font-size:13px;">Interactive Dashboard</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="font_8" style=" font-size:13px;">Formulae and Chart Customisation&nbsp;</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="font_8" style="font-size:13px;"><span style="letter-spacing:0em;">Limited Access to color palettes</span></p>
+                                                        </li>
+
+                                                        <li>
+                                                            <p class="font_8" style=" font-size:13px;">Download Excel report</p>
+                                                        </li>
+
+
+
+                                                    </ul>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-4 ">
+                                            <div class="card ">
+                                                <div class="card-body planandpriceTwoSections">
+                                                    <h1 class="font_0" style="font-size:24px;"><span style="color: #FFD834;">Starter Plan</span></h1>
+                                                    <div id="UnlocAllFeature">
+                                                        <span style="font-size:16px;"><span class="color_13">Unlock All Features</span></span>
+                                                    </div>
+
+                                                    <div id="comp-l2dy0dxr3" style="text-align:center" class="_2Hij5" data-testid="richTextElement">
+
+                                                        <h2 class="font_2" style="font-size:38px;"><span style="font-size:38px;"><span class="color_30">39.99</span></span></h2>
+                                                        <span class="rightsectionGBP">GBP</span>
+                                                        <span class="rightsectionVAT">+VAT</span>
+                                                    </div>
+                                                    @*<div id="PayVersionButton"><a href="#" class="first-link fields-link nav-link" data-toggle="tooltip-custom" data-placement="top" id="Payfreeversion" onclick="clickhiddencustomSignUpbtn()" >Select Plan</a></div>*@
+
+                                                    <div id="PayVersionButton"><a href="#" class="first-link fields-link nav-link" data-toggle="tooltip-custom" data-placement="top" id="Payfreeversion" >Select Plan</a></div>
+                                                </div>
+                                                <div class="card-body planandpriceTwoSections">
+                                                    <p class="font_8" style="line-height:2.8em; font-size:13px;"><span style="color:#2E2B7E;"><span style="letter-spacing:0em;"><span style="font-size:17px;"><span style="font-family:helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif;font-weight:700">Includes</span></span></span></span></p>
+                                                    <ul class="font_8" style="letter-spacing:0em; font-size:13px;">
+                                                        <li>
+                                                            <p class="font_8" style=" font-size:13px;"><span style="letter-spacing:0em;">Unlimited charts​</span></p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="font_8" style="font-size:13px;">1 User</p>
+                                                        </li>
+                                                    </ul>
+                                                    <p class="font_8" style=" font-size:13px;"><span style="font-size:15px;"><span style="font-family: helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif; font-weight: 700">Key Features</span></span></p>
+                                                    <ul class="font_8" style="font-size:13px;">
+                                                        <li>
+                                                            <p class="font_8" style="font-size:13px;">Drag &amp; Drop UX</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="font_8" style="font-size:13px;">Interactive Dashboard</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="font_8" style=" font-size:13px;">Formulae and Chart Customisation&nbsp;</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="font_8" style="font-size:13px;"><span style="letter-spacing:0em;">Full access to all Color Palettes</span></p>
+                                                        </li>
+
+                                                        <li>
+                                                            <p class="font_8" style=" font-size:13px;">Unlimited Downloads</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="font_8" style=" font-size:13px;">30 Saved Dashboards</p>
+                                                        <li>
+                                                            <p class="font_8" style=" font-size:13px;">Download PDF report</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="font_8" style=" font-size:13px;">Download PNG images</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="font_8" style=" font-size:13px;">Download Excel report</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="font_8" style=" font-size:13px;">Save Report</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="font_8" style=" font-size:13px;">Upload Report and Refresh</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="font_8" style=" font-size:13px;">Full Support</p>
+                                                        </li>
+
+
+                                                    </ul>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div style="text-align: center;">
+
+                                        <h3 style="text-align:center;color:black">
+                                            Subscribe to Reporting King Today with a 7-Days Full Refund Policy
+
+                                        </h3>
+                                        <p>JOIN Reporting King Today with no risk. If within 7-days you want to cancel your subscription,</p>
+                                        <p style="margin-top:-13px">simply contact us at support@reportingking.com to receive all your money back</p>
+                                        <p>*When subscribing to Reporting King, you will be redirected to app.reportingking.com </p>
+                                        <p style="margin-top:-13px">for sign-up and payment</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="privacy_policy" role="tabpanel">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="main bg-white">
+                                    <h3 style="text-align:center">Privacy Policy</h3>
+                                    <div class="content">
+                                        <h3 class="mb-2">Collecting Personal Information</h3>
+                                        <p>
+                                            When you visit the Site, we collect certain information about your activity your interaction with the Site, and information necessary to process your purchases. We may also collect additional information if you contact us for customer support. In this Privacy Policy, we refer to any information that can uniquely identify an individual (including the information below) as “Personal Information”. See the list below for more information about what Personal Information we collect and why.
+                                        </p>
+                                        <h4 class="mb-1">Device Information</h4>
+                                        <ul>
+                                            <li>
+
+                                                <b class="pivacypolicyLiH">Examples of Personal Information collected:</b>
+                                                <span class="privacypolicyspan">
+                                                    version of web browser, IP address, time zone, cookie information, what pages you view, what functionalities you use, and how you interact with the Site.
+                                                </span>
+                                            </li>
+                                            <li>
+
+                                                <b class="pivacypolicyLiH">Purpose of collection:</b>
+                                                <span class="privacypolicyspan">
+                                                    to load the Site accurately for you, and to perform analytics on Site usage to optimize our Site.
+                                                </span>
+                                            </li>
+                                            <li>
+
+                                                <b class="pivacypolicyLiH">Source of collection:</b>
+                                                <span class="privacypolicyspan">
+                                                    Collected automatically when you access our Site using cookies, log files, web beacons, tags, or pixels.
+                                                </span>
+                                            </li>
+                                            <li>
+
+                                                <b class="pivacypolicyLiH">Disclosure for a business purpose: </b>
+                                                <span class="privacypolicyspan">
+                                                    we don’t share your information with any third-party companies. Also, we don’t store any of your data on any server, as Reporting King is a web app and everything you do with your data remains locally on your machine.
+                                                </span>
+                                            </li>
+
+                                        </ul>
+
+                                        <h4 class="mb-1">Order Information</h4>
+                                        <ul>
+                                            <li>
+
+                                                <b class="pivacypolicyLiH">Examples of Personal Information collected:</b>
+                                                <span class="privacypolicyspan">
+                                                    name, billing address, shipping address, payment information, email address.
+                                                </span>
+                                            </li>
+                                            <li>
+
+                                                <b class="pivacypolicyLiH">Purpose of collection:</b>
+                                                <span class="privacypolicyspan">
+                                                    to provide products or services to you to fulfill our contract, to process your payment information, arrange for shipping, and provide you with invoices and/or order confirmations, communicate with you, screen our orders for potential risk or fraud, and when in line with the preferences you have shared with us, provide you with information or advertising relating to our products or services.
+                                                </span>
+                                            </li>
+                                            <li>
+
+                                                <b class="pivacypolicyLiH">Source of collection:</b>
+                                                <span class="privacypolicyspan">
+                                                    Collected from you.
+                                                </span>
+                                            </li>
+
+
+                                        </ul>
+
+                                        <h4 class="mb-1">Customer support information</h4>
+                                        <ul>
+                                            <li>
+
+                                                <b class="pivacypolicyLiH">Examples of Personal Information collected:</b>
+                                                <span class="privacypolicyspan">
+                                                    version of web browser, IP address, time zone, cookie information, what pages you view, what functionalities you use, and how you interact with the Site, information you share within your request
+                                                </span>
+                                            </li>
+                                            <li>
+
+                                                <b class="pivacypolicyLiH">Purpose of collection:</b>
+                                                <span class="privacypolicyspan">
+                                                    to provide customer support.
+                                                </span>
+                                            </li>
+                                            <li>
+
+                                                <b class="pivacypolicyLiH">Source of collection:</b>
+                                                <span class="privacypolicyspan">
+                                                    Collected from you.
+                                                </span>
+                                            </li>
+                                            <li>
+
+                                                <b class="pivacypolicyLiH">Disclosure for a business purpose:</b>
+                                                <span class="privacypolicyspan">
+                                                    we don’t share your information with any third-party companies.
+                                                </span>
+                                            </li>
+
+
+                                        </ul>
+                                        <h4 class="mb-1">Minors</h4>
+                                        <p>
+                                            The Site is not intended for individuals under the age of 16. We do not intentionally collect Personal Information from children. If you are the parent or guardian and believe your child has provided us with Personal Information, please contact us at the address below to request deletion.
+
+                                        </p>
+                                        <h3 class="mb-1">Using Personal Information</h3>
+                                        <p>
+                                            We use your personal Information to provide our services to you, which includes: offering products for sale, processing payments, shipping and fulfillment of your order, and keeping you up to date on new products, services, and offers
+                                        </p>
+                                        <h4 class="mb-1">Lawful basis</h4>
+                                        <p>
+                                            Pursuant to the General Data Protection Regulation (“GDPR”), if you are a resident of the European Economic Area (“EEA”), we process your personal information under the following lawful bases:
+                                        </p>
+                                        <ul>
+                                            <li class="privacypolicyspan">Your Consent</li>
+                                            <li class="privacypolicyspan">The performance of the contract between you and the Site;</li>
+                                            <li class="privacypolicyspan">Compliance with our legal obligations;</li>
+                                            <li class="privacypolicyspan">To protect your vital interests;</li>
+                                            <li class="privacypolicyspan">To perform a task carried out in the public interest;</li>
+                                            <li class="privacypolicyspan">For our legitimate interests, which do not override your fundamental rights and freedoms.</li>
+                                        </ul>
+                                        <h4 class="mb-1">Retention</h4>
+                                        <p>
+                                            When you place an order through the Site, we will retain your Personal Information for our records unless and until you ask us to erase this information. For more information on your right of erasure, please see the ‘Your rights’ section below.
+                                        </p>
+                                        <h4 class="mb-1">Automatic decision-making</h4>
+                                        <p>
+                                            If you are a resident of the EEA, you have the right to object to processing based solely on automated decision-making (which includes profiling), when that decision-making has a legal effect on you or otherwise significantly affects you.
+                                        </p>
+                                        <p>
+                                            We DO NOT engage in fully automated decision-making that has a legal or otherwise significant effect using customer data.
+                                        </p>
+                                        <p>
+                                            Services that include elements of automated decision-making include:
+                                        </p>
+                                        <ul>
+                                            <li class="privacypolicyspan">Temporary denylist of IP addresses associated with repeated failed transactions. This denylist persists for a small number of hours.</li>
+                                            <li class="privacypolicyspan">Temporary denylist of credit cards associated with denylisted IP addresses. This denylist persists for a small number of days.</li>
+                                        </ul>
+
+                                        <h3 class="mb-2">Selling Personal Information</h3>
+                                        <p>Our doesn’t sell Personal Information</p>
+                                        <h3 class="mb-0">
+                                            Your rights
+                                        </h3>
+                                        <h4 class="mb-2">GDPR</h4>
+                                        <p>If you are a resident of the EEA, you have the right to access the Personal Information we hold about you, to port it to a new service, and to ask that your Personal Information be corrected, updated, or erased. If you would like to exercise these rights, please contact us through the contact information below.</p>
+                                        <h3 class="mb-2">
+                                            Cookies
+                                        </h3>
+                                        <p>
+                                            A cookie is a small amount of information that’s downloaded to your computer or device when you visit our Site. We use a number of different cookies, including functional, performance, advertising, and social media or content cookies. Cookies make your browsing experience better by allowing the website to remember your actions and preferences (such as login and region selection). This means you don’t have to re-enter this information each time you return to the site or browse from one page to another. Cookies also provide information on how people use the website, for instance whether it’s their first time visiting or if they are a frequent visitor.
+                                        </p><p>
+                                            We use the following cookies to optimize your experience on our Site and to provide our services.
+                                        </p>
+                                        <h4 class="mb-2">Cookies Necessary for the Functioning of the Store</h4>
+                                        <table class="PrivacyTable mb-2">
+                                            <thead>
+                                                <tr class="PrivacyTableHead"><th>Name</th><th>Function</th></tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>_ab</td>
+                                                    <td>Used in connection with access to admin.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>_secure_session_id</td>
+                                                    <td>Used in connection with navigation through a storefront.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>cart</td>
+                                                    <td>Used in connection with checkout.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>cart_ts</td>
+                                                    <td>Used in connection with checkout.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>checkout_token</td>
+                                                    <td>Used in connection with checkout.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>secret</td>
+                                                    <td>Used in connection with checkout.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>secure_customer_sig</td>
+                                                    <td>Used in connection with customer login.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>storefront_digest</td>
+                                                    <td>Used in connection with customer login.</td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                        <p class="mb-1">The length of time that a cookie remains on your computer or mobile device depends on whether it is a “persistent” or “session” cookie. Session cookies last until you stop browsing and persistent cookies last until they expire or are deleted. Most of the cookies we use are persistent and will expire between 30 minutes and two years from the date they are downloaded to your device.</p>
+                                        <p class="mb-1">You can control and manage cookies in various ways. Please keep in mind that removing or blocking cookies can negatively impact your user experience and parts of our website may no longer be fully accessible.</p>
+                                        <p class="mb-1">Most browsers automatically accept cookies, but you can choose whether or not to accept cookies through your browser controls, often found in your browser’s “Tools” or “Preferences” menu. For more information on how to modify your browser settings or how to block, manage or filter cookies can be found in your browser’s help file or through such sites as <a href="www.allaboutcookies.org">www.allaboutcookies.org.</a></p>
+                                        <p class="mb-1">Additionally, please note that blocking cookies may not completely prevent how we share information with third parties such as our advertising partners. To exercise your rights or opt-out of certain uses of your information by these parties, please follow the instructions in the “Behavioural Advertising” section above.</p>
+                                        <h4 class="mb-2">Do Not Track</h4>
+                                        <p class="mb-1">Please note that because there is no consistent industry understanding of how to respond to “Do Not Track” signals, we do not alter our data collection and usage practices when we detect such a signal from your browser.</p>
+                                        <h3 class="mb-2">Changes</h3>
+                                        <p class="mb-1">We may update this Privacy Policy from time to time in order to reflect, for example, changes to our practices or for other operational, legal, or regulatory reasons.</p>
+                                        <h3 class="mb-2">Contact</h3>
+                                        <p class="mb-1">For more information about our privacy practices, if you have questions, or if you would like to make a complaint, please contact us by e-mail at <a href="reportingking@gmail.com">reportingking@gmail.com</a> </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="terms" role="tabpanel">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="main bg-white">
+                                    <h4>Terms & Conditions</h4>
+                                    <div class="content">
+                                        <h4>Example</h4>
+                                        <p>
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                            It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                                            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                                            and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                        </p>
+                                        <h4 class="mb-0">Title</h4>
+                                        <p>
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                            It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                                            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                                            and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                        </p>
+                                        <h4 class="mb-0">Title</h4>
+                                        <p>
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                            It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                                            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                                            and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @*<footer class="footer bg-white">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <i class="dripicons-expand"></i>
+                    </div>
+                </div>
+            </div>
+        </footer>*@
+</div>
+<div class="modal fade" id="WarningModal" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title modalmobiletitle"><a href=# class="modalmobiletitle">Mobile Version Not Supported</a></h4>
+            </div>
+            <div class="modal-body">
+                <p style="color:black">
+                    Reporting King is a Desktop App for Data Analytics and Data Presentation and it's not designed to work on mobile.
+                    Please go to <a class="modalmobiletitle" href="#">app.reportingking.com</a> from your laptop for a better and faster user experience
+                </p>
+            </div>
+            <div class="modal-footer" style="justify-content:center">
+                @*<a  class="btn btn-primary btn-lg" data-dismiss="modal">Got It</a>*@
+                <button type="button" class="btn btn-primary btn-lg" data-dismiss="modal">Got It</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section SCRIPTS
+{
+    <script src="~/assets/js/ProjectJS/GoogleSignIn.js"></script>
+    <script src="~/assets/js/ProjectJS/UploadFile.js"></script>
+    @*<script src="~/assets/js/ProjectJS/commonchartscripts.js"></script>*@
+    <script src="~/assets/js/ProjectJS/CustomBarChart.js"></script>
+    <script src="~/assets/js/ProjectJS/CustomLineChart.js"></script>
+    <script src="~/assets/js/ProjectJS/custommixchart.js"></script>
+    <script src="~/assets/js/ProjectJS/customscatteredchart.js"></script>
+    <script src="~/assets/js/ProjectJS/custompiechart.js"></script>
+    <script src="~/assets/js/ProjectJS/customnumberchart.js"></script>
+    <script src="~/assets/js/ProjectJS/calculatedfields.js"></script>
+    <script src="~/assets/js/ProjectJS/customtablechart.js"></script>
+    <script src="~/assets/js/ProjectJS/VedioTutorials.js"></script>
+    <script src="~/assets/js/html2pdf.bundle.min.js"></script>
+    @*<script src="https://www.paypal.com/sdk/js?client-id=AbhY28r6JUlSAoo2tN1k8-6N3Ttyc4IFm-kMSBavU5FAUFHTK1skRw5rivtIrv5bTJ0PyTWPN3qWq5vl&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>*@
+    <script src="https://www.paypal.com/sdk/js?client-id=AcIXBDDBaFn7nv4Uf5nqEir5Z5DV0VF6uauZU3WnAgstyljjAwl2dXJztnBcQAyuubKihqJgtYsjjV1X&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
+
+    <script src="~/assets/plugins/HtmlToWordDoc/FileSaver.js"></script>
+    <script src="~/assets/plugins/HtmlToWordDoc/jquery.wordexport.js"></script>
+    <script src="~/assets/js/ProjectJS/FreeAccessUsers.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            /*     $('#SignupPackageModal').modal('show');*/
+            $('[data-toggle="tooltip"]').tooltip();
+            GetPackagesData();
+            AddNewRow();
+            hideshowfieldsearchdiv();
+            //  getAllChartsForSR();
+            //if (window.history.replaceState) {
+            //    window.history.replaceState(null, null, window.location.href);
+            //}
+            loading_end();
+            if (window.screen.width <= 1024 && window.screen.height <= 1320) {
+                $("#WarningModal").modal('show');
+            }
+        });
+        paypal.Buttons({
+            style: {
+                shape: 'rect',
+                color: 'gold',
+                layout: 'vertical',
+                label: 'subscribe'
+            },
+            createSubscription: function (data, actions) {
+                return actions.subscription.create({
+                    plan_id: 'P-63B22528JT415570DMIHHL5Q'
+                });
+            },
+            onApprove: function (data, actions) {
+                // alert(data.subscriptionID); // You can add optional success message for the subscriber here
+                PaymentSuccess(data);
+            },
+            onCancel: function (data, actions) {
+                PaymentCancel();
+            }
+        }).render('#paypal-button-container-P-63B22528JT415570DMIHHL5Q');
+        //paypal.Buttons({
+        //    style: {
+        //        shape: 'rect',
+        //        color: 'gold',
+        //        layout: 'vertical',
+        //        label: 'subscribe'
+        //    },
+        //    createSubscription: function (data, actions) {
+        //        return actions.subscription.create({
+        //            /* Creates the subscription */
+        //            plan_id: 'P-9XT7194761985515GMFTO6XY'
+        //        });
+        //    },
+        //    onApprove: function (data, actions) {
+        //        PaymentSuccess(data);
+        //    },
+        //    onCancel: function (data, actions) {
+        //        PaymentCancel();
+        //    }
+        //}).render('#paypal-button-container-P-9XT7194761985515GMFTO6XY'); // Renders the PayPal button
+
+        function PaymentSuccess(data) {
+            loading_start();
+            $.ajax({
+                async: true,
+                type: "POST",
+                url: "/SignUp/PaymentSuccess",
+                data: { transactionData: data },
+                cache: false,
+                dataType: "json",
+                success: function (response) {
+                    loading_end();
+                    if (response.status) {
+                        SignUpUserInfo.subscriptionId = data.subscriptionID;
+                        saveUserData(SignUpUserInfo);
+                    }
+                    else {
+                        popupShow(response.msg, 'fail');
+                    }
+                },
+                failure: function (response) {
+                    loading_end();
+                },
+                error: function (response) {
+                    loading_end();
+                }
+            });
+        }
+
+        function PaymentCancel() {
+
+        }
+
+        function ColorPalletFunc() {
+            TurnOffVideo();
+            if ($('#new_row_btn').hasClass('customfield_page_remove')) {
+                $('#new_row_btn').removeClass('d-none');
+                $('#new_row_btn').removeClass('customfield_page_remove')
+
+            }
+            SetDynamicGrid();
+            if ($(".first-link").hasClass("active") || $(".clr-pallet").hasClass("active")) {
+
+            }
+            else if (currentscroll == 0) {
+                currentscroll = $(document).scrollTop();
+            }
+            else {
+                ScrollNow();
+            }
+            $('#new_row_btn').removeClass('d-none');
+            $("#VedioTutorialSection").addClass('d-none');
+            $('#main_div').removeClass('d-none');
+            $('#custom_fields_main_div').addClass('d-none');
+            $(".filters").removeClass("d-none");
+            $('.select2-search__field').css('width', '100%');
+            $(".menu-fixed-top").hide();
+            $("#iqonic-theme-list").show();
+            $("#Fields").hide();
+            $(".filters h4").removeClass("visibility");
+            $("#AccountDetailsSection").addClass("d-none");
+            $("#SavedReportsSection").addClass("d-none");
+            $('.left-sidenav').css('min-width', '365px')
+            $('#LeftSideFileUpload').removeClass('d-none')
+            $('#InternalDashBoardSection').addClass('d-none')
+            $('#useful_stuff').addClass('d-none');
+            $('#stuff_content').addClass('d-none');
+            ScrollNow()
+            reflowAllHighchartswithtimer();
+        }
+
+        function GetUserProfile() {
+
+            loading_start(0, 0, LoadingMessage);
+            $.ajax({
+                async: true,
+                type: "POST",
+                url: "/SignUp/GetSubscriptionInfo",
+                data: { userId: UserObjDetail.userId },
+                cache: false,
+                dataType: "json",
+                success: function (response) {
+                    loading_end();
+                    if (response.status) {
+                        //var startDate = new Date(response.data.start_time);
+                        //var startDateString = startDate.getDate() + "-" + (startDate.getMonth() + 1) + "-" + startDate.getFullYear();
+                        //var lastDate = new Date(response.data.billing_info.last_payment.time);
+                        //var lastDateString = lastDate.getDate() + "-" + (lastDate.getMonth() + 1) + "-" + lastDate.getFullYear();
+                        var nextDate = new Date(response.data.billing_info.next_billing_time);
+                        var nextDateString = nextDate.getDate() + "-" + (nextDate.getMonth() + 1) + "-" + nextDate.getFullYear();
+                        $('#AccountDetailsSection').empty();
+                        //var html =
+                        //    `<label>Name:<span>${UserObjDetail.userName}</span></label>
+                        //    <label>Email:<span>${UserObjDetail.userEmail}</span></label>
+                        //    <label>Subscription Start Date:<span>${startDateString}</span></label>
+                        //    <label>Outstanding Balance:<span>${response.data.billing_info.outstanding_balance.value} ${response.data.billing_info.outstanding_balance.currency_code}</span></label>
+
+                        //    <label>Amount Paid:<span>${response.data.billing_info.last_payment.amount.value} ${response.data.billing_info.last_payment.amount.currency_code}</span></label>
+                        //    <label>Next Payment Date:<span>${nextDateString}</span></label>`;
+                        //$('#AccountDetailsSection').append(html);
+                        //<label>Last Payment Date:<span>${lastDateString}</span></label>
+
+                        var cinfo = ``;
+                        if (response.cancelledInfo === null || response.cancelledInfo === undefined) {
+                            cinfo = `<label>Next Payment Date:<span>${nextDateString}</span></label>
+                                                                        <div style="padding-left: 40px;">
+                                                                            <button class="btn btn-danger btn-download float-left m-0" onclick="CancelSubscription()">Cancel Subscription</button>
+                                                                        </div>`;
+                        }
+                        else {
+                            var cancelDate = new Date(response.cancelledInfo.cancelDate);
+                            var cancelDateString = cancelDate.getDate() + "-" + (cancelDate.getMonth() + 1) + "-" + cancelDate.getFullYear();
+                            cinfo = `<label>Subscription Status:<span>Cancelled</span></label>
+                                                                        <label>Cancellation Date:<span>${cancelDateString}</span></label>`;//`<label>YOUR SUBSCRIPTION WILL EXPIRE ON : ${cancelDateString}</label>`;
+                        }
+
+                        var html =
+                            `<label>Name:<span>${UserObjDetail.userName}</span></label>
+                                                                <label>Email:<span>${UserObjDetail.userEmail}</span></label>
+                                                                ${cinfo}`;
+                        $('#AccountDetailsSection').append(html);
+                    }
+                    else {
+                        popupShow(response.msg, 'fail');
+                    }
+                },
+                failure: function (response) {
+                    loading_end();
+                },
+                error: function (response) {
+                    loading_end();
+                }
+            });
+        }
+
+        function CancelSubscription() {
+            if (confirm("Are you sure you want to cancel subscription?")) {
+                loading_start();
+                $.ajax({
+                    async: true,
+                    type: "POST",
+                    url: "/SignUp/CancelSubscription",
+                    data: { userId: UserObjDetail.userId },
+                    cache: false,
+                    dataType: "json",
+                    success: function (response) {
+                        loading_end();
+                        if (response.status) {
+                            popupShow(response.msg, 'good');
+                            Authtenticate();
+                            GetUserProfile();
+                        }
+                        else {
+                            popupShow(response.msg, 'fail');
+                        }
+                    },
+                    failure: function (response) {
+                        loading_end();
+                    },
+                    error: function (response) {
+                        loading_end();
+                    }
+                });
+            }
+        }
+
+    </script>
+
+}

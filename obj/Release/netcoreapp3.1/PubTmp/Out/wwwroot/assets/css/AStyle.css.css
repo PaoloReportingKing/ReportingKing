@@ -1,0 +1,186 @@
+﻿body {
+}
+.labelbutton{
+    background-color:black !important;
+    color:white;
+}
+.deletebuttonstyle {
+    display: block;
+    z-index: 99;
+}
+.numberchartdiv {
+    text-align: center;
+    margin-top: 73px;
+    font-size: 20px;
+}
+.numberchartdivDownload {
+    text-align: center;
+    margin-top: 23px;
+    font-size: 20px;
+}
+.numberchartlabelunderline {
+    text-decoration: underline;
+}
+.numberchartlabelbold {
+    background-color: black !important;
+}
+
+
+
+
+
+/*form table chart*/
+.tableFixHead table tr {
+    
+    width: auto !important;
+
+}
+.tableFixHead tfoot th {
+    padding: .59rem;
+}
+|
+.tableFixHead table  thead tr th {
+    padding-right: 18px;
+  /*  position: relative;*/
+    color: black;
+    position: sticky;
+    top: -1px;
+    border-collapse: separate;
+    z-index: 1;
+}
+
+
+.fixedtablehead {
+    padding-right: 18px;
+    /*  position: relative;*/
+    color: black;
+    position: sticky;
+    top: -1px;
+    border-collapse: separate;
+    z-index: 1;
+    cursor:default;
+}
+
+
+
+
+.tableFixHead tfoot {
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
+    border-top: 2px solid #ccc;
+    background: #feffff;
+    border-collapse: separate;
+    z-index: 1;
+    text-align: left;
+
+}
+    .tableFixHead tfoot {
+        inset-block-end: 0; /* "bottom" */
+        
+    }
+
+th a.sort-by {
+    padding-right: 0px;
+    position: relative;
+    color: black;
+}
+
+    th a.sort-by:hover {
+        color: black;
+    }
+
+a.sort-by:before,
+a.sort-by:after {
+    top: 50%;
+    position: absolute;
+    width: 0;
+}
+
+a.sort-by:before {
+    margin-top: -9px;
+    right: 0em;
+    content: "\2191";
+    opacity: 1;
+}
+
+a.sort-by:after {
+    margin-top: -9px;
+    right: -0.5em;
+    content: "\2193";
+    opacity:1;
+}
+
+
+
+
+
+
+th a.sort-byBefore {
+    padding-right: 0px;
+    position: relative;
+    color: black;
+}
+
+    th a.sort-byBefore:hover {
+        color: black;
+    }
+
+a.sort-byBefore:before,
+a.sort-byBefore:after {
+    top: 50%;
+    position: absolute;
+    width: 0;
+}
+
+a.sort-byBefore:before {
+    margin-top: -9px;
+    right: 0em;
+    content: "\2191";
+    opacity: 0.3;
+}
+
+a.sort-byBefore:after {
+    margin-top: -9px;
+    right: -0.5em;
+    content: "\2193";
+    opacity: 1;
+}
+
+
+
+/*th a.sort-byAfter {*/
+a.sort-byAfter {
+    padding-right: 0;
+    position: relative;
+    color: black;
+}
+
+    th a.sort-byAfter:hover {
+        color: black;
+    }
+
+a.sort-byAfter:before,
+a.sort-byAfter:after {
+    top: 50%;
+    position: absolute;
+    width: 0;
+}
+
+a.sort-byAfter:before {
+    margin-top: -9px;
+    right: 0em;
+    content: "\2191";
+    opacity: 1;
+}
+
+a.sort-byAfter:after {
+    margin-top: -9px;
+    right: -0.5em;
+    content: "\2193";
+    opacity: 0.3;
+}
+
+
+
+

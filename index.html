@@ -1,0 +1,503 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Reporting tool </title>
+    <meta name="viewport" content="width=device-width, initial-scale=2.0" />
+    <meta content="A premium admin dashboard template by Mannatthemes" name="description" />
+    <meta content="Mannatthemes" name="author" />
+
+    <!-- App favicon -->
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/plugins/filter/magnific-popup.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/plugins/apexcharts/apexcharts.css" rel="stylesheet" />
+    <link href="/assets/plugins/summernote/summernote-bs4.css" rel="stylesheet" />
+    <link href="/assets/plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet" />
+    <link href="/assets/plugins/select2/select2.min.css" rel="stylesheet" />
+    <link href="/assets/plugins/dropify/css/dropify.min.css" rel="stylesheet" />
+    <!-- App css -->
+
+    <link href="/assets/css/icons.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/css/metisMenu.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/custom.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+
+    <div class="page-wrapper">
+        <div class="filters">
+            <div class="container-fluid">
+                <div class="row ">
+                    <div class="col-md-12">
+                        <div class="row append-filter">
+                            <h4 class="mt-2">drop filter here...</h4>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <!-- Left Sidenav -->
+        <div class="left-sidenav">
+            <div class="main-icon-menu">
+                <nav class="nav">
+                    <a href="#UplodFile" class="first-link nav-link" data-toggle="tooltip-custom" data-placement="top" title="" data-original-title="Upload File">
+                        Upload File
+                    </a>
+                    <a href="#Fields" class=" nav-link" data-toggle="tooltip-custom" data-placement="top" title="" data-original-title="Add Fields">
+                        Add Fields
+                    </a>
+
+
+
+
+                    <a href="#Colors" class="nav-link" data-toggle="tooltip-custom" data-placement="top" title="" data-original-title="Color Pallet">
+                        Color Pallets
+                    </a>
+
+                </nav>
+            </div>
+
+            <div class="main-menu-inner">
+                <a class="nav-link button-menu-mobile btn btn-primary"> <i class="ti-angle-double-right nav-icon"></i></a>
+                <div class="menu-body slimscroll">
+                    <div id="UplodFile" class="main-icon-menu-pane">
+
+                        <ul class="nav metismenu">
+                            <li class="nav-item">
+                                <input type="file" id="input-file-now" class="dropify" />
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div id="Fields" class="main-icon-menu-pane">
+                        <ul class="fields">
+                            <li category="Team A" class="bg-gray  field">
+                                Team A
+                            </li>
+                            <li category="Team B" class="bg-gray productb field">
+                                Team B
+                            </li>
+                            <li category="Team C" class="bg-gray productc field">
+                                Team C
+                            </li>
+                            <li category="dates" class="bg-gray dates field">
+                                Dates
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="Colors" class="main-icon-menu-pane">
+                        <ul id="iqonic-theme-list">
+                            <li>
+                                <div class="row pallet">
+                                    <div class="col">
+                                        <div class="card">
+                                            <div class="card-body" style="background:#008FFB">
+
+                                            </div>
+                                            <small class="text-center">#008FFB</small>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card">
+                                            <div class="card-body" style="background: #00E396">
+
+                                            </div>
+                                            <small class="text-center">#00E396</small>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card">
+                                            <div class="card-body" style="background: #FEB019">
+
+                                            </div>
+                                            <small class="text-center">#FEB019</small>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card">
+                                            <div class="card-body" style="background: #FF4560">
+
+                                            </div>
+                                            <small class="text-center">#FF4560</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="custom-control custom-switch mb-2" dir="ltr">
+
+                                    <input name="radio" type="checkbox" class="custom-control-input themeswitch" id="customSwitch1" checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked checked=checked />
+                                    <label class="custom-control-label" for="customSwitch1">palette1</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row pallet">
+                                    <div class="col">
+                                        <div class="card">
+                                            <div class="card-body" style="background: #3F51B5">
+
+                                            </div>
+                                            <small class="text-center">#3F51B5</small>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card">
+                                            <div class="card-body" style="background: #4CAF50">
+
+                                            </div>
+                                            <small class="text-center">#4CAF50</small>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card">
+                                            <div class="card-body" style="background: #F9CE1D">
+
+                                            </div>
+                                            <small class="text-center">#F9CE1D</small>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card">
+                                            <div class="card-body" style="background: #FF9800">
+
+                                            </div>
+                                            <small class="text-center">#FF9800</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="custom-control custom-switch mb-2" dir="ltr">
+
+                                    <input name="radio" type="checkbox" class="custom-control-input themeswitch" id="customSwitch2" />
+                                    <label class="custom-control-label" for="customSwitch2">palette 2</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row pallet">
+                                    <div class="col">
+                                        <div class="card">
+                                            <div class="card-body" style="background: #33B2DF">
+
+                                            </div>
+                                            <small class="text-center">#33B2DF</small>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card">
+                                            <div class="card-body" style="background: #546E7A">
+
+                                            </div>
+                                            <small class="text-center">#546E7A</small>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card">
+                                            <div class="card-body" style="background: #D4526E">
+
+                                            </div>
+                                            <small class="text-center">#D4526E</small>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card">
+                                            <div class="card-body" style="background: #13D8AA">
+
+                                            </div>
+                                            <small class="text-center">#13D8AA</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="custom-control custom-switch mb-2" dir="ltr">
+
+                                    <input name="radio" type="checkbox" class="custom-control-input themeswitch" id="customSwitch3" />
+                                    <label class="custom-control-label" for="customSwitch3">palette 3</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row pallet">
+                                    <div class="col">
+                                        <div class="card">
+                                            <div class="card-body" style="        background: #449DD1">
+
+                                            </div>
+                                            <small class="text-center">#449DD1</small>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card">
+                                            <div class="card-body" style="        background: #F86624
+">
+
+                                            </div>
+                                            <small class="text-center">#F86624</small>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card">
+                                            <div class="card-body" style="        background: #EA3546
+">
+
+                                            </div>
+                                            <small class="text-center">#EA3546</small>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card">
+                                            <div class="card-body" style="        background: #662E9B
+">
+
+                                            </div>
+                                            <small class="text-center">#662E9B</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="custom-control custom-switch mb-2" dir="ltr">
+
+                                    <input name="radio" type="checkbox" class="custom-control-input themeswitch" id="customSwitch4" />
+                                    <label class="custom-control-label" for="customSwitch4">palette 4</label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-content">
+
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12" style="margin-top:40px;">
+                        <a href="#" class="btn btn-success  btn-save">
+                            Save
+                        </a>
+                        <a href="#" class="btn btn-primary btn-download">
+                            Download
+                        </a>
+                    </div>
+
+                </div>
+                <div class="row canvas">
+                    <div class="col dynamic-grid">
+
+                        <div class="card ">
+                            <div class="">
+                                <div class="card-body ">
+                                    <a class="btn del btn-danger btn-sm float-right" style="display: none;color: white">Delete</a>
+                                    <h4 class="card-title"> Drag and Drop  </h4>
+
+                                    <hr />
+                                    <div class="row nochart">
+                                        <div class="col-md-4">
+
+                                            <div class="chart-box active">
+                                                <img src="/assets/images/icons/Bar.svg" />
+                                                <h4 class="card-title">Bar Chart</h4>
+                                            </div>
+
+
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="chart-box">
+                                                <img src="/assets/images/icons/Line.svg" />
+
+                                                <h4 class="card-title">
+                                                    Line Chart
+                                                </h4>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="chart-box">
+                                                <img src="/assets/images/icons/Mixed.svg" />
+
+                                                <h4 class="card-title">
+                                                    Mixed Chart
+                                                </h4>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="row nochart">
+                                        <div class="col-md-4">
+                                            <div class="chart-box">
+                                                <img src="/assets/images/icons/Scatter.svg" />
+
+                                                <h4 class="card-title">
+                                                    Scatter Chart
+                                                </h4>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="chart-box">
+                                                <img src="/assets/images/icons/Number.svg" />
+
+                                                <h4 class="card-title">
+                                                    Number Chart
+                                                </h4>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="chart-box">
+                                                <img src="/assets/images/icons/Pie.svg" />
+
+                                                <h4 class="card-title">
+                                                    Pie Chart
+                                                </h4>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div id="barchart" style="height:250px;display:none"></div>
+                                    <a class="btn btn-primary w-100 note-btn" style="color:white;display:none;">Add Notes</a>
+                                    <div class="form-group notes" style="display:none;">
+                                        <h4 class="card-title">Notes</h4>
+
+                                        <div class="summernote"></div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col dynamic-grid add-new-chart" style="display:none;">
+                        <div class="card ">
+                            <div>
+                                <div class="card-body ">
+                                    <h4 class="card-title"> Drag and Drop </h4>
+                                    <hr />
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="chart-box">
+                                                <img src="/assets/images/icons/Bar.svg" />
+
+                                                <h4 class="card-title">Bar Chart</h4>
+                                            </div>
+
+
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="chart-box">
+                                                <img src="/assets/images/icons/Line.svg" />
+
+                                                <h4 class="card-title">
+                                                    Line Chart
+                                                </h4>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="chart-box">
+                                                <img src="/assets/images/icons/Mixed.svg" />
+
+                                                <h4 class="card-title">
+                                                    Mixed Chart
+                                                </h4>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="chart-box">
+                                                <img src="/assets/images/icons/Scatter.svg" />
+
+                                                <h4 class="card-title">
+                                                    Scatter Chart
+                                                </h4>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="chart-box">
+                                                <img src="/assets/images/icons/Number.svg" />
+
+                                                <h4 class="card-title">
+                                                    Number Chart
+                                                </h4>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="chart-box">
+                                                <img src="/assets/images/icons/Pie.svg" />
+
+                                                <h4 class="card-title">
+                                                    Pie Chart
+                                                </h4>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <script src="/assets/js/jquery.min.js">
+    </script>
+    <script src="/assets/js/bootstrap.bundle.min.js">
+    </script>
+    <script src="/assets/js/metisMenu.min.js">
+    </script>
+    <script src="/assets/js/waves.min.js">
+    </script>
+    <script src="/assets/js/jquery.slimscroll.min.js">
+    </script>
+    <script src="/assets/plugins/apexcharts/apexcharts.min.js">
+    </script>
+    <script src="assets/plugins/summernote/summernote-bs4.min.js">
+    </script>
+    <script src="assets/plugins/select2/select2.min.js">
+    </script>
+    <script src="/assets/pages/jquery.form-upload.init.js"></script>
+    <script src="/assets/plugins/dropify/js/dropify.min.js">
+    </script>
+    <script src="assets/plugins/jquery-ui/jquery-ui.min.js">
+    </script>
+    <script src="/assets/js/app.js">
+    </script>
+    <script src="assets/js/custom.js">
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.first-link').trigger("click");
+            $('.summernote').summernote({
+                toolbar: [
+                    // [groupName, [list of button]]
+                    ['style', ['bold', 'italic', 'underline', 'clear']],
+                     ['fontsize', ['fontsize']],
+                    ['font', ['strikethrough', 'superscript', 'subscript']],
+                    ['color', ['color']],
+                    ['para', ['ul', 'ol', 'paragraph']],
+                    ['height', ['height']]
+                ],
+                tooltip: false,
+                lineWrapping: true,
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,549 @@
+﻿body {
+}
+.labelbutton{
+    background-color:black !important;
+    color:white;
+}
+.deletebuttonstyle {
+    display: block;
+ /*   z-index: 99;*/
+}
+.numberchartdiv {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 20px;
+}
+.numberchartdivDownload {
+    text-align: center;
+    margin-top: 23px;
+    font-size: 20px;
+}
+.numberchartlabelunderline {
+    text-decoration: underline;
+}
+.numberchartlabelbold {
+    background-color: black !important;
+}
+
+
+.planandpriceTwoSections {
+    border: 1px solid #f1eff5;
+}
+.color_13 {
+    color: rgb(160,160,159);
+}
+
+
+.font_0{
+    font-weight:700;
+}
+.font_2{
+    color:black;
+    text-align:center;
+}
+#LimitedVersion{
+    margin-top:-15px;
+}
+#UnlocAllFeature {
+    margin-top: -15px;
+}
+#comp-l2dy0dxr3 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#FreeVersionButton
+{
+    text-align:center;
+    
+}
+    #FreeVersionButton > a {
+        background: #2E2B7E;
+        color: white;
+        margin-bottom: 30px;
+        font-weight: 600;   
+    }
+    #FreeVersionButton > a :hover {
+        background: #FEF19F !important;
+        background-color: #FEF19F !important;
+    }
+#linkfreeversion :hover {
+    background: #FEF19F !important;
+    background-color: #FEF19F !important;
+}
+#PayVersionButton {
+    text-align: center;
+}
+
+    #PayVersionButton > a {
+        background: #FFD834;
+        color: black;
+        margin-bottom: 30px;
+        border-color: #FEF19F;
+        border:none;
+        font-weight:600;
+    }
+
+        #PayVersionButton > a :hover {
+            color: black !important;
+            background: #FEF19F !important;
+            border: 1px solid #FEF19F !important;
+            border-color: #FEF19F !important;
+        }
+
+    #PayVersionButton :hover {
+        color: black !important;
+        background: #FEF19F !important;
+        border: 1px solid #FEF19F !important;
+        border-color: #FEF19F !important;
+    }
+#addfreeuser {
+    margin-top: 27px;
+    border: 1px solid black;
+    color: blue;
+}
+.AllowFreeAccess {
+    /*  position: absolute !important;
+    margin-left: 205px !important;
+    margin-top: 10px !important;*/
+    font-weight: bold !important;
+    color: #007bff !important;
+}
+.font_8 {
+    /*font: var(--font_8);*/
+    color: rgb(96,94,94);
+    letter-spacing: 0em;
+}
+
+.rightsectionGBP {
+    color: black;
+    position: absolute;
+    margin-top: -68px;
+    margin-left: -69px;
+    font-weight: bold;
+}
+.rightsectionVAT {
+    position: absolute;
+    margin-top: -55px;
+    margin-left: 55px;
+    font-weight: bold;
+}
+/*form table chart*/
+.tableFixHead table tr {
+    width: auto !important;
+}
+.tableFixHead tfoot th {
+    padding: .60rem;
+}
+|
+.tableFixHead table  thead tr th {
+    padding-right: 18px;
+  /*  position: relative;*/
+    color: black;
+    position: sticky;
+    top: -1px;
+    border-collapse: separate;
+    z-index: 1;
+}
+
+
+.fixedtablehead {
+    padding-right: 18px;
+    /*  position: relative;*/
+    color: black;
+    position: sticky;
+    top: -1px;
+    border-collapse: separate;
+    z-index: 1;
+    cursor:default;
+}
+
+
+
+
+.tableFixHead tfoot {
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
+    border-top: 2px solid #ccc;
+    background: #feffff;
+    border-collapse: separate;
+    z-index: 1;
+    text-align: left;
+
+}
+    .tableFixHead tfoot {
+        inset-block-end: 0; /* "bottom" */
+        
+    }
+
+th a.sort-by {
+    padding-right: 0px;
+    position: relative;
+    color: black;
+}
+
+    th a.sort-by:hover {
+        color: black;
+    }
+
+a.sort-by:before,
+a.sort-by:after {
+    top: 50%;
+    position: absolute;
+    width: 0;
+}
+
+a.sort-by:before {
+    margin-top: -9px;
+    right: 0em;
+    content: "\2191";
+    opacity: 1;
+}
+
+a.sort-by:after {
+    margin-top: -9px;
+    right: -0.5em;
+    content: "\2193";
+    opacity:1;
+}
+
+
+
+
+
+
+th a.sort-byBefore {
+    padding-right: 0px;
+    position: relative;
+    color: black;
+}
+
+    th a.sort-byBefore:hover {
+        color: black;
+    }
+
+a.sort-byBefore:before,
+a.sort-byBefore:after {
+    top: 50%;
+    position: absolute;
+    width: 0;
+}
+
+a.sort-byBefore:before {
+    margin-top: -9px;
+    right: 0em;
+    content: "\2191";
+    opacity: 0.7;
+}
+
+a.sort-byBefore:after {
+    margin-top: -9px;
+    right: -0.5em;
+    content: "\2193";
+    opacity: 1;
+}
+
+
+
+/*th a.sort-byAfter {*/
+a.sort-byAfter {
+    padding-right: 0;
+    position: relative;
+    color: black;
+}
+
+    th a.sort-byAfter:hover {
+        color: black;
+    }
+
+a.sort-byAfter:before,
+a.sort-byAfter:after {
+    top: 50%;
+    position: absolute;
+    width: 0;
+}
+
+a.sort-byAfter:before {
+    margin-top: -9px;
+    right: 0em;
+    content: "\2191";
+    opacity:1;
+}
+
+a.sort-byAfter:after {
+    margin-top: -9px;
+    right: -0.5em;
+    content: "\2193";
+    opacity: 0.8;
+}
+.apexcharts-xaxis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+@media only screen and (min-device-width: 1599px) and (max-device-width: 1900px) {
+
+    .numberchartdiv {
+        margin-top: 100px;
+    }
+}
+@media only screen and (min-device-width:1367px) and (max-device-width: 1598px) {
+
+    .numberchartdiv {
+        margin-top: 110px;
+    }
+}
+
+
+
+
+
+.highcharts-reset-zoom {
+    display: none;
+}
+/*this is used for highchart.js*/
+.legendli {
+    margin-left: 5px
+}
+
+.displayinline {
+    display: inline-block;
+}
+
+.legendtextpart {
+    position: relative;
+    color: black;
+    font-size:12px !important;
+}
+.legendtotal {
+    font-weight: 700 !important;
+}
+.legendtextpart span {
+font-size:12px;
+font-weight:500;
+
+}
+/*.legendtotal {
+    position: absolute;
+    margin-top: -20px
+}*/
+.displaynone {
+    display: none;
+}
+
+
+.highcharts-series-label {
+    display: none !important;
+}
+
+.highcharts-axis-labels {
+    font-weight: 700 !important;
+    color: black !important;
+    font-family: Poppins, sans-serif;
+    font-size: 12px !important;
+}
+
+.highcharts-tooltip {
+    opacity: 0
+}
+
+.higchartlabels {
+    font-size: 12px;
+    font-family: Poppins, sans-serif;
+}
+
+.highcharts-container {
+    position: inherit !important;
+}
+
+.legendsClass {
+    height: 50px;
+    overflow-y: auto !important;
+}
+
+/*Downloaded PDF*/
+.tableDownload table td {
+    padding: 5px;
+}
+
+.tableDownload table thead th {
+    white-space: nowrap;
+    padding-left:8px;
+}
+
+.tableDownload table th {
+    white-space: normal;
+    padding: 5px;
+}
+
+
+.vediotutorial {
+    width: 100%;
+    min-height: 77vh;
+}
+
+
+.blockpointer:hover {
+    cursor: not-allowed
+}
+
+.blockpointer {
+    cursor: not-allowed
+}   
+svg.highcharts-label {
+    font-weight: 700 !important;
+/*    color: black !important;*/
+    font-family: Poppins, sans-serif;
+    font-size: 10px !important;
+}
+#loadertitle {
+    margin-top: 20% !important;
+    /* text-align: center; */
+    width: 280px;
+    font-family: 'Revalia', cursive;
+    padding-left: 5px;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+#Companytitle {  
+    font-size: 14px;
+    width: 270px;
+}
+.progress.loaderprogress {
+    transition-delay: 2s;
+    width: 273px;
+    height: 30px;
+    padding: 3px 3px 3px 0px;
+}
+.loaderprogress {
+    display: block;
+    margin: auto;
+    font-family: 'Revalia', cursive;
+}
+#btn_cancelPNG {
+    font-family: 'Revalia', cursive;
+    background-color: #f7f7f7;
+}
+#DownLoadPngMessage {
+    position: absolute;
+    left: 50%;
+}
+    #DownLoadPngMessage p{
+        display: block;
+        clear: both;
+        position: relative;
+        left: -50%;
+        margin-top: 50px;
+        font-size: 22px;
+    }
+    #DownLoadPngMessage button {
+    margin-left:-50px;
+    }
+.golden {
+    color:#FFD400;
+}
+.sea-green {
+    color: #08ddc0;
+}
+#progressbardiv {
+    height: 25px;
+}
+.VedioTutorialDemoTitle {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: #2d5f80;
+}
+.LockTableButtonStyle {
+    margin-left: 27px;
+    color: #4d79f6 !important;
+    cursor: pointer;
+    font-size: 12px;
+}
+.LockedRowsLabel {
+    padding-left: 10px;
+    white-space: pre;
+    font-size:12px;
+}
+.BlockRowsBlock {
+    margin-left:10px;
+   
+    cursor: pointer;
+    font-size: 12px;
+}
+.BlockRowsMinus{
+    margin-left:3px;
+}
+.BlockRowsPlusSpan {
+    margin-left: 6px;
+}
+.BlockRowsTitle {
+    color: black;
+    margin-right:6px;
+}
+#v-pills-terms-tab {
+    display: none;
+}
+
+.privacypolicyspan {
+    font-family: "Roboto", sans-serif !important;
+    color: black !important;
+    font-size: 16px !important;
+}
+.pivacypolicyLiH {
+    font-weight: 700;
+    color: #2d5f80;
+    text-align: left;
+}
+.FixRows
+{
+    text-align:center;
+    text-indent:14px;
+}
+.BlocRowsTotal {
+    font-weight: normal;
+    color: #4d79f6 !important;
+}
+.PrivacyTableHead > th {
+    text-align: center;
+    border: 3px dashed #959697;
+}
+.PrivacyTable{
+    color:black;
+}
+    .PrivacyTable > tbody > tr > td {
+        border: 3px dashed #959697;
+        text-indent: 5px;
+    }
+#WarningModal{
+    margin-top:150px;
+}
+.modalmobiletitle{
+    color:blue;
+}
+.marque{
+
+}
+.visitwebsiteLink {
+    color: darkgrey;
+    font-size:15px;
+}
+    .visitwebsiteLink:hover {
+        color: darkgrey;
+    }
+.visitWebsite {
+    padding-top: 22px;
+    padding-left: 64px;
+    color: white;
+}
+.FullTutorialLink {
+    text-align: center;
+}
+.FullTutorialLink > a{
+    color:black;
+}
+.vediotitle{
+    display:none;
+}

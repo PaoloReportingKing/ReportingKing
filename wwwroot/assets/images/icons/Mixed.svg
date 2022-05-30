@@ -1,0 +1,24 @@
+<svg id="Mixed" xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #000;
+        stroke-width: 10px;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M241.354,151.972h34.6V275.549h-34.6V151.972Z"/>
+  <path id="Rectangle_1_copy" data-name="Rectangle 1 copy" class="cls-1" d="M162.264,186.573h34.6v88.976h-34.6V186.573Z"/>
+  <path id="Rectangle_1_copy_2" data-name="Rectangle 1 copy 2" class="cls-1" d="M93.061,161.858h34.6V275.549h-34.6V161.858Z"/>
+  <path class="cls-2" d="M248.351,58.053l-69.2,50.488-69.2-65.317L40.741,132.2"/>
+  <path id="Rectangle_1_copy_3" data-name="Rectangle 1 copy 3" class="cls-1" d="M23.857,221.175h34.6v59.317h-34.6V221.175Z"/>
+  <path class="cls-1" d="M253.711,33.337a17.3,17.3,0,1,1-17.3,17.3A17.3,17.3,0,0,1,253.711,33.337Z"/>
+  <path id="Ellipse_1_copy" data-name="Ellipse 1 copy" class="cls-1" d="M179.565,87.711a17.3,17.3,0,1,1-17.3,17.3A17.3,17.3,0,0,1,179.565,87.711Z"/>
+  <path id="Ellipse_1_copy_2" data-name="Ellipse 1 copy 2" class="cls-1" d="M110.361,18.508a17.3,17.3,0,1,1-17.3,17.3A17.3,17.3,0,0,1,110.361,18.508Z"/>
+  <circle id="Ellipse_1_copy_3" data-name="Ellipse 1 copy 3" cx="41.156" cy="124.781" r="17.313"/>
+</svg>

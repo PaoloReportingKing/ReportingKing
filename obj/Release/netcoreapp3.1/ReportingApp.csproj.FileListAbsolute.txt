@@ -1,0 +1,1325 @@
+D:\Working Apps\Web\reportingtool\obj\Release\netcoreapp3.1\ReportingApp.csproj.AssemblyReference.cache
+D:\Working Apps\Web\reportingtool\obj\Release\netcoreapp3.1\ReportingApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\Working Apps\Web\reportingtool\obj\Release\netcoreapp3.1\ReportingApp.AssemblyInfoInputs.cache
+D:\Working Apps\Web\reportingtool\obj\Release\netcoreapp3.1\ReportingApp.AssemblyInfo.cs
+D:\Working Apps\Web\reportingtool\obj\Release\netcoreapp3.1\ReportingApp.csproj.CoreCompileInputs.cache
+D:\Working Apps\Web\reportingtool\obj\Release\netcoreapp3.1\ReportingApp.MvcApplicationPartsAssemblyInfo.cs
+D:\Working Apps\Web\reportingtool\obj\Release\netcoreapp3.1\ReportingApp.MvcApplicationPartsAssemblyInfo.cache
+D:\Working Apps\Web\reportingtool\obj\Release\netcoreapp3.1\ReportingApp.RazorAssemblyInfo.cache
+D:\Working Apps\Web\reportingtool\obj\Release\netcoreapp3.1\ReportingApp.RazorAssemblyInfo.cs
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\appsettings.Development.json
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\appsettings.json
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\ReportingApp.StaticWebAssets.xml
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\ReportingApp.exe
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\ReportingApp.deps.json
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\ReportingApp.runtimeconfig.json
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\ReportingApp.runtimeconfig.dev.json
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\ReportingApp.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\ReportingApp.pdb
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Antiforgery.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Authentication.Abstractions.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Authentication.Cookies.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Authentication.Core.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Authentication.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Authentication.OAuth.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Authorization.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Authorization.Policy.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Components.Authorization.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Components.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Components.Forms.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Components.Server.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Components.Web.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Connections.Abstractions.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.CookiePolicy.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Cors.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.DataProtection.Abstractions.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.DataProtection.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.DataProtection.Extensions.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Diagnostics.Abstractions.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Diagnostics.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Diagnostics.HealthChecks.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.HostFiltering.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Hosting.Abstractions.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Hosting.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Html.Abstractions.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Http.Abstractions.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Http.Connections.Common.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Http.Connections.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Http.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Http.Extensions.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Http.Features.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.HttpOverrides.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.HttpsPolicy.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Identity.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Localization.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Localization.Routing.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Metadata.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.Abstractions.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.ApiExplorer.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.Core.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.Cors.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.DataAnnotations.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.Formatters.Json.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.Formatters.Xml.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.Localization.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.Razor.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.RazorPages.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.TagHelpers.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.ViewFeatures.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Razor.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Razor.Runtime.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.ResponseCaching.Abstractions.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.ResponseCaching.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.ResponseCompression.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Rewrite.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Routing.Abstractions.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Routing.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Server.HttpSys.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Server.IIS.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Server.IISIntegration.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Server.Kestrel.Core.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Server.Kestrel.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Session.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.SignalR.Common.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.SignalR.Core.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.SignalR.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.SignalR.Protocols.Json.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.StaticFiles.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.WebSockets.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.WebUtilities.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.CSharp.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.CommandLine.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.EnvironmentVariables.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.FileExtensions.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.Ini.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.Json.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.KeyPerFile.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.UserSecrets.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.Xml.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.Diagnostics.HealthChecks.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.FileProviders.Composite.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.FileProviders.Physical.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.FileSystemGlobbing.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.Hosting.Abstractions.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.Hosting.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.Http.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.Localization.Abstractions.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.Localization.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.Logging.Configuration.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.Logging.Console.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.Logging.Debug.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.Logging.EventLog.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.Logging.EventSource.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.Logging.TraceSource.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.ObjectPool.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.Options.DataAnnotations.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.WebEncoders.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.JSInterop.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Net.Http.Headers.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.VisualBasic.Core.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.VisualBasic.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Win32.Primitives.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Win32.Registry.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\mscorlib.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\netstandard.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.AppContext.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Buffers.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Collections.Concurrent.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Collections.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Collections.NonGeneric.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Collections.Specialized.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.ComponentModel.Annotations.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.ComponentModel.DataAnnotations.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.ComponentModel.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.ComponentModel.EventBasedAsync.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.ComponentModel.Primitives.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.ComponentModel.TypeConverter.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Configuration.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Console.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Core.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Data.Common.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Data.DataSetExtensions.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Data.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Diagnostics.Contracts.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Diagnostics.Debug.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Diagnostics.EventLog.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Diagnostics.FileVersionInfo.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Diagnostics.Process.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Diagnostics.StackTrace.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Diagnostics.TextWriterTraceListener.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Diagnostics.Tools.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Diagnostics.TraceSource.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Diagnostics.Tracing.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Drawing.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Drawing.Primitives.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Dynamic.Runtime.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Globalization.Calendars.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Globalization.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Globalization.Extensions.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.IO.Compression.Brotli.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.IO.Compression.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.IO.Compression.FileSystem.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.IO.Compression.ZipFile.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.IO.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.IO.FileSystem.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.IO.FileSystem.DriveInfo.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.IO.FileSystem.Primitives.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.IO.FileSystem.Watcher.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.IO.IsolatedStorage.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.IO.MemoryMappedFiles.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.IO.Pipelines.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.IO.Pipes.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.IO.UnmanagedMemoryStream.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Linq.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Linq.Expressions.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Linq.Parallel.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Linq.Queryable.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Memory.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Net.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Net.Http.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Net.HttpListener.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Net.Mail.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Net.NameResolution.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Net.NetworkInformation.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Net.Ping.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Net.Primitives.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Net.Requests.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Net.Security.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Net.ServicePoint.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Net.Sockets.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Net.WebClient.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Net.WebHeaderCollection.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Net.WebProxy.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Net.WebSockets.Client.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Net.WebSockets.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Numerics.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Numerics.Vectors.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.ObjectModel.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Reflection.DispatchProxy.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Reflection.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Reflection.Emit.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Reflection.Emit.ILGeneration.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Reflection.Emit.Lightweight.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Reflection.Extensions.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Reflection.Metadata.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Reflection.Primitives.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Reflection.TypeExtensions.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Resources.Reader.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Resources.ResourceManager.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Resources.Writer.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Runtime.CompilerServices.Unsafe.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Runtime.CompilerServices.VisualC.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Runtime.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Runtime.Extensions.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Runtime.Handles.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Runtime.InteropServices.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Runtime.InteropServices.WindowsRuntime.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Runtime.Intrinsics.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Runtime.Loader.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Runtime.Numerics.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Runtime.Serialization.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Runtime.Serialization.Formatters.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Runtime.Serialization.Json.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Runtime.Serialization.Primitives.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Runtime.Serialization.Xml.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Security.AccessControl.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Security.Claims.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Security.Cryptography.Algorithms.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Security.Cryptography.Cng.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Security.Cryptography.Csp.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Security.Cryptography.Encoding.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Security.Cryptography.Primitives.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Security.Cryptography.X509Certificates.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Security.Cryptography.Xml.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Security.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Security.Permissions.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Security.Principal.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Security.Principal.Windows.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Security.SecureString.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.ServiceModel.Web.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.ServiceProcess.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Text.Encoding.CodePages.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Text.Encoding.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Text.Encoding.Extensions.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Text.Encodings.Web.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Text.RegularExpressions.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Threading.Channels.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Threading.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Threading.Overlapped.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Threading.Tasks.Dataflow.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Threading.Tasks.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Threading.Tasks.Extensions.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Threading.Tasks.Parallel.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Threading.Thread.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Threading.ThreadPool.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Threading.Timer.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Transactions.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Transactions.Local.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.ValueTuple.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Web.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Web.HttpUtility.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Windows.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Windows.Extensions.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Xml.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Xml.Linq.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Xml.ReaderWriter.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Xml.Serialization.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Xml.XDocument.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Xml.XmlDocument.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Xml.XmlSerializer.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Xml.XPath.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\System.Xml.XPath.XDocument.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\refs\WindowsBase.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\ReportingApp.Views.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\ReportingApp.Views.pdb
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\Dapper.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\EPPlus.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\ExcelDataReader.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\ExcelDataReader.DataSet.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\ExcelNumberFormat.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.Views.V3.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.Views.V4.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.Workspaces.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\Microsoft.Extensions.FileProviders.Embedded.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\Microsoft.Extensions.Options.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\Microsoft.Identity.Client.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\dotnet-aspnet-codegenerator-design.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\MySqlConnector.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\Newtonsoft.Json.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\NuGet.Frameworks.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\Pomelo.EntityFrameworkCore.MySql.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\Pomelo.JsonObject.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\RestSharp.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\System.Collections.Immutable.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\System.Composition.AttributedModel.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\System.Composition.Convention.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\System.Composition.Hosting.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\System.Composition.Runtime.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\System.Composition.TypedParts.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\System.Runtime.Caching.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\System.Text.Json.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\System.Xml.XPath.XmlDocument.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+D:\Working Apps\Web\reportingtool\bin\Release\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\Working Apps\Web\reportingtool\obj\Release\netcoreapp3.1\staticwebassets\ReportingApp.StaticWebAssets.Manifest.cache
+D:\Working Apps\Web\reportingtool\obj\Release\netcoreapp3.1\staticwebassets\ReportingApp.StaticWebAssets.xml
+D:\Working Apps\Web\reportingtool\obj\Release\netcoreapp3.1\scopedcss\bundle\ReportingApp.styles.css
+D:\Working Apps\Web\reportingtool\obj\Release\netcoreapp3.1\ReportingApp.TagHelpers.input.cache
+D:\Working Apps\Web\reportingtool\obj\Release\netcoreapp3.1\ReportingApp.TagHelpers.output.cache
+D:\Working Apps\Web\reportingtool\obj\Release\netcoreapp3.1\ReportingApp.RazorCoreGenerate.cache
+D:\Working Apps\Web\reportingtool\obj\Release\netcoreapp3.1\Razor\Views\Account\Index.cshtml.g.cs
+D:\Working Apps\Web\reportingtool\obj\Release\netcoreapp3.1\Razor\Views\Home\DumyIndex.cshtml.g.cs
+D:\Working Apps\Web\reportingtool\obj\Release\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+D:\Working Apps\Web\reportingtool\obj\Release\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+D:\Working Apps\Web\reportingtool\obj\Release\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+D:\Working Apps\Web\reportingtool\obj\Release\netcoreapp3.1\Razor\Views\Shared\_Layout - Copy.cshtml.g.cs
+D:\Working Apps\Web\reportingtool\obj\Release\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+D:\Working Apps\Web\reportingtool\obj\Release\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+D:\Working Apps\Web\reportingtool\obj\Release\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+D:\Working Apps\Web\reportingtool\obj\Release\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+D:\Working Apps\Web\reportingtool\obj\Release\netcoreapp3.1\ReportingApp.RazorTargetAssemblyInfo.cache
+D:\Working Apps\Web\reportingtool\obj\Release\netcoreapp3.1\ReportingApp.RazorTargetAssemblyInfo.cs
+D:\Working Apps\Web\reportingtool\obj\Release\netcoreapp3.1\ReportingApp.Views.pdb
+D:\Working Apps\Web\reportingtool\obj\Release\netcoreapp3.1\ReportingApp.csproj.CopyComplete
+D:\Working Apps\Web\reportingtool\obj\Release\netcoreapp3.1\ReportingApp.dll
+D:\Working Apps\Web\reportingtool\obj\Release\netcoreapp3.1\ReportingApp.pdb
+D:\Working Apps\Web\reportingtool\obj\Release\netcoreapp3.1\ReportingApp.genruntimeconfig.cache
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\appsettings.Development.json
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\appsettings.json
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\ReportingApp.StaticWebAssets.xml
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\ReportingApp.exe
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\ReportingApp.deps.json
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\ReportingApp.runtimeconfig.json
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\ReportingApp.runtimeconfig.dev.json
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\ReportingApp.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\ReportingApp.pdb
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Antiforgery.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Authentication.Abstractions.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Authentication.Cookies.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Authentication.Core.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Authentication.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Authentication.OAuth.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Authorization.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Authorization.Policy.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Components.Authorization.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Components.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Components.Forms.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Components.Server.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Components.Web.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Connections.Abstractions.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.CookiePolicy.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Cors.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.DataProtection.Abstractions.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.DataProtection.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.DataProtection.Extensions.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Diagnostics.Abstractions.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Diagnostics.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Diagnostics.HealthChecks.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.HostFiltering.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Hosting.Abstractions.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Hosting.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Html.Abstractions.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Http.Abstractions.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Http.Connections.Common.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Http.Connections.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Http.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Http.Extensions.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Http.Features.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.HttpOverrides.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.HttpsPolicy.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Identity.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Localization.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Localization.Routing.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Metadata.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.Abstractions.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.ApiExplorer.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.Core.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.Cors.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.DataAnnotations.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.Formatters.Json.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.Formatters.Xml.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.Localization.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.Razor.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.RazorPages.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.TagHelpers.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.ViewFeatures.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Razor.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Razor.Runtime.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.ResponseCaching.Abstractions.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.ResponseCaching.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.ResponseCompression.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Rewrite.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Routing.Abstractions.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Routing.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Server.HttpSys.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Server.IIS.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Server.IISIntegration.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Server.Kestrel.Core.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Server.Kestrel.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Session.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.SignalR.Common.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.SignalR.Core.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.SignalR.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.SignalR.Protocols.Json.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.StaticFiles.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.WebSockets.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.WebUtilities.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.CSharp.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.CommandLine.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.EnvironmentVariables.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.FileExtensions.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.Ini.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.Json.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.KeyPerFile.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.UserSecrets.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.Xml.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.Diagnostics.HealthChecks.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.FileProviders.Composite.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.FileProviders.Physical.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.FileSystemGlobbing.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.Hosting.Abstractions.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.Hosting.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.Http.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.Localization.Abstractions.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.Localization.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.Logging.Configuration.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.Logging.Console.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.Logging.Debug.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.Logging.EventLog.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.Logging.EventSource.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.Logging.TraceSource.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.ObjectPool.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.Options.DataAnnotations.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.WebEncoders.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.JSInterop.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Net.Http.Headers.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.VisualBasic.Core.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.VisualBasic.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Win32.Primitives.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Win32.Registry.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\mscorlib.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\netstandard.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.AppContext.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Buffers.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Collections.Concurrent.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Collections.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Collections.NonGeneric.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Collections.Specialized.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.ComponentModel.Annotations.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.ComponentModel.DataAnnotations.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.ComponentModel.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.ComponentModel.EventBasedAsync.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.ComponentModel.Primitives.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.ComponentModel.TypeConverter.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Configuration.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Console.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Core.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Data.Common.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Data.DataSetExtensions.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Data.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Diagnostics.Contracts.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Diagnostics.Debug.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Diagnostics.EventLog.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Diagnostics.FileVersionInfo.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Diagnostics.Process.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Diagnostics.StackTrace.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Diagnostics.TextWriterTraceListener.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Diagnostics.Tools.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Diagnostics.TraceSource.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Diagnostics.Tracing.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Drawing.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Drawing.Primitives.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Dynamic.Runtime.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Globalization.Calendars.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Globalization.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Globalization.Extensions.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.IO.Compression.Brotli.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.IO.Compression.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.IO.Compression.FileSystem.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.IO.Compression.ZipFile.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.IO.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.IO.FileSystem.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.IO.FileSystem.DriveInfo.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.IO.FileSystem.Primitives.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.IO.FileSystem.Watcher.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.IO.IsolatedStorage.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.IO.MemoryMappedFiles.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.IO.Pipelines.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.IO.Pipes.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.IO.UnmanagedMemoryStream.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Linq.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Linq.Expressions.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Linq.Parallel.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Linq.Queryable.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Memory.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Net.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Net.Http.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Net.HttpListener.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Net.Mail.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Net.NameResolution.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Net.NetworkInformation.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Net.Ping.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Net.Primitives.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Net.Requests.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Net.Security.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Net.ServicePoint.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Net.Sockets.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Net.WebClient.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Net.WebHeaderCollection.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Net.WebProxy.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Net.WebSockets.Client.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Net.WebSockets.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Numerics.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Numerics.Vectors.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.ObjectModel.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Reflection.DispatchProxy.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Reflection.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Reflection.Emit.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Reflection.Emit.ILGeneration.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Reflection.Emit.Lightweight.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Reflection.Extensions.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Reflection.Metadata.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Reflection.Primitives.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Reflection.TypeExtensions.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Resources.Reader.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Resources.ResourceManager.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Resources.Writer.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Runtime.CompilerServices.Unsafe.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Runtime.CompilerServices.VisualC.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Runtime.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Runtime.Extensions.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Runtime.Handles.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Runtime.InteropServices.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Runtime.InteropServices.WindowsRuntime.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Runtime.Intrinsics.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Runtime.Loader.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Runtime.Numerics.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Runtime.Serialization.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Runtime.Serialization.Formatters.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Runtime.Serialization.Json.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Runtime.Serialization.Primitives.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Runtime.Serialization.Xml.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Security.AccessControl.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Security.Claims.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Security.Cryptography.Algorithms.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Security.Cryptography.Cng.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Security.Cryptography.Csp.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Security.Cryptography.Encoding.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Security.Cryptography.Primitives.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Security.Cryptography.X509Certificates.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Security.Cryptography.Xml.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Security.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Security.Permissions.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Security.Principal.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Security.Principal.Windows.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Security.SecureString.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.ServiceModel.Web.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.ServiceProcess.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Text.Encoding.CodePages.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Text.Encoding.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Text.Encoding.Extensions.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Text.Encodings.Web.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Text.RegularExpressions.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Threading.Channels.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Threading.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Threading.Overlapped.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Threading.Tasks.Dataflow.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Threading.Tasks.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Threading.Tasks.Extensions.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Threading.Tasks.Parallel.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Threading.Thread.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Threading.ThreadPool.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Threading.Timer.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Transactions.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Transactions.Local.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.ValueTuple.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Web.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Web.HttpUtility.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Windows.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Windows.Extensions.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Xml.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Xml.Linq.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Xml.ReaderWriter.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Xml.Serialization.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Xml.XDocument.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Xml.XmlDocument.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Xml.XmlSerializer.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Xml.XPath.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\System.Xml.XPath.XDocument.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\refs\WindowsBase.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\ReportingApp.Views.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\ReportingApp.Views.pdb
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\Dapper.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\EPPlus.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\ExcelDataReader.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\ExcelDataReader.DataSet.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\ExcelNumberFormat.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.Views.V3.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.Views.V4.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.Workspaces.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\Microsoft.Extensions.FileProviders.Abstractions.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\Microsoft.Extensions.FileProviders.Embedded.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\Microsoft.Extensions.Options.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\Microsoft.Identity.Client.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\dotnet-aspnet-codegenerator-design.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\MySqlConnector.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\Newtonsoft.Json.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\NuGet.Frameworks.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\Pomelo.EntityFrameworkCore.MySql.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\Pomelo.JsonObject.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\RestSharp.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\System.Collections.Immutable.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\System.Composition.AttributedModel.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\System.Composition.Convention.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\System.Composition.Hosting.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\System.Composition.Runtime.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\System.Composition.TypedParts.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\System.Runtime.Caching.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\System.Text.Json.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\System.Xml.XPath.XmlDocument.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+E:\ReportingTool_NewRepo\reportingtool\bin\Release\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+E:\ReportingTool_NewRepo\reportingtool\obj\Release\netcoreapp3.1\ReportingApp.csproj.AssemblyReference.cache
+E:\ReportingTool_NewRepo\reportingtool\obj\Release\netcoreapp3.1\ReportingApp.GeneratedMSBuildEditorConfig.editorconfig
+E:\ReportingTool_NewRepo\reportingtool\obj\Release\netcoreapp3.1\ReportingApp.AssemblyInfoInputs.cache
+E:\ReportingTool_NewRepo\reportingtool\obj\Release\netcoreapp3.1\ReportingApp.AssemblyInfo.cs
+E:\ReportingTool_NewRepo\reportingtool\obj\Release\netcoreapp3.1\ReportingApp.csproj.CoreCompileInputs.cache
+E:\ReportingTool_NewRepo\reportingtool\obj\Release\netcoreapp3.1\ReportingApp.MvcApplicationPartsAssemblyInfo.cs
+E:\ReportingTool_NewRepo\reportingtool\obj\Release\netcoreapp3.1\ReportingApp.MvcApplicationPartsAssemblyInfo.cache
+E:\ReportingTool_NewRepo\reportingtool\obj\Release\netcoreapp3.1\ReportingApp.RazorAssemblyInfo.cache
+E:\ReportingTool_NewRepo\reportingtool\obj\Release\netcoreapp3.1\ReportingApp.RazorAssemblyInfo.cs
+E:\ReportingTool_NewRepo\reportingtool\obj\Release\netcoreapp3.1\staticwebassets\ReportingApp.StaticWebAssets.Manifest.cache
+E:\ReportingTool_NewRepo\reportingtool\obj\Release\netcoreapp3.1\staticwebassets\ReportingApp.StaticWebAssets.xml
+E:\ReportingTool_NewRepo\reportingtool\obj\Release\netcoreapp3.1\scopedcss\bundle\ReportingApp.styles.css
+E:\ReportingTool_NewRepo\reportingtool\obj\Release\netcoreapp3.1\ReportingApp.TagHelpers.input.cache
+E:\ReportingTool_NewRepo\reportingtool\obj\Release\netcoreapp3.1\ReportingApp.TagHelpers.output.cache
+E:\ReportingTool_NewRepo\reportingtool\obj\Release\netcoreapp3.1\ReportingApp.RazorCoreGenerate.cache
+E:\ReportingTool_NewRepo\reportingtool\obj\Release\netcoreapp3.1\Razor\Views\Account\Index.cshtml.g.cs
+E:\ReportingTool_NewRepo\reportingtool\obj\Release\netcoreapp3.1\Razor\Views\Home\DumyIndex.cshtml.g.cs
+E:\ReportingTool_NewRepo\reportingtool\obj\Release\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+E:\ReportingTool_NewRepo\reportingtool\obj\Release\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+E:\ReportingTool_NewRepo\reportingtool\obj\Release\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+E:\ReportingTool_NewRepo\reportingtool\obj\Release\netcoreapp3.1\Razor\Views\Shared\_Layout - Copy.cshtml.g.cs
+E:\ReportingTool_NewRepo\reportingtool\obj\Release\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+E:\ReportingTool_NewRepo\reportingtool\obj\Release\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+E:\ReportingTool_NewRepo\reportingtool\obj\Release\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+E:\ReportingTool_NewRepo\reportingtool\obj\Release\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+E:\ReportingTool_NewRepo\reportingtool\obj\Release\netcoreapp3.1\ReportingApp.RazorTargetAssemblyInfo.cache
+E:\ReportingTool_NewRepo\reportingtool\obj\Release\netcoreapp3.1\ReportingApp.RazorTargetAssemblyInfo.cs
+E:\ReportingTool_NewRepo\reportingtool\obj\Release\netcoreapp3.1\ReportingApp.Views.pdb
+E:\ReportingTool_NewRepo\reportingtool\obj\Release\netcoreapp3.1\ReportingApp.csproj.CopyComplete
+E:\ReportingTool_NewRepo\reportingtool\obj\Release\netcoreapp3.1\ReportingApp.dll
+E:\ReportingTool_NewRepo\reportingtool\obj\Release\netcoreapp3.1\ReportingApp.pdb
+E:\ReportingTool_NewRepo\reportingtool\obj\Release\netcoreapp3.1\ReportingApp.genruntimeconfig.cache
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\appsettings.Development.json
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\appsettings.json
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\ReportingApp.StaticWebAssets.xml
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\ReportingApp.exe
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\ReportingApp.deps.json
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\ReportingApp.runtimeconfig.json
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\ReportingApp.runtimeconfig.dev.json
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\ReportingApp.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\ReportingApp.pdb
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Antiforgery.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Authentication.Abstractions.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Authentication.Cookies.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Authentication.Core.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Authentication.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Authentication.OAuth.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Authorization.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Authorization.Policy.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Components.Authorization.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Components.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Components.Forms.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Components.Server.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Components.Web.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Connections.Abstractions.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.CookiePolicy.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Cors.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.DataProtection.Abstractions.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.DataProtection.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.DataProtection.Extensions.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Diagnostics.Abstractions.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Diagnostics.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Diagnostics.HealthChecks.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.HostFiltering.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Hosting.Abstractions.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Hosting.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Html.Abstractions.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Http.Abstractions.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Http.Connections.Common.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Http.Connections.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Http.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Http.Extensions.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Http.Features.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.HttpOverrides.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.HttpsPolicy.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Identity.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Localization.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Localization.Routing.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Metadata.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.Abstractions.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.ApiExplorer.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.Core.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.Cors.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.DataAnnotations.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.Formatters.Json.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.Formatters.Xml.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.Localization.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.Razor.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.RazorPages.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.TagHelpers.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.ViewFeatures.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Razor.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Razor.Runtime.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.ResponseCaching.Abstractions.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.ResponseCaching.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.ResponseCompression.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Rewrite.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Routing.Abstractions.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Routing.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Server.HttpSys.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Server.IIS.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Server.IISIntegration.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Server.Kestrel.Core.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Server.Kestrel.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.Session.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.SignalR.Common.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.SignalR.Core.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.SignalR.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.SignalR.Protocols.Json.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.StaticFiles.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.WebSockets.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.AspNetCore.WebUtilities.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.CSharp.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.CommandLine.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.EnvironmentVariables.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.FileExtensions.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.Ini.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.Json.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.KeyPerFile.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.UserSecrets.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.Xml.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.Diagnostics.HealthChecks.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.FileProviders.Composite.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.FileProviders.Physical.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.FileSystemGlobbing.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.Hosting.Abstractions.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.Hosting.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.Http.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.Localization.Abstractions.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.Localization.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.Logging.Configuration.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.Logging.Console.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.Logging.Debug.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.Logging.EventLog.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.Logging.EventSource.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.Logging.TraceSource.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.ObjectPool.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.Options.DataAnnotations.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Extensions.WebEncoders.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.JSInterop.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Net.Http.Headers.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.VisualBasic.Core.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.VisualBasic.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Win32.Primitives.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\Microsoft.Win32.Registry.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\mscorlib.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\netstandard.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.AppContext.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Buffers.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Collections.Concurrent.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Collections.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Collections.NonGeneric.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Collections.Specialized.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.ComponentModel.Annotations.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.ComponentModel.DataAnnotations.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.ComponentModel.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.ComponentModel.EventBasedAsync.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.ComponentModel.Primitives.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.ComponentModel.TypeConverter.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Configuration.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Console.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Core.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Data.Common.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Data.DataSetExtensions.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Data.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Diagnostics.Contracts.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Diagnostics.Debug.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Diagnostics.EventLog.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Diagnostics.FileVersionInfo.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Diagnostics.Process.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Diagnostics.StackTrace.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Diagnostics.TextWriterTraceListener.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Diagnostics.Tools.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Diagnostics.TraceSource.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Diagnostics.Tracing.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Drawing.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Drawing.Primitives.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Dynamic.Runtime.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Globalization.Calendars.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Globalization.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Globalization.Extensions.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.IO.Compression.Brotli.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.IO.Compression.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.IO.Compression.FileSystem.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.IO.Compression.ZipFile.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.IO.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.IO.FileSystem.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.IO.FileSystem.DriveInfo.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.IO.FileSystem.Primitives.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.IO.FileSystem.Watcher.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.IO.IsolatedStorage.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.IO.MemoryMappedFiles.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.IO.Pipelines.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.IO.Pipes.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.IO.UnmanagedMemoryStream.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Linq.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Linq.Expressions.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Linq.Parallel.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Linq.Queryable.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Memory.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Net.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Net.Http.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Net.HttpListener.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Net.Mail.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Net.NameResolution.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Net.NetworkInformation.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Net.Ping.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Net.Primitives.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Net.Requests.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Net.Security.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Net.ServicePoint.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Net.Sockets.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Net.WebClient.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Net.WebHeaderCollection.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Net.WebProxy.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Net.WebSockets.Client.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Net.WebSockets.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Numerics.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Numerics.Vectors.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.ObjectModel.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Reflection.DispatchProxy.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Reflection.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Reflection.Emit.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Reflection.Emit.ILGeneration.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Reflection.Emit.Lightweight.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Reflection.Extensions.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Reflection.Metadata.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Reflection.Primitives.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Reflection.TypeExtensions.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Resources.Reader.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Resources.ResourceManager.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Resources.Writer.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Runtime.CompilerServices.Unsafe.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Runtime.CompilerServices.VisualC.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Runtime.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Runtime.Extensions.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Runtime.Handles.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Runtime.InteropServices.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Runtime.InteropServices.WindowsRuntime.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Runtime.Intrinsics.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Runtime.Loader.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Runtime.Numerics.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Runtime.Serialization.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Runtime.Serialization.Formatters.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Runtime.Serialization.Json.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Runtime.Serialization.Primitives.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Runtime.Serialization.Xml.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Security.AccessControl.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Security.Claims.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Security.Cryptography.Algorithms.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Security.Cryptography.Cng.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Security.Cryptography.Csp.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Security.Cryptography.Encoding.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Security.Cryptography.Primitives.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Security.Cryptography.X509Certificates.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Security.Cryptography.Xml.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Security.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Security.Permissions.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Security.Principal.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Security.Principal.Windows.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Security.SecureString.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.ServiceModel.Web.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.ServiceProcess.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Text.Encoding.CodePages.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Text.Encoding.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Text.Encoding.Extensions.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Text.Encodings.Web.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Text.RegularExpressions.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Threading.Channels.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Threading.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Threading.Overlapped.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Threading.Tasks.Dataflow.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Threading.Tasks.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Threading.Tasks.Extensions.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Threading.Tasks.Parallel.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Threading.Thread.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Threading.ThreadPool.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Threading.Timer.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Transactions.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Transactions.Local.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.ValueTuple.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Web.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Web.HttpUtility.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Windows.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Windows.Extensions.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Xml.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Xml.Linq.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Xml.ReaderWriter.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Xml.Serialization.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Xml.XDocument.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Xml.XmlDocument.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Xml.XmlSerializer.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Xml.XPath.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\System.Xml.XPath.XDocument.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\refs\WindowsBase.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\ReportingApp.Views.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\ReportingApp.Views.pdb
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\Dapper.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\EPPlus.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\ExcelDataReader.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\ExcelDataReader.DataSet.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\ExcelNumberFormat.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.Views.V3.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.Views.V4.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.Workspaces.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\Microsoft.Extensions.FileProviders.Abstractions.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\Microsoft.Extensions.FileProviders.Embedded.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\Microsoft.Extensions.Options.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\Microsoft.Identity.Client.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\dotnet-aspnet-codegenerator-design.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\MySqlConnector.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\Newtonsoft.Json.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\NuGet.Frameworks.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\Pomelo.EntityFrameworkCore.MySql.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\Pomelo.JsonObject.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\RestSharp.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\System.Collections.Immutable.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\System.Composition.AttributedModel.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\System.Composition.Convention.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\System.Composition.Hosting.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\System.Composition.Runtime.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\System.Composition.TypedParts.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\System.Runtime.Caching.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\System.Text.Json.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\System.Xml.XPath.XmlDocument.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+E:\reporting Tool\reportingtool\bin\Release\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+E:\reporting Tool\reportingtool\obj\Release\netcoreapp3.1\ReportingApp.csproj.AssemblyReference.cache
+E:\reporting Tool\reportingtool\obj\Release\netcoreapp3.1\ReportingApp.GeneratedMSBuildEditorConfig.editorconfig
+E:\reporting Tool\reportingtool\obj\Release\netcoreapp3.1\ReportingApp.AssemblyInfoInputs.cache
+E:\reporting Tool\reportingtool\obj\Release\netcoreapp3.1\ReportingApp.AssemblyInfo.cs
+E:\reporting Tool\reportingtool\obj\Release\netcoreapp3.1\ReportingApp.csproj.CoreCompileInputs.cache
+E:\reporting Tool\reportingtool\obj\Release\netcoreapp3.1\ReportingApp.MvcApplicationPartsAssemblyInfo.cs
+E:\reporting Tool\reportingtool\obj\Release\netcoreapp3.1\ReportingApp.MvcApplicationPartsAssemblyInfo.cache
+E:\reporting Tool\reportingtool\obj\Release\netcoreapp3.1\ReportingApp.RazorAssemblyInfo.cache
+E:\reporting Tool\reportingtool\obj\Release\netcoreapp3.1\ReportingApp.RazorAssemblyInfo.cs
+E:\reporting Tool\reportingtool\obj\Release\netcoreapp3.1\staticwebassets\ReportingApp.StaticWebAssets.Manifest.cache
+E:\reporting Tool\reportingtool\obj\Release\netcoreapp3.1\staticwebassets\ReportingApp.StaticWebAssets.xml
+E:\reporting Tool\reportingtool\obj\Release\netcoreapp3.1\scopedcss\bundle\ReportingApp.styles.css
+E:\reporting Tool\reportingtool\obj\Release\netcoreapp3.1\ReportingApp.TagHelpers.input.cache
+E:\reporting Tool\reportingtool\obj\Release\netcoreapp3.1\ReportingApp.TagHelpers.output.cache
+E:\reporting Tool\reportingtool\obj\Release\netcoreapp3.1\ReportingApp.RazorCoreGenerate.cache
+E:\reporting Tool\reportingtool\obj\Release\netcoreapp3.1\Razor\Views\Account\Index.cshtml.g.cs
+E:\reporting Tool\reportingtool\obj\Release\netcoreapp3.1\Razor\Views\Home\DumyIndex.cshtml.g.cs
+E:\reporting Tool\reportingtool\obj\Release\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+E:\reporting Tool\reportingtool\obj\Release\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+E:\reporting Tool\reportingtool\obj\Release\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+E:\reporting Tool\reportingtool\obj\Release\netcoreapp3.1\Razor\Views\Shared\_Layout - Copy.cshtml.g.cs
+E:\reporting Tool\reportingtool\obj\Release\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+E:\reporting Tool\reportingtool\obj\Release\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+E:\reporting Tool\reportingtool\obj\Release\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+E:\reporting Tool\reportingtool\obj\Release\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+E:\reporting Tool\reportingtool\obj\Release\netcoreapp3.1\ReportingApp.RazorTargetAssemblyInfo.cache
+E:\reporting Tool\reportingtool\obj\Release\netcoreapp3.1\ReportingApp.RazorTargetAssemblyInfo.cs
+E:\reporting Tool\reportingtool\obj\Release\netcoreapp3.1\ReportingApp.Views.pdb
+E:\reporting Tool\reportingtool\obj\Release\netcoreapp3.1\ReportingApp.csproj.CopyComplete
+E:\reporting Tool\reportingtool\obj\Release\netcoreapp3.1\ReportingApp.dll
+E:\reporting Tool\reportingtool\obj\Release\netcoreapp3.1\ReportingApp.pdb
+E:\reporting Tool\reportingtool\obj\Release\netcoreapp3.1\ReportingApp.genruntimeconfig.cache
+D:\Working Apps\Web\reportingtool\obj\Release\netcoreapp3.1\Razor\Views\Home\Index - Copy.cshtml.g.cs
+D:\Working Apps\Web\reportingtool\obj\Release\netcoreapp3.1\Razor\Views\Home\pdfhtml.cshtml.g.cs

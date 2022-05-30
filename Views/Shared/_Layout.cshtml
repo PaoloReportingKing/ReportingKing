@@ -1,0 +1,530 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"]</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="Reporting Tool" name="description" />
+    <meta content="Codedesk" name="author" />
+
+    <!-- App favicon -->
+    <link href="~/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/assets/plugins/filter/magnific-popup.css" rel="stylesheet" type="text/css" />
+    <link href="~/assets/plugins/apexcharts/apexcharts.css" rel="stylesheet" />
+
+
+    <link href="~/assets/plugins/summernote/summernote-bs4.css" rel="stylesheet" />
+
+    <link href="~/assets/plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet" />
+    <link href="~/assets/plugins/select2/select2.min.css" rel="stylesheet" />
+    <link href="~/assets/plugins/dropify/css/dropify.min.css" rel="stylesheet" />
+    <!-- App css -->
+
+    <link href="~/assets/css/icons.css" rel="stylesheet" type="text/css" />
+    <link href="~/assets/css/metisMenu.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/assets/css/style.css" rel="stylesheet" type="text/css" />
+
+    <link href="~/assets/css/custom.css" rel="stylesheet" />
+    <link href="~/assets/css/corner-popup.min.css" rel="stylesheet" />
+    <link href="~/assets/toastr/build/toastr.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+    @*<script src="https://apis.google.com/js/client:platform.js" async defer></script>*@
+    <script src="~/js/ApiGoogle.js"></script>
+    <meta name="google-signin-client_id" content="495447302183-ul6n1bgt9gdcjelhuniqlt1qce24ohp7.apps.googleusercontent.com">
+    <meta name="Reporting tool" content="495447302183-ul6n1bgt9gdcjelhuniqlt1qce24ohp7.apps.googleusercontent.com">
+    <link href="~/assets/css/AStyle.css.css" rel="stylesheet" />
+
+    @*<script async src="https://www.googletagmanager.com/gtag/js?id=G-72XV65N8T4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-72XV65N8T4');
+    </script>*@
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L73TB6Y7EN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-L73TB6Y7EN');
+    </script>
+
+
+    <style>
+
+
+        .field.ui-draggable {
+            width: 100% !important;
+        }
+
+        apexcharts-tooltip,
+        .apexcharts-tooltip.active,
+        .apexcharts-xaxistooltip,
+        .apexcharts-xaxistooltip.active,
+        .apexcharts-marker {
+            transition: none !important;
+        }
+
+        .apexcharts-tooltip {
+            top: -35px !important;
+            position: absolute;
+            width: 175px !important;
+            display: block !important;
+            margin: auto !important;
+            z-index: 1;
+        }
+
+
+        .apexcharts-marker {
+            transition: none !important;
+        }
+
+
+        .misscolbackground {
+            background-color: red;
+            color: white !important;
+            padding-left: 3px;
+            padding-right: 3px;
+            border-radius: 2px;
+            padding-bottom: 2px;
+        }
+
+        .apexcharts-canvas ::-webkit-scrollbar, .legendsClass::-webkit-scrollbar {
+            width: 4px !important;
+            height: 4px;
+            background-color: #F5F8FF;
+        }
+    </style>
+
+    <link href="~/assets/tables/css/datatable/dataTables.bootstrap4.min.css" rel="stylesheet" />
+
+    <script src="~/assets/plugins/Highcharts/Hightcharts.js"></script>
+    <script src="~/assets/plugins/Highcharts/series-label.js"></script>
+    <script src="~/assets/plugins/Highcharts/exporting.js"></script>
+    @*<script src="~/assets/plugins/Highcharts/exportinghtml.js"></script>*@
+    @*<link href="~/assets/css/Highchart.css" rel="stylesheet" />*@
+    @*<link href="https://code.highcharts.com/css/highcharts.css" rel="stylesheet" type="text/css" />*@
+    @*<script src="https://code.highcharts.com/highcharts.js"></script>
+            <script src="https://code.highcharts.com/modules/series-label.js"></script>
+            <script src="https://code.highcharts.com/modules/exporting.js"></script>
+        <script src="https://code.highcharts.com/modules/export-data.js"></script>
+            <script src="https://code.highcharts.com/modules/accessibility.js"></script>*@
+
+
+    @RenderSection("CSS", required: false)
+
+</head>
+
+<body>
+
+    @*<div class="preloader" style="display: none;">
+            <div class="lds-ripple">
+                <div class="lds-pos"></div>
+                <div class="lds-pos"></div>
+            </div>
+            <h4 id="loading_label" class="text-center text-white d-none" style="position: absolute; top: calc(50% - -50px); left: calc(50% - 40px);">LOADING...</h4>
+        </div>*@
+    <div class="preloader golden" style="width:100%;">
+        <p id="loadertitle" class="loaderprogress">Loading....</p>
+        <div class="progress loaderprogress">
+            <div class="progress-bar" id="progressbardiv" style="background: url('/assets/images/ProgressBar.png'); width: 0% " role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                @*<span class="sr-only">70% Complete</span>*@
+            </div>
+        </div>
+        <p id="Companytitle" class="loaderprogress"> <span class="float-left">Reporting King</span> <span class="float-right">%</span><span id="LoaderPercentage" class="float-right loaderprogress">0</span></p>
+        <div id="DownLoadPngMessage" class="d-none">
+            <p>
+                PNG download time depends on the numbers of charts created <br />
+                Estimate PNG Print Time : 12' per charts
+            </p>
+            <br />
+
+                
+                    <button type="button" id="btn_cancelPNG" onclick="CancelDownLoadPng()" class="btn btn-default">Cancel</button>
+                
+        </div>
+        
+    </div>
+
+    <div class="topbar">
+        <nav class="navbar-custom">
+                
+            <div class="row">
+                <div class="col-md-1">
+
+
+                </div>
+                <div class="col-md-4">
+                    <div class="visitWebsite">
+                        <a href="https://www.reportingking.com/" class="visitwebsiteLink" target="_blank">Visit Website</a>
+                    </div>
+
+                </div>
+                <div class="col-md-7">
+                    <img src="~/assets/images/reporting-king-logo.png" class="reporting-logo" />
+                    <div class="row align-items-center">
+                        <div class="col-md-12">
+                            <div class="actions">
+                                <div class="float-right" style="display:none">
+                                    <div id="customBtnshow" onclick="clickhiddencustombtn()" class="d-none customGPlusSignIn customBtn">
+                                        <span class="buttonText">Sign in</span>
+                                    </div>
+                                    <div id="customBtn" class="customGPlusSignIn customBtn d-none">
+                                        <span class="buttonText">Sign in</span>
+                                    </div>
+                                    <div id="customBtn2" class="d-none customGPlusSignIn customBtn" style="float:right">
+                                        <span class="buttonText">Sign up</span>
+                                    </div>
+                                </div>
+                                <div class="dropdown  float-right">
+                                    <button type="button" id="gSignOutWrapper" class="btn btn-success btn-download dropdown-toggle text-white btn btn-success btn-circle d-none" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">S</button>
+
+                                    <div class="dropdown-menu" aria-labelledby="btn_DownLoad" style="cursor: pointer;">
+                                        <button type="button" onclick="Logout()" class="dropdown-item">Logout</button>
+                                    </div>
+                                </div>
+                                <button type="button" onclick="clickhiddencustomSignUpbtn()" class="btn btn-success btn-download dropdown-toggle text-white signinsignup btn-square d-none SignUp">Sign Up</button>
+                                <button type="button" onclick="clickhiddencustombtn()" class="btn btn-primary btn-download dropdown-toggle text-white signinsignup btn-square d-none SignIn">Sign In</button>
+                                <div class="dropdown">
+                                    <button type="button" id="btn_DownLoad" disabled class="btn btn-danger btn-download dropdown-toggle text-white btn btn-success btn-square" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Download<i class="mdi mdi-chevron-down"></i></button>
+                                    <div class="dropdown-menu" aria-labelledby="btn_DownLoad" style="cursor: pointer;">
+                                        <button type="button" id="btn_DownLoadExcel" onclick="downloadChartsAsSpreadSheet()" class="dropdown-item">Download Excel</button>
+                                        <button type="button" id="btn_DownLoadPdf" onclick="downloadCharts()" class="dropdown-item">Download PDF</button>
+                                        @*<button type="button" id="btn_DownLoadWord" onclick="downloadChartsWordFile()" class="dropdown-item">Download Word</button>*@
+                                        <button type="button" id="btn_DownLoadPng" onclick="downloadChartPngs()" class="dropdown-item">Download PNG</button>
+                                        <button type="button" id="btn_DownLoadWord" onclick="downloadWholeChartsPng()" class="dropdown-item">Report PNG</button>
+                                        <button type="button" id="btn_DownLoadWord" onclick="Downloadhtmlfile()" class="dropdown-item">Download HTML</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <button id="btn_ReportSave" onclick="saveChart()" disabled class="btn btn-orange btn-download">Save</button>
+                            <a href="#" id="SignInUserName" class="btn btn-success btn-download d-none " style="background:transparent;display:none"></a>
+                            <div class="" style=" width: 40%; float: right; margin-top: -30px;">
+                                @*<select id="savedCharts" onchange="getChart()" class="form-control select2 d-none">
+                            <option value="0">New Dashboard</option>
+                        </select>*@
+                                <input data-id="0" id="nameLabel" value="Report Title - Untitled" class="form-control d-none" maxlength="50">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="page-wrapper">
+        @RenderBody()
+    </div>
+
+    <div id="SignupPackageModal" class="modal fade bd-example-modal-xl" data-keyboard="false" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" style="color:black">Complete SignUp</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div id="SignupPackageDiv" class="container" style="padding-top:20px">
+                    <div class="row">
+                        <div class="col-md-4 offset-md-2">
+                            <div class="card">
+                                <div class="card-header">
+                                    FREE
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">1 chart at a time</li>
+                                    <li class="list-group-item">1 filter at a time</li>
+                                    <li class="list-group-item">Customize charts</li>
+                                    <li class="list-group-item">Add comment</li>
+                                    <li class="list-group-item">Zoom</li>
+                                    <li class="list-group-item">Show totals</li>
+                                    <li class="list-group-item">Download PDF</li>
+                                    <li class="list-group-item">Download xls</li>
+                                    <li class="list-group-item">Download png</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-header">
+                                    PAID <span class="price ml-3">£39.99</span>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Unlimited charts</li>
+                                    <li class="list-group-item">Unlimited filters</li>
+                                    <li class="list-group-item">Customize charts</li>
+                                    <li class="list-group-item">Add comment</li>
+                                    <li class="list-group-item">Zoom</li>
+                                    <li class="list-group-item">Show totals</li>
+                                    <li class="list-group-item">Download PDF</li>
+                                    <li class="list-group-item">Download xls</li>
+                                    <li class="list-group-item">Download png</li>
+                                    <li class="list-group-item">Create formulae</li>
+                                    <li class="list-group-item">Change color pallet</li>
+                                    <li class="list-group-item">Quick create data field</li>
+                                    <li class="list-group-item">Merge fields</li>
+                                    <li class="list-group-item">Save report & reulpload</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4 offset-md-4">
+                            @*<div id="paypal-button-container-P-9XT7194761985515GMFTO6XY"></div>*@
+                            <div id="paypal-button-container-P-63B22528JT415570DMIHHL5Q"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="~/assets/js/jquery.min.js">
+    </script>
+    <script src="~/assets/js/bootstrap.bundle.min.js">
+    </script>
+    <script src="~/assets/js/metisMenu.min.js">
+    </script>
+    <script src="~/assets/js/waves.min.js">
+    </script>
+
+    <script src="~/assets/plugins/apexcharts/locales/apexchartmaximize.js"></script>
+    <script src="~/assets/plugins/summernote/summernote-bs4.min.js">
+    </script>
+    <script src="~/assets/plugins/select2/select2.min.js">
+    </script>
+    <script src="~/assets/pages/jquery.form-upload.init.js"></script>
+    <script src="~/assets/plugins/dropify/js/dropify.min.js">
+    </script>
+    <script src="~/assets/plugins/jquery-ui/jquery-ui.min.js">
+    </script>
+    <script src="~/assets/js/app.js">
+    </script>
+    <script src="~/assets/js/ProjectJS/RightsManagements.js"></script>
+    <script src="~/assets/js/custom.js">
+    </script>
+    @*<script src="~/assets/plugins/Lodash/Lodash.min.js"></script>*@
+    <script src="~/assets/js/ProjectJS/ChartsManagement.js"></script>
+    <script src="~/assets/js/ProjectJS/MultiCharts.js"></script>
+    <script src="~/assets/js/ProjectJS/Download.js"></script>
+    <script src="~/assets/js/ProjectJS/DownloadExcel.js"></script>
+    <script src="~/assets/js/ProjectJS/commonchartscripts.js"></script>
+    <script src="~/assets/js/corner-popup.min.js"></script>
+    <script src="~/assets/js/cornerpopupshow.js"></script>
+    <script src="~/assets/toastr/toastr.js"></script>
+    <script src="~/assets/toastr/build/toastr.min.js"></script>
+
+
+    <script src="~/assets/tables/js/jquery.dataTables.min.js"></script>
+    <script src="~/assets/tables/js/datatable/dataTables.bootstrap4.min.js"></script>
+    <script src="~/assets/tables/moment.min.js"></script>
+    <script src="~/assets/js/html2canvas.min.js"></script>
+    <script src="~/assets/js/jszip.min.js"></script>
+    <script src="~/assets/js/FileSaver.min.js"></script>
+
+    <script type="text/javascript">
+        var UserObjDetail = {};
+        function loading_start(width, LoaderPercentage, title, DownloadPng, addSeaGrean) {
+            if (addSeaGrean == true) {
+                $(".preloader").addClass('sea-green');
+                $(".preloader").removeClass('golden');
+            }
+            else {
+                $(".preloader").removeClass('sea-green');
+                $(".preloader").addClass('golden');
+            }
+            if (DownloadPng == true) {
+                $("#DownLoadPngMessage").removeClass('d-none');
+            }
+            else {
+                $("#DownLoadPngMessage").addClass('d-none');
+            }
+           
+
+            if (title != undefined) {
+                $('#loadertitle').empty();
+                $('#loadertitle').text(title);
+            }
+            
+            $(".preloader").css('display', 'block');
+            if (width != undefined) {
+                $("#progressbardiv").css('width', width + '%');
+            }
+            
+            if (LoaderPercentage != undefined) {
+               $("#LoaderPercentage").empty();
+                var previousPercentage = $("#LoaderPercentage").text();
+             //   $("#LoaderPercentage").text(LoaderPercentage);
+                $("#LoaderPercentage").text(LoaderPercentage);
+                if (addSeaGrean != true && DownloadPng !=true) {
+                    ShowCounterAnimationofProgressbar(previousPercentage, LoaderPercentage);
+                }
+                else{
+                    /*  $("#LoaderPercentage").empty();*/
+                    $("#LoaderPercentage").text(LoaderPercentage);
+                }
+
+               
+              
+            }
+        }
+        function loading_end(Error, TimerChangeforPdf) {
+            if (Error == false) {
+                $("#progressbardiv").css('width', '0');
+                $("#LoaderPercentage").empty();
+                $("#LoaderPercentage").text('0');
+            }
+            else {
+                $("#progressbardiv").css('width', '100%');
+                $("#LoaderPercentage").empty();
+                var previousPercentage = $("#LoaderPercentage").text();
+                $("#LoaderPercentage").text('100');
+                if (TimerChangeforPdf != true) {
+                    ShowCounterAnimationofProgressbar(previousPercentage, 100, TimerChangeforPdf);
+                }
+               
+            }
+            var timer = 600;
+            if (TimerChangeforPdf == true) {
+                timer = 2000;
+            }
+           
+
+            setTimeout(function () {
+
+                $(".preloader").css('display', 'none');
+                $("#DownLoadPngMessage").addClass('d-none');
+                //$("#progressbardiv").css('width', '0%');
+                //$("#LoaderPercentage").empty();
+                //$("#LoaderPercentage").text('0');
+                setTimeout(function () {
+                    $("#progressbardiv").css('width', '0');
+                    $("#LoaderPercentage").empty();
+                    $("#LoaderPercentage").text('0');
+
+                }, 20);
+
+            }, timer);
+          
+           
+        }
+        
+        $(document).ready(function () {
+
+            $(".zero-configuration").DataTable();
+            $(".nav-link").click(function () {
+
+
+
+                if ($("body").hasClass("enlarge-menu")) {
+                    $(".button-menu-mobile").trigger("click");
+
+                }
+
+
+            })
+            $(".button-menu-mobile").click(function () {
+                if ($("body").hasClass("enlarge-menu")) {
+                    currentscroll = $(window).scrollTop();
+                    $('#new_row_btn').parent().parent().removeClass("col-md-9");
+
+                }
+
+                if ($("body").hasClass("enlarge-menu")) {
+                    $(".dynamic-grid").removeClass("col-md-9");
+                    $(".dynamic-grid").addClass("col-md-12");
+                    $('#new_row_btn').parent().parent().removeClass("col-md-9");
+                    $('#new_row_btn').parent().parent().addClass("col-md-12");
+
+
+                }
+                else {
+                    $(".dynamic-grid").each(function () {
+                        if ($("#FieldsList li").length > 0 && !$(this).next().hasClass("d-none")) {
+                            $(this).removeClass("col-md-12");
+                            $(this).addClass("col-md-9");
+                            $('#new_row_btn').parent().parent().addClass("col-md-9");
+                            $('#new_row_btn').parent().parent().removeClass("col-md-12");
+
+                        }
+                    })
+                    ScrollNow();
+                }
+
+                SetDynamicGrid();
+                //RefreshAllCharts(true);
+            });
+            $('.first-link').trigger("click");
+            initializesummernote();
+
+            GetInternalDashData();
+        });
+        function initializesummernote() {
+            $('.summernote').summernote({
+                toolbar: [
+                    // [groupName, [list of button]]
+                    ['style', ['bold', 'italic', 'underline', 'clear']],
+                    ['fontsize', ['fontsize']],
+                    ['font', ['strikethrough', 'superscript', 'subscript']],
+                    ['color', ['color']],
+                    ['para', ['ul', 'ol', 'paragraph']],
+                    ['height', ['height']]
+                ],
+                tooltip: false
+            });
+        }
+
+        function GetInternalDashData() {
+
+            $.ajax({
+                type: "GET",
+                url: "/Home/GetIDData",
+                dataType: 'json',
+                success: function (Response) {
+                    if (Response.status) {
+                        $(".zero-configuration").DataTable().destroy();
+                        $(".zero-configuration tbody").empty()
+                        $.each(Response.data, function (i, item) {
+                            var startDate = moment(item.startDate).format('DD/MM/YYYY');
+                            var LastPaymentDate = '-';
+                            if (item.lastPaymentDate != null) {
+                                LastPaymentDate = moment(item.lastPaymentDate).format('DD/MM/YYYY');
+                            }
+                            var NextPaymentDate = '-';
+                            if (item.nextPaymentDate) {
+                                NextPaymentDate = moment(item.nextPaymentDate).format('DD/MM/YYYY');
+                            }
+                            var rowHtml = `<tr>
+                                                                                                    <td>${item.customerId}</td>
+                                                                                                    <td>${item.name}</td>
+                                                                                                    <td>${item.email}</td>
+                                                                                                    <td>${startDate}</td>
+                                                                                                    <td>${item.days}</td>
+                                                                                                    <td>${item.month}</td>
+                                                                                                    <td>${LastPaymentDate}</td>
+                                                                                                    <td>${NextPaymentDate}</td>
+                                                                                                    <td>${item.paidSoFor == null ? '-' : item.paidSoFor}</td>
+                                                                                                    <td>${item.userStatus ? 'Active' : 'Blocked'}</td>
+                                                                                                </tr>`;
+                            $(".zero-configuration tbody").append(rowHtml);
+                        });
+                        $(".zero-configuration").DataTable();
+                    } else {
+
+                    }
+                },
+                failure: function (response) {
+                },
+                error: function (response) {
+                }
+            });
+        }
+    </script>
+
+    @RenderSection("SCRIPTS", required: false)
+</body>
+</html>

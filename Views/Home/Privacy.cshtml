@@ -1,0 +1,51 @@
+﻿@{
+    ViewData["Title"] = "Privacy Policy";
+}
+<style>
+</style>
+
+<div class="test" style="width:100%;margin-top:10%;">
+    <h1>@ViewData["Title"]</h1>
+    <div class="progress" style="width:300px;height:30px;">
+        <div class="progress-bar" style="background: url('/assets/images/ProgressBar.png'); width: 30% " role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+            <span class="sr-only">70% Complete</span>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-3">
+    <div class="tool tool_charts">
+        <label id="lbl_${randomChartId}" class="red" style="font-size:12px;padding-left: 10px; text-transform:none;">Impressions</label>
+        <div class="row">
+            <div class="col-md-2">
+                <div class="icon mixed " onclick=changeseriestype("${randomChartId}","Style1")>
+                    <img class="seriestypeborder" id="Style1_${randomChartId}" src="../../assets/new/Font Styles 1.png" />
+                </div>
+            </div>
+
+            <div class="col-md-2">
+                <div class="icon bar" onclick=changeseriestype("${randomChartId}","Style2")>
+                    <img id="Style2_${randomChartId}" src="../../assets/new/Font Styles 2.png" />
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="icon" onclick=changeseriestype("${randomChartId}","Style3")>
+                    <img id="Style3_${randomChartId}" src="../../assets/new/Font Styles 3.png" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-md-4">
+    <div class="color">
+        <button class="prev" onclick=movetoprevious('${randomChartId}')><i class="fa fa-caret-left" aria-hidden="true"></i></button>
+        <div class="box" id='box${randomChartId}'></div>
+        <button class="next" onclick=movetoforword('${randomChartId}')><i class="fa fa-caret-right" aria-hidden="true"></i></button>
+    </div>
+</div>
+<div class="col-md-5">
+    <div class="delete">
+        <a href="#" id="remove_${randomChartId}" onclick="RemoveThisSeries('remove_${randomChartId}')">Delete</a>
+        <button type="button" class="close-panel-btn " onclick="closestylebar('snav_${randomChartId}')">&times;</button>
+    </div>
+</div>

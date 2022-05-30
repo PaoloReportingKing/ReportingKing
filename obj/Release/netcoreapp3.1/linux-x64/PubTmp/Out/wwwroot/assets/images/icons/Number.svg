@@ -1,0 +1,14 @@
+<svg id="Number" xmlns="http://www.w3.org/2000/svg" width="301" height="301" viewBox="0 0 301 301">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-width: 30px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M149.5,16.009A133.446,133.446,0,1,1,78.011,36.745"/>
+  <circle id="Ellipse_2_copy" data-name="Ellipse 2 copy" cx="149.5" cy="149.5" r="75.5"/>
+</svg>

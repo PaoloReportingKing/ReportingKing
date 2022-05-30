@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Users\Umar Ahsan\Desktop\ReportingTool</_PublishTargetUrl>
+    <History>True|2022-01-03T14:41:53.4935271Z;True|2021-12-27T19:19:20.5516204+05:00;True|2021-12-21T17:21:44.6956532+05:00;True|2021-12-17T13:14:24.0828586+05:00;True|2021-12-15T20:05:09.7575139+05:00;True|2021-12-01T18:32:18.4544470+05:00;True|2021-11-30T12:58:35.3430560+05:00;True|2021-11-25T19:17:23.0294154+05:00;True|2021-11-19T21:13:58.2123615+05:00;True|2021-11-19T17:56:01.5441049+05:00;True|2021-11-17T17:17:58.6579122+05:00;True|2021-11-15T14:40:29.7224813+05:00;True|2021-11-12T18:54:28.6431579+05:00;True|2021-11-10T16:34:06.1444487+05:00;</History>
+  </PropertyGroup>
+</Project>

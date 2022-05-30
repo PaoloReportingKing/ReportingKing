@@ -1,0 +1,19 @@
+<svg id="Pie" xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #131313;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <circle class="cls-1" cx="153.766" cy="150.266" r="142.422"/>
+  <path id="Rectangle_4_copy" data-name="Rectangle 4 copy" class="cls-2" d="M149.693,244.073h7.54v48.6h-7.54V244.073Z"/>
+  <path class="cls-2" d="M149.693,7.332h7.54V292.668h-7.54V7.332Z"/>
+  <path id="Rectangle_4_copy_2" data-name="Rectangle 4 copy 2" class="cls-2" d="M153.178,149.732H310.09v7.54H153.178v-7.54Z"/>
+  <path id="Rectangle_4_copy_3" data-name="Rectangle 4 copy 3" class="cls-2" d="M45.333,254.843L257.445,39.257l5.322,5.322L50.654,260.164Z"/>
+</svg>

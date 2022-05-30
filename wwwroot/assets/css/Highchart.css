@@ -1,0 +1,49 @@
+﻿.highcharts-background {
+    fill: #ffffff;
+}
+/*.highcharts-root {
+    display: block;
+}
+.highcharts-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    line-height: normal;
+    z-index: 0;*/
+    /* #1072 */
+    /*-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    user-select: none;
+    touch-action: manipulation;
+    outline: none;
+}*/
+.highcharts-plot-border, .highcharts-plot-background {
+    fill: none;
+}
+/*.highcharts-axis-line {
+    fill: none;
+    stroke: #ccd6eb;
+}*/
+.highcharts-grid-line {
+    fill: none;
+    stroke: #e6e6e6;
+}
+
+.highcharts-xaxis-grid .highcharts-grid-line {
+    stroke-width: 0px;
+}
+
+.highcharts-tick {
+    stroke: #ccd6eb;
+}
+
+.highcharts-yaxis .highcharts-tick {
+    stroke-width: 0;
+}
+
+.highcharts-minor-grid-line {
+    stroke: #f2f2f2;
+}

@@ -1,0 +1,363 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Menu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="Reporting Tool" name="description" />
+    <meta content="Codedesk" name="author" />
+
+    <!-- App favicon -->
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/plugins/filter/magnific-popup.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/plugins/apexcharts/apexcharts.css" rel="stylesheet" />
+    <link href="/assets/plugins/summernote/summernote-bs4.css" rel="stylesheet" />
+    <link href="/assets/plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet" />
+    <link href="/assets/plugins/select2/select2.min.css" rel="stylesheet" />
+    <link href="/assets/plugins/dropify/css/dropify.min.css" rel="stylesheet" />
+    <!-- App css -->
+
+    <link href="/assets/css/icons.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/css/metisMenu.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/css/custom.css" rel="stylesheet" />
+    <link href="/assets/css/corner-popup.min.css" rel="stylesheet" />
+    <link href="/assets/toastr/build/toastr.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://apis.google.com/js/client:platform.js?onload=renderButton" async defer></script>
+    <meta name="google-signin-client_id" content="495447302183-ul6n1bgt9gdcjelhuniqlt1qce24ohp7.apps.googleusercontent.com">
+    <meta name="Reporting tool" content="495447302183-ul6n1bgt9gdcjelhuniqlt1qce24ohp7.apps.googleusercontent.com">
+
+</head>
+
+<body>
+    <div class="container pt-4">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Scattered Chart</h3>
+                <nav id="snav_${randomChartId}" class="navbar navbar-expand-lg navbar-light bg-light tools-menu bar scattered_chart">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarTogglerDemo02">
+                        <input type=hidden id="txtseriesname_${randomChartId}" />
+                        <ul class="navbar-nav mt-2 mt-lg-0">
+                            
+                            <li class="nav-item color pt-2">
+                                <button class="prev"><i class="fa fa-caret-left" aria-hidden="true"></i></button>
+                                <div class="box"></div>
+                                <button class="next"><i class="fa fa-caret-right" aria-hidden="true"></i></button>
+                            </li>
+                            <li class="nav-item delete">
+                                <a href="#">Delete</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Bar</h3>
+                <nav id="snav_${randomChartId}" class="navbar navbar-expand-lg navbar-light bg-light tools-menu bar first">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                        <input type=hidden id="txtseriesname_${randomChartId}" />
+                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                            <li class="nav-item">
+                                <div class="tool tool_charts">
+                                    <label id="lbl_${randomChartId}" style="font-size: 12px; text-transform: none; ">Amount spend</label>
+                                    <div class="icon mixed " onclick=changeseriestype("${randomChartId}","bar")>
+                                        <img class="seriestypeborder" id="stypebar_${randomChartId}" src="../../assets/new/border.png" />
+                                        <label class="icon-label">Border</label>
+                                    </div>
+                                    <div class="icon bar" onclick=changeseriestype("${randomChartId}","stacked")>
+                                        <img id="stypestacked_${randomChartId}" src="../../assets/new/Dotted 1.png" />
+                                        <label class="icon-label">Dotted</label>
+                                    </div>
+                                    <div class="icon" onclick=changeseriestype("${randomChartId}","line")>
+                                        <img id="stypeline_${randomChartId}" src="../../assets/new/Dotted.png" />
+                                        <label class="icon-label">Dotted</label>
+                                    </div>
+                                    <div class="icon" onclick=changeseriestype("${randomChartId}","dotline")>
+                                        <img id="stypedotted_${randomChartId}" src="../../assets/new/Smooth.png" />
+                                        <label class="icon-label">Smooth</label>
+                                    </div>
+                                    <div class="icon" onclick=changeseriestype("${randomChartId}","area")>
+                                        <img id="stypearea_${randomChartId}" src="../../assets/new/Curved.png" />
+                                        <label class="icon-label">Curved</label>
+                                    </div>
+                                    <div class="icon mixed " onclick=changeseriestype("${randomChartId}","bar")>
+                                        <img class="seriestypeborder" id="stypebar_${randomChartId}" src="../../assets/new/mixed.png" />
+                                        <label class="icon-label">Bar</label>
+                                    </div>
+                                    <div class="icon bar" onclick=changeseriestype("${randomChartId}","stacked")>
+                                        <img id="stypestacked_${randomChartId}" src="../../assets/new/Bar_black.png" />
+                                        <label class="icon-label">Line</label>
+                                    </div>
+                                    <div class="icon" onclick=changeseriestype("${randomChartId}","line")>
+                                        <img id="stypeline_${randomChartId}" src="../../assets/new/Smooth.png" />
+                                        <label class="icon-label">Smooth</label>
+                                    </div>
+                                    <div class="icon" onclick=changeseriestype("${randomChartId}","dotline")>
+                                        <img id="stypedotted_${randomChartId}" src="../../assets/new/Dash.png" />
+                                        <label class="icon-label">Dash</label>
+                                    </div>
+                                    <div class="icon" onclick=changeseriestype("${randomChartId}","area")>
+                                        <img id="stypearea_${randomChartId}" src="../../assets/new/area_black.png" />
+                                        <label class="icon-label">Area</label>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item pt-4">
+                                <div class="tool justify-content-end">
+                                    <label>Axis</label>
+                                    <div class="set-axis">
+                                        <button class="axis active btn-1">1</button>
+                                        <button class="axis btn-2">2</button>
+                                    </div>
+                                </div>
+                                <div class="tool layer">
+                                    <label>Layer</label>
+                                    <div class="set-axis">
+                                        <button class="axis btn-3">-</button>
+                                        <button class="axis btn-4">+</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item pt-4">
+                                <div class="tool">
+                                    <label>Labels</label>
+                                    <div class="custom-control custom-switch mb-2" dir="ltr">
+                                        <input name="radio" type="checkbox" class="custom-control-input  stylebarlabel" id="slabel_${randomChartId}" checked="checked">
+                                        <label class="custom-control-label " for="slabel_${randomChartId}"></label>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item color pt-2">
+                                <button class="prev"><i class="fa fa-caret-left" aria-hidden="true"></i></button>
+                                <div class="box"></div>
+                                <button class="next"><i class="fa fa-caret-right" aria-hidden="true"></i></button>
+                            </li>
+                            <li class="nav-item delete">
+                                <a href="#">Delete</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Number</h3>
+                <nav id="snav_${randomChartId}" class="navbar navbar-expand-lg navbar-light bg-light tools-menu bar number">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                        <input type=hidden id="txtseriesname_${randomChartId}" />
+                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                            <li class="nav-item">
+                                <div class="tool tool_charts">
+                                    <label id="lbl_${randomChartId}" style="font-size:12px; text-transform:none;">Amount spend</label>
+                                    <div class="icon mixed " onclick=changeseriestype("${randomChartId}","bar")>
+                                        <img class="seriestypeborder" id="stypebar_${randomChartId}" src="../../assets/new/mixed.png" />
+                                        <label class="icon-label">Style 1</label>
+                                    </div>
+                                    <div class="icon bar" onclick=changeseriestype("${randomChartId}","stacked")>
+                                        <img id="stypestacked_${randomChartId}" src="../../assets/new/bar.png" />
+                                        <label class="icon-label">Style 2</label>
+                                    </div>
+                                    <div class="icon" onclick=changeseriestype("${randomChartId}","line")>
+                                        <img id="stypeline_${randomChartId}" src="../../assets/new/line.png" />
+                                        <label class="icon-label">Style 3</label>
+                                    </div>
+                                    <div class="icon" onclick=changeseriestype("${randomChartId}","dotline")>
+                                        <img id="stypedotted_${randomChartId}" src="../../assets/new/dotted-line.png" />
+                                        <label class="icon-label">Style 4</label>
+                                    </div>
+                                    <div class="icon" onclick=changeseriestype("${randomChartId}","area")>
+                                        <img id="stypearea_${randomChartId}" src="../../assets/new/area.png" />
+                                        <label class="icon-label">Style 5</label>
+                                    </div>
+                                    <div class="icon mixed " onclick=changeseriestype("${randomChartId}","bar")>
+                                        <img class="seriestypeborder" id="stypebar_${randomChartId}" src="../../assets/new/mixed.png" />
+                                        <label class="icon-label">Style 6</label>
+                                    </div>
+
+                                </div>
+                            </li>
+                            <li class="nav-item color">
+                                <button class="prev"><i class="fa fa-caret-left" aria-hidden="true"></i></button>
+                                <div class="box"></div>
+                                <button class="next"><i class="fa fa-caret-right" aria-hidden="true"></i></button>
+                            </li>
+                            <li class="nav-item delete">
+                                <a href="#">Delete</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Pie</h3>
+                <nav id="snav_${randomChartId}" class="navbar navbar-expand-lg navbar-light bg-light tools-menu bar pie">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                        <input type=hidden id="txtseriesname_${randomChartId}" />
+                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                            <li class="nav-item">
+                                <div class="tool tool_charts">
+                                    <label id="lbl_${randomChartId}" style="font-size: 12px; text-transform: none;">Amount spend</label>
+                                    <div class="icon mixed " onclick=changeseriestype("${randomChartId}","bar")>
+                                        <img class="seriestypeborder" id="stypebar_${randomChartId}" src="../../assets/new/mixed.png" />
+                                        <label class="icon-label">Pie</label>
+                                    </div>
+                                    <div class="icon bar" onclick=changeseriestype("${randomChartId}","stacked")>
+                                        <img id="stypestacked_${randomChartId}" src="../../assets/new/bar.png" />
+                                        <label class="icon-label">Donuts</label>
+                                    </div>
+                                    <div class="icon" onclick=changeseriestype("${randomChartId}","line")>
+                                        <img id="stypeline_${randomChartId}" src="../../assets/new/line.png" />
+                                        <label class="icon-label">Ring</label>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <div class="tool">
+                                    <label>LABELS</label>
+                                    <div class="set-axis">
+                                        <button class="axis btn-5 mb-1">Value</button>
+                                        <button class="axis btn-6">%</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <div class="tool">
+                                    <label>LABELS</label>
+                                    <div class="set-axis">
+                                        <button class="axis btn-7 mb-1">Overlap</button>
+                                        <button class="axis btn-8">Side</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item delete">
+                                <a href="#">Delete</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Table</h3>
+                <nav id="snav_${randomChartId}" class="navbar navbar-expand-lg navbar-light bg-light tools-menu bar table_chart">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                        <input type=hidden id="txtseriesname_${randomChartId}" />
+                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                            <li class="nav-item">
+                                <div class="tool tool_charts">
+                                    <label id="lbl_${randomChartId}" style="font-size: 12px; text-transform: none;">Amount spend</label>
+                                    <div class="icon mixed " onclick=changeseriestype("${randomChartId}","bar")>
+                                        <img class="seriestypeborder" id="stypebar_${randomChartId}" src="../../assets/new/mixed.png" />
+                                        <label class="icon-label">Bar</label>
+                                    </div>
+                                    <div class="icon bar">
+                                        <img id="stypestacked_${randomChartId}" src="../../assets/new/bar.png" />
+                                        <label class="icon-label">Stacked</label>
+                                    </div>
+                                    <div class="icon" onclick=changeseriestype("${randomChartId}","line")>
+                                        <img id="stypeline_${randomChartId}" src="../../assets/new/line.png" />
+                                        <label class="icon-label">Line</label>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item pt-4">
+                                <div class="tool">
+                                    <div class="set-axis">
+                                        <button class="axis btn-9 mb-1">Value</button>
+                                        <button class="axis btn-10">%</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <div class="tool">
+                                    <label>BARS</label>
+                                    <div class="custom-control custom-switch mb-2" dir="ltr">
+                                        <input name="radio" type="checkbox" class="custom-control-input  stylebarlabel" id="slabel_${randomChartId}" checked="checked">
+                                        <label class="custom-control-label " for="slabel_${randomChartId}"></label>
+                                    </div>
+                                </div>
+                                <div class="icon bar_icon pt-0">
+                                    <img id="stypeline_${randomChartId}" src="../../assets/new/bar_line.png" />
+                                </div>
+                            </li>
+
+                            <li class="nav-item color">
+                                <button class="prev"><i class="fa fa-caret-left" aria-hidden="true"></i></button>
+                                <div class="box"></div>
+                                <button class="next"><i class="fa fa-caret-right" aria-hidden="true"></i></button>
+                            </li>
+
+                            <li class="nav-item delete">
+                                <a href="#">Delete</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <script src="/assets/js/jquery.min.js">
+    </script>
+    <script src="/assets/js/bootstrap.bundle.min.js">
+    </script>
+    <script src="/assets/js/metisMenu.min.js">
+    </script>
+    <script src="/assets/js/waves.min.js">
+    </script>
+    <script src="/assets/js/jquery.slimscroll.min.js">
+    </script>
+    <!--<script src="/assets/plugins/apexcharts/apexcharts.min.js"></script>-->
+    <script src="/assets/plugins/apexcharts/locales/apexchartmaximize.js"></script>
+    <script src="/assets/plugins/summernote/summernote-bs4.min.js">
+    </script>
+    <script src="/assets/plugins/select2/select2.min.js">
+    </script>
+    <script src="/assets/pages/jquery.form-upload.init.js"></script>
+    <script src="/assets/plugins/dropify/js/dropify.min.js">
+    </script>
+    <script src="/assets/plugins/jquery-ui/jquery-ui.min.js">
+    </script>
+    <script src="/assets/js/app.js">
+    </script>
+    <script src="/assets/js/custom.js">
+    </script>
+    <script src="/assets/js/ProjectJS/ChartsManagement.js"></script>
+    <script src="/assets/js/ProjectJS/MultiCharts.js"></script>
+    <script src="/assets/js/ProjectJS/Download.js"></script>
+    <script src="/assets/js/ProjectJS/DownloadExcel.js"></script>
+    <script src="/assets/js/ProjectJS/commonchartscripts.js"></script>
+    <script src="/assets/js/corner-popup.min.js"></script>
+    <script src="/assets/js/cornerpopupshow.js"></script>
+    <script src="/assets/toastr/toastr.js"></script>
+    <script src="/assets/toastr/build/toastr.min.js"></script>
+  
+</body>
+</html>
