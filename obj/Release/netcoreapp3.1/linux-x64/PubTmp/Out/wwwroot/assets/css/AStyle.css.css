@@ -57,11 +57,12 @@
     text-align:center;
     
 }
-#FreeVersionButton > a{
-    background: #2E2B7E;
-    color:white;
-    margin-bottom:30px;
-}
+    #FreeVersionButton > a {
+        background: #2E2B7E;
+        color: white;
+        margin-bottom: 30px;
+        font-weight: 600;   
+    }
     #FreeVersionButton > a :hover {
         background: #FEF19F !important;
         background-color: #FEF19F !important;
@@ -80,6 +81,7 @@
         margin-bottom: 30px;
         border-color: #FEF19F;
         border:none;
+        font-weight:600;
     }
 
         #PayVersionButton > a :hover {
@@ -95,6 +97,18 @@
         border: 1px solid #FEF19F !important;
         border-color: #FEF19F !important;
     }
+#addfreeuser {
+    margin-top: 27px;
+    border: 1px solid black;
+    color: blue;
+}
+.AllowFreeAccess {
+    /*  position: absolute !important;
+    margin-left: 205px !important;
+    margin-top: 10px !important;*/
+    font-weight: bold !important;
+    color: #007bff !important;
+}
 .font_8 {
     /*font: var(--font_8);*/
     color: rgb(96,94,94);

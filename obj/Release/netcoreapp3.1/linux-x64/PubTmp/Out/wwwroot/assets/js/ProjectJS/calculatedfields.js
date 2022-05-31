@@ -50,6 +50,7 @@ function GetInternalDashboardData() {
     $('#LeftSideFileUpload').addClass('d-none')
     $('#AccountDetailsSection').addClass('d-none')
     $("#VedioTutorialSection").addClass('d-none');
+    $('#stuff_content').addClass('d-none');
     $(".filters h4").removeClass("visibility");
 }
 
@@ -1024,8 +1025,8 @@ function calculateValuesForCustomFieldsNumberChart(dataFilter, columnName, chart
                 //    });
                 //}
                 //else {
-                    $.each(dataFilter, function (i, item) {
-                        if (chartconfigobj.TableLocked && i > chartconfigobj.TableLockedRows) {
+                $.each(dataFilter, function (i, item) {
+                    if (chartconfigobj != undefined && chartconfigobj.TableLocked && i > chartconfigobj.TableLockedRows) {
                             //  sumvalue = 0;
                         }
                         else {

@@ -55,14 +55,23 @@
 #FreeVersionButton
 {
     text-align:center;
-    
+    margin-top:52px
 }
-    #FreeVersionButton > a {
-        background: #2E2B7E;
-        color: white;
-        margin-bottom: 30px;
-        font-weight: 600;   
-    }
+.Freeheader {
+    margin-top: 35px;
+}
+#v-pills-faq-tab{
+    display:none;   
+}
+#v-pills-privacy_policy-tab {
+    display: none;
+}
+#FreeVersionButton > a {
+    background: #2E2B7E;
+    color: white;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
     #FreeVersionButton > a :hover {
         background: #FEF19F !important;
         background-color: #FEF19F !important;
@@ -124,8 +133,8 @@
 }
 .rightsectionVAT {
     position: absolute;
-    margin-top: -55px;
-    margin-left: 55px;
+    margin-top: -64px;
+    margin-left: 85px;
     font-weight: bold;
 }
 /*form table chart*/
@@ -135,7 +144,10 @@
 .tableFixHead tfoot th {
     padding: .60rem;
 }
-|
+.EveryMonth {
+    text-align: center;
+    font-size: 13px;
+}
 .tableFixHead table  thead tr th {
     padding-right: 18px;
   /*  position: relative;*/

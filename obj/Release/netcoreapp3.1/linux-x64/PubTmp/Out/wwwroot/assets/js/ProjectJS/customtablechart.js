@@ -1086,6 +1086,6 @@ function gettablefordownload(chartconfigobj,downloadforhtmlpng) {
         return "<div style='" + styledata + "' class='tableFixHead tableDownload'><table class='table table-striped' style='font-size:" + nineWalaFont + "px;color:black;word-wrap: break-word;" + tablestyle + ";" + tablestyleononecolumn + "' id=table" + chartid + "><thead style='color:" + headertextcolor + ";background-color:" + headercolour + "'>" + thead + "</thead>" + trsbodyhtml + "" + footerHtml + "</table></div>"
     }
     else {
-        return "<div style='" + styledata + "' class='tableFixHead tableDownload'><table class='table table-striped' style='font-size:11px;color:black;word-wrap: break-word;" + tablestyle + ";" + tablestyleononecolumn + "' id=table" + chartid + "><thead style='color:" + headertextcolor + ";background-color:" + headercolour + "'>" + thead + "</thead>" + trsbodyhtml + "" + footerHtml + "</table></div>"
+        return "<div style='" + styledata + "' class='tableFixHead tableDownload'><table class='table table-striped' style='font-size:11px;color:black;word-wrap: break-word;" + tablestyle + ";" + tablestyleononecolumn + "margin-bottom:30px;' id=table" + chartid + "><thead style='color:" + headertextcolor + ";background-color:" + headercolour + "'>" + thead + "</thead>" + trsbodyhtml + "" + footerHtml + "</table></div>"
     }
 }

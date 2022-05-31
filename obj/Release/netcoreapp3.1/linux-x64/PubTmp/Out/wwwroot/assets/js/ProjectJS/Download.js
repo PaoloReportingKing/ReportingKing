@@ -2821,10 +2821,20 @@ function GetHtmlForWholePng(downloadhtml) {
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
    
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
     `;
     }
      
     html = html +`"<style>
+.progress{
+
+height: 20px;
+     margin-bottom: 5px;
+    overflow: hidden;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 2px rgb(0 0 0 / 10%);
+    box-shadow: inset 0 1px 2px rgb(0 0 0}  
 .numberchartdivDownload {
     text-align: center;
     margin-top: 50px;
@@ -2861,6 +2871,17 @@ function GetHtmlForWholePng(downloadhtml) {
       padding:40px;
 
         }
+.OneTwoColumns {
+    width: 30% !important;
+}
+
+.ThreeFourColumns {
+    width: 65% !important;
+}
+
+.Noofcolumns {
+    width: 75% !important;
+}
     </style></head>
                 <body>
                <div class="card" id="pngchartcard"><div class="card-body"> <div class="container-fluid" id="pdfcharts">`;
@@ -3323,7 +3344,7 @@ function getBase64ById(id, index) {
             getBase64ById(ab_rows_png[index + 1].id, index + 1)
         }
     });
-}
+}   
 
 //function getBase64ById(id) {
 //    var element = document.getElementById(id);

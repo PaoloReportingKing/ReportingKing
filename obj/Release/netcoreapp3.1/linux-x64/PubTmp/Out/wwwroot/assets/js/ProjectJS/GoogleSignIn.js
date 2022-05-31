@@ -126,7 +126,15 @@ function clickhiddencustombtn() {
 function clickhiddencustomSignUpbtn() {
     $("#customBtn2").click();
 }
-
+function clickhiddencustomSignUpbtnusingpricing() {
+    if (!UserObjDetail.isLogin) {
+        $("#customBtn2").click();
+    }
+    else {
+        hideshowfunctionality();
+    }
+    
+}
 function Login(userData) {
     loading_start(0, 0, LoadingMessage);
     // $.post('userData.php', { oauth_provider: 'google', userData: JSON.stringify(userData) });

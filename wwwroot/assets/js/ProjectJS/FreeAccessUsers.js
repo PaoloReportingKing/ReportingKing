@@ -44,5 +44,6 @@ function showChartsDivusingFreeVersion() {
     //}
     //ScrollNow();
     //showChartsDiv();
-    setTimeout(showChartsDiv, 100);
+    $("#a_AddFields").click();
+   // setTimeout(showChartsDiv, 100);
 }
