@@ -2898,8 +2898,8 @@ width: 100%;
         html = html + "<style>"
     }
 
-    html = html + `"
-
+    html = html + `
+    
 .numberchartdivDownload {
     text-align: center;
     margin-top: 50px;
@@ -2942,7 +2942,7 @@ width: 100%;
 
 .ThreeFourColumns {
     width: 65% !important;
-}
+}   
 
 .Noofcolumns {
     width: 75% !important;

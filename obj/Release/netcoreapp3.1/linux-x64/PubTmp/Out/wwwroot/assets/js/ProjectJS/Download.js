@@ -2829,7 +2829,8 @@ height: 20px !important;
    
 border-radius: 0;
     display: flex;
-   
+   webkit-box-shadow:none !important;
+    box-shadow:none !important;
 }
 .tableFixHead table tr {
     width: auto !important;
