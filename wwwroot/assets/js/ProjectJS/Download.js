@@ -18,7 +18,7 @@ async function downloadChartPngs() {
     dpr = window.devicePixelRatio;
     window.devicePixelRatio = 3;
     $(".preloader").css('background', '#333333');
-    loading_start(0, 0, DownLoadPngMessage,true);
+    loading_start(0, 0, DownLoadPngMessage, true);
     $('#loading_label').empty();
     $('#loading_label').append(DownLoadPngMessage);
     $('#loading_label').removeClass('d-none');
@@ -91,7 +91,7 @@ async function GetPngData() {
             continue;
         }
 
-        let col_md_whole =12 / charts.length;
+        let col_md_whole = 12 / charts.length;
 
         for (var i = 0; i < charts.length; i++) {
 
@@ -102,7 +102,7 @@ async function GetPngData() {
                 col_md_whole = 3;
             }
             else {
-                col_md_whole = 6/ charts.length;
+                col_md_whole = 6 / charts.length;
             }
 
             chartCountIndex++;
@@ -110,7 +110,7 @@ async function GetPngData() {
             if (percentageCount > 10) {
                 percentageCount = 10;
             }
-            loading_start(percentageCount, percentageCount, DownLoadPngMessage,true,false)
+            loading_start(percentageCount, percentageCount, DownLoadPngMessage, true, false)
             /* var html = `<div class="col-md-${col_md_whole}" id="png_chart_${chartCountIndex}">`;*/
             var html = `<div class="col-md-6" id="png_chart_${chartCountIndex}">`;
             var legendsHtml = ``;
@@ -185,14 +185,14 @@ async function GetPngData() {
                 try {
 
 
-                $.each(myChart.options.xAxis, function (s, catfield) {
-                    myChart.options.xAxis[s].labels.style.fontWeight = 900;
-                    myChart.options.xAxis[s].labels.style.fontSize = '11px';
-                });
-                $.each(myChart.options.yAxis, function (s, catfield) {
-                    myChart.options.yAxis[s].labels.style.fontWeight = 900;
-                    myChart.options.yAxis[s].labels.style.fontSize = '11px';
-                });
+                    $.each(myChart.options.xAxis, function (s, catfield) {
+                        myChart.options.xAxis[s].labels.style.fontWeight = 900;
+                        myChart.options.xAxis[s].labels.style.fontSize = '11px';
+                    });
+                    $.each(myChart.options.yAxis, function (s, catfield) {
+                        myChart.options.yAxis[s].labels.style.fontWeight = 900;
+                        myChart.options.yAxis[s].labels.style.fontSize = '11px';
+                    });
 
                 } catch (e) {
 
@@ -359,11 +359,10 @@ async function GetPngData() {
                     LegendsFontSize = 8;
                     legendTitle = `<li style="font-size: 10px; font-weight: 800; color: rgb(55, 61, 63);">${chartconfigobj.chartYAxises[0].label}</li></br>`;
                 }
-                else
-                {
+                else {
                     legendTitle = `<li style="font-size: 10px; font-weight: 800; color: rgb(55, 61, 63);">${chartconfigobj.chartYAxises[0].label}</li></br>`;
                 }
-                    legends = chartconfigobj.chartXAxisShowLabels;
+                legends = chartconfigobj.chartXAxisShowLabels;
 
                 for (var w = 0; w < legends.length; w++) {
                     if (w == 0) {
@@ -394,7 +393,7 @@ async function GetPngData() {
                 //  //  ChartObj.instance.w.globals.dom.Paper.height(285);
                 //   /* ChartObj.instance.w.globals.dom.Paper.width(597);*/
                 //}
-               
+
                 var svgString = ChartObj.instance.w.globals.dom.Paper.svg();
                 if (svgString.indexOf(`font-size="12px"`) > -1) {
                     svgString = svgString.replaceAll(`font-size="12px"`, `font-size="14px"`)
@@ -415,8 +414,8 @@ async function GetPngData() {
 
                 var imgURI = "data:image/svg+xml;base64," + btoa(unescape(encodeURIComponent(svgString)));
                 imgsHtml = imgsHtml + `<div class="col-md-${col_md}"><img class="img-fluid mx-auto d-block" src="${imgURI}" alt=""></div>`;
-  /*              */
-          
+                /*              */
+
                 //if (charts.length == 1) {
                 //    ChartObj.instance.w.globals.dom.Paper.height(chartorigionlHeight);
                 //    ChartObj.instance.w.globals.dom.Paper.width(chartorigionlawidth);
@@ -597,7 +596,7 @@ async function downloadCharts() {
     //<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/js/bootstrap.min.js"></script>
     //<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css" />
     $(".preloader").css('background', '#333333');
-    loading_start(0, 0, DownLoadPdfMessage,false,true);
+    loading_start(0, 0, DownLoadPdfMessage, false, true);
     $('#loading_label').empty();
     $('#loading_label').append('Generating Pdf...');
     $('#loading_label').removeClass('d-none');
@@ -676,7 +675,7 @@ async function GetPdfDataswitholabels() {
         var lblsHtml = ``;
         var commentsHtml = ``;
         html = html + `<div class="row kaala pt-0" style="margin-top:5px">`;
-     /*   html = html + `<div class="row kaala pt-0" style="page-break-inside: avoid;margin-top:5px">`;*/
+        /*   html = html + `<div class="row kaala pt-0" style="page-break-inside: avoid;margin-top:5px">`;*/
         for (var i = 0; i < charts.length; i++) {
             totalchartsynclength++;
             var percentageCount = parseInt((totalchartsynclength / chartsconfigurations.length) * 100);
@@ -1048,7 +1047,7 @@ async function GetPdfDataswitholabels() {
                 //ChartObj.instance.w.globals.dom.Paper.width(ChartObj.instance.w.globals.dom.Paper.width() + 40);
 
                 var svgString = ChartObj.instance.w.globals.dom.Paper.svg();
-               
+
                 if (svgString.indexOf(`font-size="11px"`) > -1) {
                     svgString = svgString.replaceAll(`font-size="11px"`, `font-size="12px"`)
                 }
@@ -1066,7 +1065,7 @@ async function GetPdfDataswitholabels() {
                 }
 
                 svgString = svgString.replaceAll(`font-weight:700;`, `font-weight:800;`)
-               
+
                 //ChartObj.instance.w.globals.dom.Paper.height(ChartObj.instance.w.globals.dom.Paper.height() - 40);
                 //ChartObj.instance.w.globals.dom.Paper.width(ChartObj.instance.w.globals.dom.Paper.width() - 40);
                 //svgObj.setAttribute('transform', 'translate(0, 0)');
@@ -1110,7 +1109,7 @@ async function GetPdfDataswitholabels() {
                 commentsHtml = commentsHtml + `<div class="col-md-${col_md}"><p></p></div>`;
             }
         }
-                html = html + `<div class="col-md-12">
+        html = html + `<div class="col-md-12">
         <div class="row align-items-center">
 
         ${legendsHtml}
@@ -1122,7 +1121,7 @@ async function GetPdfDataswitholabels() {
 ${imgsHtml}
 </div></div>`;
 
-                html = html + `<div class="col-md-12">
+        html = html + `<div class="col-md-12">
         <div class="row align-items-center">
         ${lblsHtml}
         </div></div>`;
@@ -1174,18 +1173,18 @@ ${commentsHtml}
     //olsize = parseFloat($('.note-editor .note-editing-area ol').css('font-size'));
     //newOlSize = olsize + olfactor;
     //$('.note-editor .note-editing-area ol').css({ 'font-size': newOlSize.toString() + "px" });
-  //  $('body').append(html);
+    //  $('body').append(html);
 
     GeneratePdf(html);
 }
 //async function GetPdfData() {
 
-  
+
 
 //    $('.highcharts-root').removeAttr("style");
 //    $('.highcharts-root').attr("style", "font-weight:800 !important; color:black !important; font-family:Poppins, sans-serif; font-size:12px !important;");
 
-  
+
 
 //    var html = `<html lang="en" data-textdirection="ltr">
 //                <body>
@@ -1204,9 +1203,9 @@ ${commentsHtml}
 //        if (charts.length === 0) {
 //            continue;
 //        }
-       
+
 //        var imgsHtml = ``;
-      
+
 //        var commentsHtml = ``;
 //        html = html + `<div class="row kaala pt-0" style="margin-top:5px">`;
 //       /* html = html + `<div class="row kaala pt-0" style="page-break-inside: avoid;margin-top:5px">`;*/
@@ -1304,7 +1303,7 @@ ${commentsHtml}
 //             //   debugger;
 //                try {
 
-               
+
 
 //                $.each(myChart.options.xAxis, function (s, catfield) {
 //                    myChart.options.xAxis[s].labels.style.fontWeight = 900;
@@ -1468,12 +1467,12 @@ ${commentsHtml}
 //                //if (svgString.indexOf(`font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif;`) > -1) {
 //                //    svgString = svgString.replaceAll(`font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif;`, `font-family: Poppins, sans-serif;`)
 //                //}
-               
+
 //                var imgURI = "data:image/svg+xml;base64," + btoa(unescape(encodeURIComponent(svgString)));
 //                lblsHtml= lblsHtml + `<div class="align-items-center"><ul class="legendsClass_L text-center" style="list-style: none; padding:0;"><li style="color: rgb(0, 0, 0); font-size: 8px; font-weight: 800;">${chartconfigobj.chartXAxis}</li></ul></div>`;
 //                imgsHtml = imgsHtml + `<div class="col-md-${col_md}">${legendsHtml}<img class="img-fluid"  src="${imgURI}" alt="">${lblsHtml}</div>`;
 //                // imgsHtml = imgsHtml + `<div class="col-md-${col_md}"><img class="img-fluid" style='width:100%' src="${imgURI}" alt=""></div>`;
-              
+
 //                /*lblsHtml = lblsHtml + `<div class="col-md-${col_md}"><ul class="legendsClass_L text-center" style="list-style: none; padding:0;"><li><span class="markerClass_M" style="background-color: #be2020;"></span><strong>${chartconfigobj.chartXAxis}</strong></li></ul></div>`;*/
 //            }
 //            else if (chartconfigobj.chartType == "pie_chart") {
@@ -1529,7 +1528,7 @@ ${commentsHtml}
 //                lblsHtml = lblsHtml + `<div class="align-items-center"><ul class="legendsClass_L text-center" style="list-style: none; padding:0;"><li style="color: rgb(0, 0, 0); font-size: 8px; font-weight: 800;">${chartconfigobj.chartXAxis}</li></ul></div>`;
 //                imgsHtml = imgsHtml + `<div class="text-center col-md-${col_md}">${legendsHtml}<img style="width:80%;" class="img-fluid" src="${imgURI}" alt="">${lblsHtml}</div>`;
 
-                
+
 //                //lblsHtml = lblsHtml + `<div class="col-md-${col_md}"><ul class="legendsClass_L text-center" style="list-style: none; padding:0;"><li><span class="markerClass_M" style="background-color: #be2020;"></span><strong>${chartconfigobj.chartXAxis}</strong></li></ul></div>`;
 
 //                ChartObj.instance.updateOptions({
@@ -1576,7 +1575,7 @@ ${commentsHtml}
 //                        show: false
 //                    }
 //                });
-              
+
 
 //                var svgString = ChartObj.instance.w.globals.dom.Paper.svg();
 //                if (svgString.indexOf(`height="300"`) > -1) {
@@ -1599,12 +1598,12 @@ ${commentsHtml}
 //                }
 
 //                svgString = svgString.replaceAll(`font-weight:700;`, `font-weight:800;`)
-               
+
 //                var imgURI = "data:image/svg+xml;base64," + btoa(unescape(encodeURIComponent(svgString)));
 //                lblsHtml = lblsHtml + `<div class="align-items-center"><ul class="legendsClass_L text-center" style="list-style: none; padding:0;"><li style="color: rgb(0, 0, 0); font-size: 8px; font-weight: 800;">${chartconfigobj.chartXAxis}</li></ul></div>`;
 //                imgsHtml = imgsHtml + `<div class="col-md-${col_md}">${legendsHtml}<img class="img-fluid"  src="${imgURI}" alt="">${lblsHtml}</div>`;
 
-               
+
 //                //lblsHtml = lblsHtml + `<div class="col-md-${col_md}"><ul class="legendsClass_L text-center" style="list-style: none; padding:0;"><li><span class="markerClass_M" style="background-color: #be2020;"></span><strong>${chartconfigobj.chartXAxis}</strong></li></ul></div>`;
 
 //                ChartObj.instance.updateOptions({
@@ -1671,7 +1670,7 @@ ${commentsHtml}
 //    html = html + `</div></body></html>`;
 
 
-  
+
 // //   Downloadhtmlfile();
 //    GeneratePdf(html);
 //    //$('body').append(html);
@@ -2330,14 +2329,14 @@ async function GetPdfDataNotUsed() {
                 let myChart = Highcharts.charts[myChartEl.getAttribute('data-highcharts-chart')];
                 debugger;
                 try {
-                $.each(myChart.options.xAxis, function (s, catfield) {
-                    myChart.options.xAxis[s].labels.style.fontWeight = 900;
-                    myChart.options.xAxis[s].labels.style.fontSize = '11px';
-                });
-                $.each(myChart.options.yAxis, function (s, catfield) {
-                    myChart.options.yAxis[s].labels.style.fontWeight = 900;
-                    myChart.options.yAxis[s].labels.style.fontSize = '11px';
-                });
+                    $.each(myChart.options.xAxis, function (s, catfield) {
+                        myChart.options.xAxis[s].labels.style.fontWeight = 900;
+                        myChart.options.xAxis[s].labels.style.fontSize = '11px';
+                    });
+                    $.each(myChart.options.yAxis, function (s, catfield) {
+                        myChart.options.yAxis[s].labels.style.fontWeight = 900;
+                        myChart.options.yAxis[s].labels.style.fontSize = '11px';
+                    });
                 } catch (e) {
 
                 }
@@ -2627,7 +2626,7 @@ async function GetPdfDataNotUsed() {
                 svgString = svgString.replaceAll(`font-weight:700;`, `font-weight:800;`)
                 //ChartObj.instance.w.globals.dom.Paper.height(ChartObj.instance.w.globals.dom.Paper.height() - 40);
                 //ChartObj.instance.w.globals.dom.Paper.width(ChartObj.instance.w.globals.dom.Paper.width() - 40);
-             /*   ChartObj.instance.w.globals.dom.Paper.width(chartorigionlawidth);*/
+                /*   ChartObj.instance.w.globals.dom.Paper.width(chartorigionlawidth);*/
                 //svgObj.setAttribute('transform', 'translate(0, 0)');
 
 
@@ -2765,7 +2764,7 @@ async function DownloadWholePngImage() {
     $('.highcharts-root').attr("style", "font-weight:800 !important; color:black !important; font-family:Poppins, sans-serif; font-size:12px !important;");
     var html = GetHtmlForWholePng(false);
     $('body').append(html);
- /*   setTimeout(() => { getBase64ByIdfordownloadpdfcharts("pdfcharts");},5000)*/
+    /*   setTimeout(() => { getBase64ByIdfordownloadpdfcharts("pdfcharts");},5000)*/
     getBase64ByIdfordownloadpdfcharts("pdfcharts");
     setTimeout(() => {
         if (sidebarOpened) {
@@ -2815,26 +2814,92 @@ function GetHtmlForWholePng(downloadhtml) {
     $('.highcharts-root').removeAttr("style");
     $('.highcharts-root').attr("style", "font-weight:800 !important; color:black !important; font-family:Poppins, sans-serif; font-size:12px !important;");
     var html = `<html lang="en" data-textdirection="ltr"><head>`;
-    if(downloadhtml)
-    {
+    if (downloadhtml) {
         html = html + `<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
    
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
-    `;
-    }
-     
-    html = html +`"<style>
+<style>
 .progress{
 
-height: 20px;
+height: 20px !important;
      margin-bottom: 5px;
     overflow: hidden;
     background-color: #f5f5f5;
-    border-radius: 4px;
-    -webkit-box-shadow: inset 0 1px 2px rgb(0 0 0 / 10%);
-    box-shadow: inset 0 1px 2px rgb(0 0 0}  
+   
+border-radius: 0;
+    display: flex;
+   webkit-box-shadow:none !important;
+    box-shadow:none !important;
+}
+.tableFixHead table tr {
+    width: auto !important;
+}
+.tableFixHead table tr {
+    width: auto !important;
+}
+.tableFixHead tfoot th {
+    padding: .60rem;
+}
+|
+.tableFixHead table  thead tr th {
+    padding-right: 18px;
+    color: black;
+    position: sticky;
+    top: -1px;
+    border-collapse: separate;
+    z-index: 1;
+}
+.tableFixHead table  tbody tr td     {
+  vertical-align: revert;
+}
+
+.fixedtablehead {   
+    padding-right: 18px;
+    color: black;
+    position: sticky;
+    top: -1px;
+    border-collapse: separate;
+    z-index: 1;
+    cursor:default;
+}
+.progress.loaderprogress {
+    transition-delay: 2s;
+    width: 273px;
+    height: 30px;
+    padding: 3px 3px 3px 0px;
+}
+.loaderprogress {
+    display: block;
+    margin: auto;
+    font-family: 'Revalia', cursive;
+}
+#progressbardiv {
+    height: 25px;
+}
+table{
+table-layout: fixed;
+width: 100%;
+}
+.progress.loaderprogress {
+    transition-delay: 2s;
+    width: 273px;
+    height: 30px;
+    padding: 3px 3px 3px 0px;
+}
+.loaderprogress {
+    display: block;
+    margin: auto;
+    font-family: 'Revalia', cursive;
+}
+    `;
+    }
+    else {
+        html = html + "<style>"
+    }
+
+    html = html + `"
+
 .numberchartdivDownload {
     text-align: center;
     margin-top: 50px;
@@ -2858,8 +2923,8 @@ height: 20px;
             margin-right: 3px;
             margin-left: 3px;
             color: white;
-            height: 10px;
-            width: 10px;
+            height: 12px;
+            width: 12px;
             border-radius: 50%;
             display: inline-block;
             cursor: pointer;
@@ -2910,15 +2975,15 @@ height: 20px;
             var ChartObj = chartIns.find(x => x.id === ChartId);
             var chartconfigobj = chartsconfigurations.find(x => x.chartId == ChartId);
 
-          //  SetCommentsForPdf("comments_" + ChartId.replace('chart_', ''));
+            //  SetCommentsForPdf("comments_" + ChartId.replace('chart_', ''));
 
             var comments = $("#comments_text_" + ChartId.replace('chart_', '')).summernote('code');//for formatted html
             var col_md = RowOtherChartCol;//12 / charts.length;
 
-          //  RevertBackComments("comments_" + ChartId.replace('chart_', ''));
+            //  RevertBackComments("comments_" + ChartId.replace('chart_', ''));
 
             if (chartconfigobj.chartType == "comments_chart") {
-              //  SetCommentsForPdf(ChartId);
+                //  SetCommentsForPdf(ChartId);
 
                 let commentsChartHtml = $("#comments_chart_text_" + ChartId.replace('chart_', '')).summernote('code');
                 legendsHtml = legendsHtml + `<div class="col-md-${RowNumberChartCol}"></div>`;
@@ -2936,16 +3001,16 @@ height: 20px;
                 imgsHtml = imgsHtml + `<div style="word-wrap: break-word;margin-top:55px;padding-left:${rowpadding}px;padding-right:${rowpadding}px;padding-bottom:${rowpadding}px;" class="col-md-${RowNumberChartCol}"><div>${commentsChartHtml}</div></div>`;
                 lblsHtml = lblsHtml + `<div class="col-md-${RowNumberChartCol}" style="margin-bottom:20px"></div>`;
 
-            //    RevertBackComments(ChartId);
+                //    RevertBackComments(ChartId);
             }
             else if (chartconfigobj.chartType == "table_chart") {
                 legendsHtml = legendsHtml + `<div></div>`;
-                imgsHtml = imgsHtml + `<div class="col-md-${col_md}">${gettablefordownload(chartconfigobj,true)}</div>`;
+                imgsHtml = imgsHtml + `<div class="col-md-${col_md}">${gettablefordownload(chartconfigobj, true)}</div>`;
                 lblsHtml = lblsHtml + `<div class="col-md-${col_md}" style="margin-bottom:20px"></div>`;
             }
             else if (chartconfigobj.chartType == "number_chart") {
                 legendsHtml = legendsHtml + `<div style="margin-top:15px"></div>`;
-                var chartHtml = get_numberchart_for_pdf_data(chartconfigobj, true,true);
+                var chartHtml = get_numberchart_for_pdf_data(chartconfigobj, true, true);
                 imgsHtml = imgsHtml + `<div class="col-md-${RowNumberChartCol}">${chartHtml}</div>`;
                 lblsHtml = lblsHtml + `<div class="col-md-${RowNumberChartCol}" style="margin-bottom:20px"></div>`;
             }
@@ -2971,6 +3036,7 @@ height: 20px;
                         legendsHtml = legendsHtml + `<div class="align-items-center"><ul class="legendsClass_L text-center" style="list-style: none; padding:0;">${legendTitle}`;
                     }
                     legendsHtml = legendsHtml + `<li><span class="markerClass_M" style="background-color: ${rungs[w]};"></span><span style="font-size: 12px; font-weight: 600;">${legends[w]}</span></li>`;
+                    /*       legendsHtml = legendsHtml + `<li><span class="markerClass_M" style="background-color: ${rungs[w]};"></span><span style="font-size: 12px; font-weight: 600;">${legends[w]}</span></li>`;*/
                     if (w == legends.length - 1) {
                         legendsHtml = legendsHtml + `</ul></div>`;
                     }
@@ -3046,7 +3112,17 @@ height: 20px;
                     if (w == 0) {
                         legendsHtml = legendsHtml + `<div class="align-items-center"><ul class="legendsClass_L text-center" style="list-style: none; padding:0;">${legendTitle}`;
                     }
-                    legendsHtml = legendsHtml + `<li><span class="markerClass_M" style="background-color: ${rungs[w]};"></span><span style="font-size: 12px; font-weight: 600;">${legends[w]}</span></li>`;
+                    legendsHtml = legendsHtml + `<li><span  style=" margin-right: 3px;
+            margin-left: 3px;
+            color: white;
+            height: 12px;
+            width: 12px;
+            border-radius: 50%;
+            display: inline-block;
+            cursor: pointer;
+            align-items: center;
+            justify-content: center;
+            vertical-align: middle;background-color: ${rungs[w]};"></span><span style="font-size: 12px; font-weight: 600;">${legends[w]}</span></li>`;
                     //legendsHtml = legendsHtml + `<li><span class="markerClass_M" style="background-color: ${rungs[w]};"></span>${legends[w]}</li>`;
                     if (w == legends.length - 1) {
                         legendsHtml = legendsHtml + `</ul></div>`;
@@ -3178,7 +3254,7 @@ ${imgsHtml}
 </div></div>`;
         var row_id = rows[j].id.replace('charts_data_', '');
         if (comments_for_row.indexOf(row_id) > -1) {
-           // SetCommentsForPdf("comments_" + row_id);
+            // SetCommentsForPdf("comments_" + row_id);
             var comments_row = $("#comments_text_" + row_id).summernote('code');//for formatted html
             if (comments_row.length > 0 && comments_row != '<p><br></p>') {
                 commentsHtml = `<div class="col-md-12"><div style="padding-left:30px;padding-right:30px;word-wrap: break-word;">${comments_row}</div></div>`;
@@ -3187,7 +3263,7 @@ ${imgsHtml}
                 commentsHtml = `<div class="col-md-12"><p></p></div>`;
             }
 
-         //   RevertBackComments("comments_" + row_id);
+            //   RevertBackComments("comments_" + row_id);
         }
 
         html = html + `<div class="col-md-12">
@@ -3259,14 +3335,14 @@ function RevertBackComments(cmntsId) {
 
 function GeneratePdf(html) {
     // var chartheight = $("#pdfdiv").height()*2;
-   /* var elementheight = document.getElementById("main_div").scrollHeight;*/
+    /* var elementheight = document.getElementById("main_div").scrollHeight;*/
     debugger;
     var opt = {
         margin: [20, 0, 20, 0],
         filename: new Date() + '_charts.pdf',
         image: { type: 'jpeg', quality: 1 },
         //  pagebreak: { mode: ['avoid-all'] }
-      //  html2canvas: {scale:1},
+        //  html2canvas: {scale:1},
         pagebreak: { mode: ['avoid-all', 'css', 'legacy'] },
         //jsPDF: {
         //    unit: 'px',
@@ -3293,7 +3369,7 @@ function GeneratePdf(html) {
         $(".preloader").css('background', '#333333d1');
         window.devicePixelRatio = dpr;
         $('#loading_label').addClass('d-none');
-        loading_end(true,true);
+        loading_end(true, true);
         reflowAllHighchartswithtimer();
     }, 3000);
 
@@ -3305,10 +3381,10 @@ function getBase64ById(id, index) {
     debugger;
     //original code
     //element.scrollHeight 
-   // $(".preloader").css('background', '#333333d1');
-    html2canvas(element, { windowWidth: element.scrollWidth, windowHeight: element.scrollHeight}).then(function (canvas) {
-  //  html2canvas(element, { windowWidth: 597, windowHeight: 273 }).then(function (canvas) {
-    var base64image = canvas.toDataURL("image/png");
+    // $(".preloader").css('background', '#333333d1');
+    html2canvas(element, { windowWidth: element.scrollWidth, windowHeight: element.scrollHeight }).then(function (canvas) {
+        //  html2canvas(element, { windowWidth: 597, windowHeight: 273 }).then(function (canvas) {
+        var base64image = canvas.toDataURL("image/png");
         //downloadBase64File(base64image, "aiwen.png");
 
         var solution = base64image.split("base64,")[1];
@@ -3344,7 +3420,7 @@ function getBase64ById(id, index) {
             getBase64ById(ab_rows_png[index + 1].id, index + 1)
         }
     });
-}   
+}
 
 //function getBase64ById(id) {
 //    var element = document.getElementById(id);
@@ -3369,9 +3445,9 @@ function getBase64ByIdfordownloadpdfcharts(id) {
     var element = document.getElementById(id);
     debugger;
     //original code
-   //html2canvas(element,{scale:4}).then(function (canvas) {
-    html2canvas(element, { scale: 4, windowWidth: element.scrollWidth, windowHeight: element.scrollHeight }).then(function (canvas) {
-        var base64image = canvas.toDataURL("image/png");
+    html2canvas(element, { scale: 2 }).then(function (canvas) {
+        // html2canvas(element, { scale: 4, windowWidth: element.scrollWidth, windowHeight: element.scrollHeight }).then(function (canvas) {
+        var base64image = canvas.toDataURL("image/png", 1.0);
         downloadBase64File(base64image, getReportNameForDownload() + '.png');
     });
 }
@@ -3506,7 +3582,7 @@ function displayCommentsChart(chartId) {
 
 function CancelDownLoadPng() {
     CancelPng = true;
- //   loading_end(false);
+    //   loading_end(false);
 }
 function getReportNameForDownload() {
     var today = new Date();
@@ -3517,7 +3593,7 @@ function getReportNameForDownload() {
         .replace('m', today.getMonth() + 1)
         .replace('d', today.getDate());
     var reportname = $("#nameLabel").val();
-    
+
     if (reportname == '' || reportname == undefined || reportname == null) {
         reportname = usDate;
     }

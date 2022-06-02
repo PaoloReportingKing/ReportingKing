@@ -1001,26 +1001,26 @@ function getsortingcolumnindex(index) {
 
 
 
-function gettablefordownload(chartconfigobj,downloadforhtmlpng) {
+function gettablefordownload(chartconfigobj, downloadforhtmlpng) {
     //debugger;
     var chartid = chartconfigobj.chartId;
     var randomchartid = getrandomchartidusingid(chartid);
 
     var trs = $("#table" + chartid);
     var trsbody = $("#table" + chartid + " tbody");
-   
+
     var trsfooter = $("#table" + chartid + " tfoot");
     var thead = "";
 
     let nineWalaFont = 9 + chartsLabelsFontFactor;
 
     var footerHtml = trsfooter[0].innerHTML;
-    if (downloadforhtmlpng!=true) {
+    if (downloadforhtmlpng != true) {
         if (footerHtml.indexOf(`font-size:12px`) > -1) {
             footerHtml = footerHtml.replaceAll(`font-size:12px`, `font-size:${nineWalaFont}px`)
         }
     }
-   
+
     var trsbodyhtml = trsbody[0].innerHTML;
     //if (chartconfigobj.TableLocked) {
     //    trsbodyhtml = "";
@@ -1030,15 +1030,15 @@ function gettablefordownload(chartconfigobj,downloadforhtmlpng) {
     //        if (i < parseInt(chartconfigobj.TableLockedRows)) {
     //            trsbodyhtml = trsbodyhtml + tableRows[i].outerHTML;
     //        }
-           
+
     //    }
 
     //}
     if (trsbodyhtml.indexOf(`height:17;background-color:transparent`) > -1) {
         trsbodyhtml = trsbodyhtml.replaceAll(`height:17;background-color:transparent`, `height:${tblBarHeight};background-color:transparent`)
     }
-     var styledata = "display: block;margin-top:50px";
-   /* var styledata = "display: block;";*/
+    var styledata = "display: block;margin-top:50px";
+    /* var styledata = "display: block;";*/
 
     // alert(maximumvalue);
     var tablestyleononecolumn = "";
@@ -1056,21 +1056,21 @@ function gettablefordownload(chartconfigobj,downloadforhtmlpng) {
     }
     if (downloadforhtmlpng != true) {
         if (chartconfigobj.chartXAxis.length > 0) {
-            thead = thead + "<th font-weight:400 style='font-size:" + nineWalaFont + "px;color:" + headertextcolor + "'>" + chartconfigobj.chartXAxis + "</th>";
+            thead = thead + "<th class='fixedtablehead' font-weight:400 style='font-size:" + nineWalaFont + "px;color:" + headertextcolor + "'>" + chartconfigobj.chartXAxis + "</th>";
         }
         for (var i = 0; i < chartconfigobj.chartYAxises.length; i++) {
-            thead = thead + "<th font-weight:400 style='font-size:" + nineWalaFont + "px;color:" + headertextcolor + "' >" + chartconfigobj.chartYAxises[i].label + "</th>";
+            thead = thead + "<th class='fixedtablehead' font-weight:400 style='font-size:" + nineWalaFont + "px;color:" + headertextcolor + "' >" + chartconfigobj.chartYAxises[i].label + "</th>";
         }
     }
     else {
         if (chartconfigobj.chartXAxis.length > 0) {
-            thead = thead + "<th  style='color:" + headertextcolor + "'>" + chartconfigobj.chartXAxis + "</th>";
+            thead = thead + "<th class='fixedtablehead'  style='color:" + headertextcolor + "'>" + chartconfigobj.chartXAxis + "</th>";
         }
         for (var i = 0; i < chartconfigobj.chartYAxises.length; i++) {
-            thead = thead + "<th  style='color:" + headertextcolor + "' >" + chartconfigobj.chartYAxises[i].label + "</th>";
+            thead = thead + "<th class='fixedtablehead'  style='color:" + headertextcolor + "' >" + chartconfigobj.chartYAxises[i].label + "</th>";
         }
     }
-    
+
 
     var tablestyle = "max-width:620px;margin:auto";
     var totallength = chartconfigobj.chartYAxises.length;
