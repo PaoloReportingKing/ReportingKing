@@ -22,5 +22,6 @@ namespace ReportingApp.Models.UserManagement
         public string NextPaymentDate { get; set; }
         public string PaymentSoFor { get; set; }
         public string SubscriptionStatus { get; set; }
+        public bool IsFreeUsers { get; set; }
     }
 }

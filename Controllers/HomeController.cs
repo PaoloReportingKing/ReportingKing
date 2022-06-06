@@ -885,6 +885,37 @@ namespace ReportingApp.Controllers
             }
         }
 
+
+        [HttpGet]
+        public IActionResult GetFreeUsers()
+        {
+            try
+            {
+                using (IDbConnection con = new MySqlConnection(_configuration.GetConnectionString("DefaultConnection")))
+                {
+                    string queryInternal = "SELECT * FROM Users WHERE IsSuperAdmin!=true and IsFreeUsers=true";
+                    List<InternalDashboard> usersList = (con.Query<User>(queryInternal, commandType: CommandType.Text))
+                        .Select(t => new InternalDashboard()
+                        {
+                            CustomerId = t.Id,
+                            Name = t.name,
+                            Email = t.email,
+                            UserStatus = t.IsActive,
+                        }).ToList();
+
+
+                    return new JsonResult(new { status = true, data = usersList });
+                }
+            }
+            catch (Exception ex)
+            {
+                return new JsonResult(new { status = true });
+            }
+
+
+        }
+
+
         //[HttpPost]
         //public IActionResult GetAllColumns(int id)
         //{

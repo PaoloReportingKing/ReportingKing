@@ -201,8 +201,72 @@ namespace ReportingApp.Controllers
                 return new JsonResult(new { status = false });
             }
         }
+        [HttpPost]
+        public IActionResult SaveNewFreeUser(string Email)
+        {
+            try
+            {
 
 
+                if (!string.IsNullOrEmpty(Email))
+                {
+                    if (context.Users.Where(x => x.email == Email).FirstOrDefault() != null)
+                    {
+                        return new JsonResult(new { status = false, msg = "User is already exist against this email", id = 0 });
+                    }
+                    User userobj = new User();
+                    userobj.CreatedDate = DateTime.Now;
+                    userobj.email = Email;
+                    userobj.googleaccountid ="Free";
+                    userobj.locale = "Free";
+                    userobj.name = Email;
+                    userobj.PackagePlanId = 2;
+                    userobj.SubscriptionId = "Free";
+                    userobj.IsSuperAdmin = false;
+                    userobj.IsActive = true;
+                    userobj.IsFreeUsers = true;
+                    context.Users.Add(userobj);
+                    context.SaveChanges();
+                }
+
+
+                return new JsonResult(new { status = true, msg = "User is added successfully..." });
+            }
+            catch
+            {
+                return new JsonResult(new { status = false });
+            }
+        }
+
+
+        
+  [HttpPost]
+        public IActionResult DeleteFreeUser(int Id)
+        {
+            try
+            {
+
+
+                if (Id>0)
+                {
+                    var user = context.Users.Where(x => x.Id == Id).FirstOrDefault();
+                    if (user == null)
+                    {
+                        return new JsonResult(new { status = false, msg = "No User Exist"});
+                    }
+                
+                    context.Users.Remove(user);
+                    context.SaveChanges();
+                }
+
+
+                return new JsonResult(new { status = true, msg = "User is deleted successfully..." });
+            }
+            catch
+            {
+                return new JsonResult(new { status = false });
+            }
+        }
     }
 }
   

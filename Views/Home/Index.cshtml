@@ -1181,7 +1181,7 @@
                 <div class="card" style="min-height:510px;padding:30px;margin-top:50px">
                     <div class="row">
                         <div class="col-md-12">
-                            @*<a href="#" class="AllowFreeAccess" onclick="ShowHideDashboardTable()" id="freeaccessuser">Allow Free Access</a>*@
+                            <a href="#" class="AllowFreeAccess" onclick="ShowHideDashboardTable()" id="freeaccessuser">Allow Free Access</a>
 
                      
                         </div>
@@ -1212,18 +1212,19 @@
                         </div>
                     </div>
                     <div class="row d-none" id="FreeAccessSections">
-                        <div class="col-md-2">
+                        <div class="col-md-3">
                             <label>Email Address</label>
                             <input class="form-control" type="text" id="txt_FreeAccessEmail" />.
 
                         </div>
-                        <div class="col-md-2">
-                            <button type="button" id="addfreeuser" class="btn btn-default">Add</button>
+                        <div class="col-md-1">
+                            <button type="button" id="addfreeuser" onclick="AddFreeAccessUser()" class="btn btn-orange">Add</button>
 
-                        </div>
-                        <div class="col-md-8">
-                            <div>Free Access</div>
-                            <div><span style="color:red">x</span>maro@gmail.com</div>
+                        </div>  
+                        <div class="col-md-7">
+                            <div id="freeuserheader" style="font-weight:bold">Free Access</div>
+                            <div id="AllFreeUsers">  </div>
+                          
                         </div>
                     </div>
                     </div>
