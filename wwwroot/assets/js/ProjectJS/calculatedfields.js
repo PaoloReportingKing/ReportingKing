@@ -1477,6 +1477,10 @@ function refreshchartaftercalculatedfieldscreation(fieldnames) {
 }
 
 function showStuff() {
+    setTimeout(() => {
+        $(".button-menu-mobile").trigger("click");
+
+    }, 0);
     TurnOffVideo();
     if ($(".first-link").hasClass("active") || $(".clr-pallet").hasClass("active")) {
         currentscroll = $(document).scrollTop();
@@ -1491,8 +1495,11 @@ function showStuff() {
     $('#SavedReportsSection').addClass('d-none');
     $('#AccountDetailsSection').addClass('d-none');
     $("#VedioTutorialSection").addClass('d-none');
-    $('#LeftSideFileUpload').removeClass('d-none');
-}
+ /*   $('#LeftSideFileUpload').removeClass('d-none');*/
+   
+  //  $('#LeftSideFileUpload').addClass('d-none');
+    
+}   
 
 
 
