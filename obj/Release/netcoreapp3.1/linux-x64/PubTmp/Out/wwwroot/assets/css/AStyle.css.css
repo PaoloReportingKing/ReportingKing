@@ -107,9 +107,21 @@
         border-color: #FEF19F !important;
     }
 #addfreeuser {
-    margin-top: 27px;
-    border: 1px solid black;
-    color: blue;
+    margin-top: 27px;   
+    /*border: 1px solid black;
+    color: blue;*/
+}
+#freeuserheader {
+    margin-left:0px;
+}
+.freeuseremail{
+    margin-left:10px;   
+}
+#AllFreeUsers{
+    margin-top:0px;
+}
+#FreeAccessSections{
+    margin-top:32px
 }
 .AllowFreeAccess {
     /*  position: absolute !important;

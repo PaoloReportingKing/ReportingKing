@@ -173,7 +173,10 @@ namespace ReportingApp.Controllers
                 {
                     return new JsonResult(new { status = false, msg = "No user found" });
                 }
-
+                if (user.IsFreeUsers)
+                {
+                    return new JsonResult(new { status = false, msg = "No Account Connect with Technical Team" });
+                }
                 string access_token = GetPaypalAccessToken();
                 if (string.IsNullOrEmpty(access_token))
                 {
