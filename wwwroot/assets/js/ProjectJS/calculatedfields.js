@@ -1477,10 +1477,7 @@ function refreshchartaftercalculatedfieldscreation(fieldnames) {
 }
 
 function showStuff() {
-    setTimeout(() => {
-        $(".button-menu-mobile").trigger("click");
-
-    }, 0);
+  
     TurnOffVideo();
     if ($(".first-link").hasClass("active") || $(".clr-pallet").hasClass("active")) {
         currentscroll = $(document).scrollTop();
@@ -1498,7 +1495,9 @@ function showStuff() {
  /*   $('#LeftSideFileUpload').removeClass('d-none');*/
    
   //  $('#LeftSideFileUpload').addClass('d-none');
-    
+    //setTimeout(() => {
+    //    $(".button-menu-mobile").trigger("click");
+    //}, 0);
 }   
 
 
