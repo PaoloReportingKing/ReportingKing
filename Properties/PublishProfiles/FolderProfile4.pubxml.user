@@ -5,6 +5,6 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <_PublishTargetUrl>D:\publishedapps\Reporting Tools</_PublishTargetUrl>
-    <History>True|2022-06-09T14:03:18.9182298Z;True|2022-06-02T17:25:16.1541700+05:00;True|2022-06-02T16:11:48.2963339+05:00;True|2022-05-31T19:56:42.0158040+05:00;True|2022-05-31T13:20:19.2054326+05:00;</History>
+    <History>True|2022-06-10T10:21:30.0520938Z;True|2022-06-10T15:16:43.4358481+05:00;True|2022-06-10T12:25:00.0766488+05:00;True|2022-06-09T20:01:20.6965921+05:00;True|2022-06-09T19:46:55.0974193+05:00;True|2022-06-09T19:03:18.9182298+05:00;True|2022-06-02T17:25:16.1541700+05:00;True|2022-06-02T16:11:48.2963339+05:00;True|2022-05-31T19:56:42.0158040+05:00;True|2022-05-31T13:20:19.2054326+05:00;</History>
   </PropertyGroup>
 </Project>

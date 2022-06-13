@@ -1495,9 +1495,9 @@ function showStuff() {
  /*   $('#LeftSideFileUpload').removeClass('d-none');*/
    
   //  $('#LeftSideFileUpload').addClass('d-none');
-    //setTimeout(() => {
-    //    $(".button-menu-mobile").trigger("click");
-    //}, 0);
+    setTimeout(() => {
+        $(".button-menu-mobile").trigger("click");
+    }, 0);
 }   
 
 

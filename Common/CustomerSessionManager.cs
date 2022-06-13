@@ -17,6 +17,7 @@ namespace ReportingApp.Common
         public bool IsLogin { get; set; }
         public int PackagePlanId  { get; set; }
         public string PackagePlanName { get; set; }
+        public bool IsFreeUser { get; set; }
 
         public List<ComponentRight> Components { get; set; }
 

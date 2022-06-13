@@ -1241,6 +1241,15 @@ D:\Working Apps\Web\Reportingkingrepo\obj\Release\netcoreapp3.1\linux-x64\PubTmp
 D:\Working Apps\Web\Reportingkingrepo\obj\Release\netcoreapp3.1\linux-x64\PubTmp\Out\wwwroot\lib\jquery\LICENSE.txt
 D:\Working Apps\Web\Reportingkingrepo\obj\Release\netcoreapp3.1\linux-x64\PubTmp\Out\wwwroot\Menu.html
 D:\Working Apps\Web\Reportingkingrepo\obj\Release\netcoreapp3.1\linux-x64\PubTmp\Out\wwwroot\uploads\08_04_2022_12_29_23_charts.xlsx
+D:\Working Apps\Web\Reportingkingrepo\obj\Release\netcoreapp3.1\linux-x64\PubTmp\Out\wwwroot\uploads\10_06_2022_11_49_27_charts.xlsx
+D:\Working Apps\Web\Reportingkingrepo\obj\Release\netcoreapp3.1\linux-x64\PubTmp\Out\wwwroot\uploads\10_06_2022_11_50_45_charts.xlsx
+D:\Working Apps\Web\Reportingkingrepo\obj\Release\netcoreapp3.1\linux-x64\PubTmp\Out\wwwroot\uploads\10_06_2022_11_52_15_charts.xlsx
+D:\Working Apps\Web\Reportingkingrepo\obj\Release\netcoreapp3.1\linux-x64\PubTmp\Out\wwwroot\uploads\10_06_2022_11_53_39_charts.xlsx
+D:\Working Apps\Web\Reportingkingrepo\obj\Release\netcoreapp3.1\linux-x64\PubTmp\Out\wwwroot\uploads\10_06_2022_11_55_48_charts.xlsx
+D:\Working Apps\Web\Reportingkingrepo\obj\Release\netcoreapp3.1\linux-x64\PubTmp\Out\wwwroot\uploads\10_06_2022_12_00_23_charts.xlsx
+D:\Working Apps\Web\Reportingkingrepo\obj\Release\netcoreapp3.1\linux-x64\PubTmp\Out\wwwroot\uploads\10_06_2022_12_05_29_charts.xlsx
+D:\Working Apps\Web\Reportingkingrepo\obj\Release\netcoreapp3.1\linux-x64\PubTmp\Out\wwwroot\uploads\10_06_2022_12_07_15_charts.xlsx
+D:\Working Apps\Web\Reportingkingrepo\obj\Release\netcoreapp3.1\linux-x64\PubTmp\Out\wwwroot\uploads\10_06_2022_12_12_24_charts.xlsx
 D:\Working Apps\Web\Reportingkingrepo\obj\Release\netcoreapp3.1\linux-x64\PubTmp\Out\wwwroot\uploads\aiwen.png
 D:\Working Apps\Web\Reportingkingrepo\obj\Release\netcoreapp3.1\linux-x64\PubTmp\Out\appsettings.Development.json
 D:\Working Apps\Web\Reportingkingrepo\obj\Release\netcoreapp3.1\linux-x64\PubTmp\Out\appsettings.json

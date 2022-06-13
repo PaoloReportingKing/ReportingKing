@@ -228,6 +228,68 @@ namespace ReportingApp.Common
             }
             return newFile.Name;
         }
+        public string CreateWorkSheetNew(DataSet ds, List<ChartsConfiguration> chartsConfigurations)
+        {
+            string filedate = DateTime.Now.ToString("dd_MM_yyyy HH_mm_ss").Trim();
+            filedate = filedate.Replace(":", "");
+            try
+            {
+                filedate = filedate.Replace(" ", "_");
+            }
+            catch (Exception ex)
+            {
+
+            }
+            FileInfo newFile = Utils.GetFileInfo(filedate + "_charts.xlsx");
+            using (ExcelPackage pck = new ExcelPackage(newFile))
+            {
+                int tablesCount = 1;
+                ExcelWorksheet ws = pck.Workbook.Worksheets.Add("Sheet" + tablesCount);
+                int cellCount = 1;
+                int columnIndex = 1;
+                foreach (DataTable dt in ds.Tables)
+                {
+
+                    //ws.Cells["A1"].LoadFromDataTable(dt, true);
+                    ws.Cells[GetExcelColumnName(dt.Columns.Count + 1) + "20"].LoadFromDataTable(dt, true);
+                    foreach (var columns in dt.Columns)
+                    {
+                        //if (columnIndex > 1)
+                        //{
+                        string excelColumnName = GetExcelColumnName(columnIndex);
+                        
+                        foreach (var cell in ws.Cells[excelColumnName + ":" + excelColumnName])
+                        {
+                            if (cellCount > 1)
+                            {
+                                if (chartsConfigurations[tablesCount - 1].chartType != "table_chart")
+                                {
+                                    try
+                                    {
+                                        cell.Value = Convert.ToDecimal(cell.Value);
+                                    }
+                                    catch (Exception ex)
+                                    {
+
+                                    }
+                                }
+                            }
+
+                            cellCount++;
+                        }
+
+                        //}
+                        columnIndex++;
+                    }
+                    ws.InsertColumn(dt.Columns.Count + 1, 1);
+                    ws.Cells[GetExcelColumnName(dt.Columns.Count + 1) + "20"].Value = "Comments: " + chartsConfigurations[tablesCount - 1].comments;
+                    //  ws.Cells[GetExcelColumnName(dt.Columns.Count + 1) + "20"].Value =   chartsConfigurations[tablesCount - 1].comments;
+                    tablesCount++;
+                }
+                pck.Save();
+            }
+            return newFile.Name;
+        }
         public void GenerateBarChart(string fileName, ChartsConfiguration chartInfo, DataTable dt, int tablesCount)
         {
             FileInfo newFile = Utils.GetFileInfo(fileName, false);
@@ -237,6 +299,43 @@ namespace ReportingApp.Common
                 ExcelWorksheet chart_sheet = package.Workbook.Worksheets["Sheet" + tablesCount];
                 //var chart = (chart_sheet.Drawings.AddChart("BarChart", eChartType.BarStacked) as ExcelBarChart);
                 var chart = (ExcelBarChart)chart_sheet.Drawings.AddChart("barChart", eChartType.ColumnClustered);
+                //chart.Title.Text = "Total";
+                //From row 1 colum 5 with five pixels offset
+                chart.SetPosition(0, 0, 5, 5);
+                chart.SetSize(600, 300);
+                //ExcelAddress valueAddress = new ExcelAddress("E2:E49, G2:G49");
+                int columnIndex = 1;
+                foreach (var columns in dt.Columns)
+                {
+                    if (columnIndex > 1)
+                    {
+                        string excelColumnName = GetExcelColumnName(columnIndex);
+                        chart.Series.Add(excelColumnName + "2:" + excelColumnName + rowLength, "A2:A" + rowLength).Header = columns.ToString(); ;
+                    }
+                    columnIndex++;
+                }
+                //var ser = (chart.Series.Add(valueAddress.Address, "V2:V49") as ExcelBarChartSerie);
+                //chart.Series.Add(ExcelRange.GetAddress(2,5,48,5), ExcelRange.GetAddress(2, 22, 48, 22));
+                chart.DataLabel.ShowCategory = false;
+                chart.DataLabel.ShowPercent = false;
+                chart.Legend.Border.LineStyle = eLineStyle.Solid;
+                chart.Legend.Border.Fill.Style = eFillStyle.SolidFill;
+                chart.Legend.Border.Fill.Color = Color.DarkBlue;
+                //Switch the PageLayoutView back to normal
+                chart_sheet.View.PageLayoutView = false;
+                // save our new workbook and we are done!
+                package.Save();
+            }
+        }
+        public void GenerateBarChartNew (string fileName, ChartsConfiguration chartInfo, DataTable dt, int tablesCount)
+        {
+            FileInfo newFile = Utils.GetFileInfo(fileName, false);
+            using (ExcelPackage package = new ExcelPackage(newFile))
+            {
+                int rowLength = dt.Rows.Count + 1;
+                ExcelWorksheet chart_sheet = package.Workbook.Worksheets["Sheet1"];
+                //var chart = (chart_sheet.Drawings.AddChart("BarChart", eChartType.BarStacked) as ExcelBarChart);
+                var chart = (ExcelBarChart)chart_sheet.Drawings.AddChart("barChart"+tablesCount, eChartType.ColumnClustered);
                 //chart.Title.Text = "Total";
                 //From row 1 colum 5 with five pixels offset
                 chart.SetPosition(0, 0, 5, 5);

@@ -17,7 +17,7 @@
 
 function applyReportingToolsRights() {
     // UserObjDetail
-    if (!UserObjDetail.isSuperAdmin && getpermissionstatus("Profile")) {
+    if (!UserObjDetail.isSuperAdmin && !UserObjDetail.isFreeUser && getpermissionstatus("Profile")) {
         $('#profileBtn').removeClass('d-none');
     }
     else {

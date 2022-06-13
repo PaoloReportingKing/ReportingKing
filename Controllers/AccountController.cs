@@ -132,6 +132,7 @@ namespace ReportingApp.Controllers
             csm.UserEmail = userobj.email;
             csm.IsActive = userobj.IsActive;
             csm.IsLogin = true;
+            csm.IsFreeUser = userobj.IsFreeUsers;
             csm.IsSuperAdmin = userobj.IsSuperAdmin;
             csm.PackagePlanId = userobj.PackagePlanId;
             csm.PackagePlanName = context.PackagePlans.Where(x => x.Id == userobj.PackagePlanId).Select(x => x.PackageName).FirstOrDefault();

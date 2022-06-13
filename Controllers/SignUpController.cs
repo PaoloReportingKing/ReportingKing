@@ -175,7 +175,7 @@ namespace ReportingApp.Controllers
                 }
                 if (user.IsFreeUsers)
                 {
-                    return new JsonResult(new { status = false, msg = "No Account Connect with Technical Team" });
+                    return new JsonResult(new { status = false, msg = "No account connect. Please contact with Admin." });
                 }
                 string access_token = GetPaypalAccessToken();
                 if (string.IsNullOrEmpty(access_token))
