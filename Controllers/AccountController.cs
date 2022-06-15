@@ -233,9 +233,9 @@ namespace ReportingApp.Controllers
 
                 return new JsonResult(new { status = true, msg = "User is added successfully..." });
             }
-            catch
+            catch(Exception ex)
             {
-                return new JsonResult(new { status = false });
+                return new JsonResult(new { status = false, msg = ex.InnerException.Message });
             }
         }
 

@@ -1250,6 +1250,7 @@ D:\Working Apps\Web\Reportingkingrepo\obj\Release\netcoreapp3.1\linux-x64\PubTmp
 D:\Working Apps\Web\Reportingkingrepo\obj\Release\netcoreapp3.1\linux-x64\PubTmp\Out\wwwroot\uploads\10_06_2022_12_05_29_charts.xlsx
 D:\Working Apps\Web\Reportingkingrepo\obj\Release\netcoreapp3.1\linux-x64\PubTmp\Out\wwwroot\uploads\10_06_2022_12_07_15_charts.xlsx
 D:\Working Apps\Web\Reportingkingrepo\obj\Release\netcoreapp3.1\linux-x64\PubTmp\Out\wwwroot\uploads\10_06_2022_12_12_24_charts.xlsx
+D:\Working Apps\Web\Reportingkingrepo\obj\Release\netcoreapp3.1\linux-x64\PubTmp\Out\wwwroot\uploads\13_06_2022_20_45_12_charts.xlsx
 D:\Working Apps\Web\Reportingkingrepo\obj\Release\netcoreapp3.1\linux-x64\PubTmp\Out\wwwroot\uploads\aiwen.png
 D:\Working Apps\Web\Reportingkingrepo\obj\Release\netcoreapp3.1\linux-x64\PubTmp\Out\appsettings.Development.json
 D:\Working Apps\Web\Reportingkingrepo\obj\Release\netcoreapp3.1\linux-x64\PubTmp\Out\appsettings.json

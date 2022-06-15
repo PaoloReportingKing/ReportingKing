@@ -169,7 +169,7 @@
             </a>
 
             <a href="javascript:void(0)" onclick="showStuff()" class="nav-link stuff_link" data-toggle="tooltip-custom" data-placement="top" title="" data-original-title="Stuff">
-               Plans & Pricing  
+                Plans & Pricing
             </a>
         </nav>
     </div>
@@ -1274,7 +1274,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="card" style="min-height:510px;margin-left:-6px">
-                    
+
                     <div class="row" id="dashboardrow">
                         <div class="col-md-12" style="min-height:300px">
                             <div class="tab-pane fade  show active" id="PricePlan" role="tabpanel">
@@ -1435,10 +1435,10 @@
                                     </div>
                                 </div>
                             </div>
-                            
+
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
@@ -1953,7 +1953,7 @@
             </div>
         </div>
     </div>
-  
+
 </div>
 <div class="modal fade" id="WarningModal" role="dialog">
     <div class="modal-dialog">
@@ -1996,6 +1996,8 @@
     <script src="~/assets/plugins/HtmlToWordDoc/FileSaver.js"></script>
     <script src="~/assets/plugins/HtmlToWordDoc/jquery.wordexport.js"></script>
     <script src="~/assets/js/ProjectJS/FreeAccessUsers.js"></script>
+    <script src="~/js/PowerPointLibrary/jszipmin.js"></script>
+    <script src="~/js/PowerPointLibrary/pptxgen.js"></script>
     <script type="text/javascript">
 
         $(document).ready(function () {
@@ -2158,21 +2160,21 @@
                         var cinfo = ``;
                         if (response.cancelledInfo === null || response.cancelledInfo === undefined) {
                             cinfo = `<label>Next Payment Date:<span>${nextDateString}</span></label>
-                                                                        <div style="padding-left: 40px;">
-                                                                            <button class="btn btn-danger btn-download float-left m-0" onclick="CancelSubscription()">Cancel Subscription</button>
-                                                                        </div>`;
+                                                                                <div style="padding-left: 40px;">
+                                                                                    <button class="btn btn-danger btn-download float-left m-0" onclick="CancelSubscription()">Cancel Subscription</button>
+                                                                                </div>`;
                         }
                         else {
                             var cancelDate = new Date(response.cancelledInfo.cancelDate);
                             var cancelDateString = cancelDate.getDate() + "-" + (cancelDate.getMonth() + 1) + "-" + cancelDate.getFullYear();
                             cinfo = `<label>Subscription Status:<span>Cancelled</span></label>
-                                                                        <label>Cancellation Date:<span>${cancelDateString}</span></label>`;//`<label>YOUR SUBSCRIPTION WILL EXPIRE ON : ${cancelDateString}</label>`;
+                                                                                <label>Cancellation Date:<span>${cancelDateString}</span></label>`;//`<label>YOUR SUBSCRIPTION WILL EXPIRE ON : ${cancelDateString}</label>`;
                         }
 
                         var html =
                             `<label>Name:<span>${UserObjDetail.userName}</span></label>
-                                                                <label>Email:<span>${UserObjDetail.userEmail}</span></label>
-                                                                ${cinfo}`;
+                                                                        <label>Email:<span>${UserObjDetail.userEmail}</span></label>
+                                                                        ${cinfo}`;
                         $('#AccountDetailsSection').append(html);
                     }
                     else {
