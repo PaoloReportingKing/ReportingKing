@@ -84,7 +84,7 @@ function AddNewRow() {
                                         <div class="col-md-4">
                                             <div id="comments_chart_${randomId}" class="chart-box active">
                                                 <img src="../../assets/images/icons/Comment.svg" />
-                                                <h4 class="card-title">Comment</h4>
+                                                <h4 class="card-title fixpositionatrow">Comment</h4>
                                             </div>
                                         </div>
                                     </div>
@@ -132,7 +132,7 @@ function AddNewRow() {
                            </div>
                             <div id="comments_chart_${randomId}_side" class="chart-box active">
                                 <img src="../../assets/images/icons/Comment.svg" />
-                                <h4 class="card-title">Comment</h4>
+                                <h4 class="card-title fixpositionatrow">Comment</h4>
                             </div>
                         </div>
                     </div>

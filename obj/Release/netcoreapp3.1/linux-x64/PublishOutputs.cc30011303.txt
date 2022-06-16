@@ -1232,6 +1232,8 @@ D:\Working Apps\Web\Reportingkingrepo\obj\Release\netcoreapp3.1\linux-x64\PubTmp
 D:\Working Apps\Web\Reportingkingrepo\obj\Release\netcoreapp3.1\linux-x64\PubTmp\Out\wwwroot\favicon.ico
 D:\Working Apps\Web\Reportingkingrepo\obj\Release\netcoreapp3.1\linux-x64\PubTmp\Out\wwwroot\js\ApiGoogle.js
 D:\Working Apps\Web\Reportingkingrepo\obj\Release\netcoreapp3.1\linux-x64\PubTmp\Out\wwwroot\js\fontgoogleapi.js
+D:\Working Apps\Web\Reportingkingrepo\obj\Release\netcoreapp3.1\linux-x64\PubTmp\Out\wwwroot\js\PowerPointLibrary\jszipmin.js
+D:\Working Apps\Web\Reportingkingrepo\obj\Release\netcoreapp3.1\linux-x64\PubTmp\Out\wwwroot\js\PowerPointLibrary\pptxgen.js
 D:\Working Apps\Web\Reportingkingrepo\obj\Release\netcoreapp3.1\linux-x64\PubTmp\Out\wwwroot\js\site.js
 D:\Working Apps\Web\Reportingkingrepo\obj\Release\netcoreapp3.1\linux-x64\PubTmp\Out\wwwroot\lib\bootstrap\LICENSE
 D:\Working Apps\Web\Reportingkingrepo\obj\Release\netcoreapp3.1\linux-x64\PubTmp\Out\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
