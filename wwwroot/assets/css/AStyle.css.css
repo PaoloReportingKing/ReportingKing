@@ -123,6 +123,10 @@
 #FreeAccessSections{
     margin-top:32px
 }
+.fixpositionatrow{
+    position:absolute;
+    margin-left:95px !important;
+}
 .AllowFreeAccess {
     /*  position: absolute !important;
     margin-left: 205px !important;

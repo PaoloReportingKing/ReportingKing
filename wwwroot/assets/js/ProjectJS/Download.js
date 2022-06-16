@@ -3433,9 +3433,9 @@ function getBase64ById(id, index) {
         var base64image = canvas.toDataURL("image/png");
         //downloadBase64File(base64image, "aiwen.png");
 
-        /* var solution = base64image.split("base64,")[1];*/
-        /* chartBases.push(solution);*/
-        chartBases.push(base64image);
+         var solution = base64image.split("base64,")[1];
+         chartBases.push(solution);
+       // chartBases.push(base64image);
         loopChartsCount++;
         var percentageCount = parseInt((loopChartsCount / chartsconfigurations.length) * 100);
         if (percentageCount < 40) {
@@ -3461,7 +3461,8 @@ function getBase64ById(id, index) {
         }
         if (totalChartsCount === loopChartsCount) {
             //all done
-            DownLoadPowerPointDataAfterCreatingImages(chartBases);
+            /*  DownLoadPowerPointDataAfterCreatingImages(chartBases);*/
+            finalZipFunc();
         }
         else {
             getBase64ById(ab_rows_png[index + 1].id, index + 1)
@@ -3587,7 +3588,7 @@ function downloadZip(base64strings) {
     for (var x = 0; x < base64strings.length; x++) {
         img.file((x + 1) + ".png", base64strings[x], { base64: true });
     }
-    DownLoadPowerPointDataAfterCreatingImages(base64strings);
+   // DownLoadPowerPointDataAfterCreatingImages(base64strings);
     chartBases = [];
 
     zip.generateAsync({ type: "blob" })
